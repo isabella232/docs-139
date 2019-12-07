@@ -43,5 +43,5 @@ function WebComponent(){
 Donde :
 
 * `count` es el estado actual, inicializando en `0`
-* `increment` es el actualizador de estado mediante el uso de `setCount`
+* `increment` : Callback que despacha el incremento del estado usando setState
 
