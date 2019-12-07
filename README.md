@@ -28,9 +28,9 @@ customElement("any-name", WebComponent);
 
 Atomico se presenta como una micro librería para un desarrollo moderno, con una curva baja curva de aprendizaje y sintaxis heredada de React, algunos de los beneficios de Atomico son:
 
-#### virtual-dom pensado para el web-component
+#### virtual-dom designed for the web-component
 
-Atomico introduce el uso del tag `host` y el uso de propiedades especiales como `shadowDom` o `styleSheet`  que permite manipular mejor el estado del web-component, como cualquier nodo del virtual-dom, ej:
+Atomico introduces the use of the `host` tag and the use of special properties such as `shadowDom` or `styleSheet` that allows you to better manipulate the state of the web-component, eg:
 
 ```jsx
 <host
