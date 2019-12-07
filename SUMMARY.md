@@ -4,12 +4,8 @@
 
 ## Comenzando <a id="get-started"></a>
 
-* [Instalación](get-started/instalacion/README.md)
-  * [Uso sin bundle](get-started/instalacion/browser.md)
-* [Ejemplos](get-started/ejemplos/README.md)
-  * [Hola mundo](get-started/ejemplos/hola-mundo.md)
-  * [Contador](get-started/ejemplos/contador.md)
-  * [Request](get-started/ejemplos/request.md)
+* [Instalación](get-started/instalacion.md)
+* [Uso sin bundle](get-started/browser.md)
 
 ## Guias
 
@@ -27,6 +23,10 @@
   * [atomico/use-lazy](guias/hooks/atomico-use-lazy.md)
   * [atomico/use-router](guias/hooks/atomico-use-router.md)
   * [atomico/use-state-generator](guias/hooks/atomico-use-state-generator.md)
+* [Ejemplos](guias/ejemplos/README.md)
+  * [Hola mundo](guias/ejemplos/hola-mundo.md)
+  * [Contador](guias/ejemplos/contador.md)
+  * [Request](guias/ejemplos/request.md)
 
 ## Comparaciones y migraciones
 

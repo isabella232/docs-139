@@ -6,13 +6,13 @@ description: Comenzar con Atomico es simple y rapido
 
 ## Manual
 
-### Paso 1 Npm
+### Paso 1, Npm
 
 ```bash
 npm install atomico
 ```
 
-### Paso 2, configurar  pragma de babel JSX
+### Paso 2, Configurar  pragma de babel JSX
 
 Atomico usa la letra `h` para la declaración del JSX, la siguiente configuración es la recomendada para babel.
 
