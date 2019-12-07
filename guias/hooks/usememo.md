@@ -1,7 +1,8 @@
 ---
 description: >-
-  memoriza el retorno de un callback limitando su ejecución mediante un array de
-  argumentos, este se ejecuta en el momento del render
+  Memorize the return of a callback by limiting its execution through an array
+  of arguments, the callback is executed at the time of rendering only if the
+  arguments change
 ---
 
 # useMemo
