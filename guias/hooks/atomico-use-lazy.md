@@ -22,6 +22,8 @@ Donde :
 
 {% embed url="https://codepen.io/uppercod/pen/BaaMORB?editors=1010" %}
 
+El request enseñado solo se regenerara si la variable id cambia, useLazy se quedara siempre con el retorno de la ultima regneracion del callback ignorando las pendientes 
+
 ## useLazyNode
 
 ```javascript
