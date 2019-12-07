@@ -10,6 +10,7 @@
   * [useState](guides/hooks/usestate.md)
   * [useEffect](guides/hooks/useeffect.md)
   * [useRef](guides/hooks/useref.md)
+  * [useMemo](guides/hooks/usememo.md)
 
 ## Comparisons and migrations
 
