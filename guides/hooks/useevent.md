@@ -15,7 +15,7 @@ let eventInit = {
 let dispatchMyEvent = useEvent("myEvent",eventInit)
 ```
 
-Donde :
+Where:
 
 * `"myEvent"`: String required, name of the event to be dispatched by the callback.
 * `eventInit`: Optional object, allows you to define the behavior of the event using the native [eventInit api.](https://developer.mozilla.org/es/docs/Web/API/Event/Event)
