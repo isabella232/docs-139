@@ -15,6 +15,7 @@
   * [useReducer](guides/hooks/usereducer.md)
   * [useEvent](guides/hooks/useevent.md)
   * [usePublic](guides/hooks/usepublic.md)
+  * [atomico/use-lazy](guides/hooks/atomico-use-lazy.md)
 
 ## Comparisons and migrations
 
