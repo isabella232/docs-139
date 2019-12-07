@@ -30,7 +30,7 @@ Atómico se presenta como una micro librería para  un desarrollo moderno, con u
 
 #### virtual-dom pensado para el web-component
 
-Atomico introduce el uso del tag `host`, el que permite manipular el estado del web-component, como cualquier nodo del virtual-dom, ej:
+Atomico introduce el uso del tag `host` y el uso de propiedades especiales como `shadowDom` o `styleSheet`  que permite manipular mejor el estado del web-component, como cualquier nodo del virtual-dom, ej:
 
 ```jsx
 <host
