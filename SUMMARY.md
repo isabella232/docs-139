@@ -8,6 +8,7 @@
 * [Hooks](guides/hooks/README.md)
   * [useProp](guides/hooks/useprop.md)
   * [useState](guides/hooks/usestate.md)
+  * [useEffect](guides/hooks/useeffect.md)
 
 ## Comparisons and migrations
 
