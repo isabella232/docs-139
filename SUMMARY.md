@@ -2,10 +2,10 @@
 
 * [Introducción](README.md)
 
-## Comenzando <a id="get-started"></a>
+## Comenzando
 
-* [Instalación](get-started/instalacion.md)
-* [Uso sin bundle](get-started/browser.md)
+* [Instalación](comenzando/instalacion.md)
+* [Uso sin bundle](comenzando/browser.md)
 
 ## Guias
 
