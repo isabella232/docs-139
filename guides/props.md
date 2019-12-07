@@ -1,8 +1,13 @@
+---
+description: >-
+  Atomico improves the experience of defining properties associated with the
+  web-component, by using the props object, you can define attributes and
+  properties.
+---
+
 # Props
 
-
-
-Atomico improves the experience of defining properties associated with the web-component, by using the props object, you can define attributes and properties, eg:
+### Syntax
 
 ```javascript
 WebComponent.props = {
