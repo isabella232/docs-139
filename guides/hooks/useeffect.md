@@ -1,3 +1,7 @@
+---
+description: "allows you to create side effects, useful for controlling effects that\_\_ interactive with the DOM or asynchrony"
+---
+
 # useEffect
 
 ### Syntax

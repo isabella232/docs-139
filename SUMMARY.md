@@ -9,6 +9,7 @@
   * [useProp](guides/hooks/useprop.md)
   * [useState](guides/hooks/usestate.md)
   * [useEffect](guides/hooks/useeffect.md)
+  * [useRef](guides/hooks/useref.md)
 
 ## Comparisons and migrations
 

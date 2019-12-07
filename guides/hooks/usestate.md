@@ -1,6 +1,8 @@
+---
+description: Create a local state in the web-component
+---
+
 # useState
-
-
 
 ### Syntax
 
