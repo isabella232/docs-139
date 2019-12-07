@@ -7,7 +7,7 @@ description: >-
 
 # useMemo
 
-### Sintaxis
+### Syntax
 
 ```javascript
 let memo = useMemo(callback, args);
