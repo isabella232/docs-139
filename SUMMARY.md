@@ -5,7 +5,8 @@
 ## Guides
 
 * [Props](guides/props.md)
-* [Hooks](guides/hooks.md)
+* [Hooks](guides/hooks/README.md)
+  * [useProp](guides/hooks/useprop.md)
 
 ## Comparisons and migrations
 
