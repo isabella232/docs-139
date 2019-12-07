@@ -1,5 +1,7 @@
 ---
-description: permite crear una referencia que se mantiene mutable entre renders.
+description: >-
+  Permite crear un objeto que puede contener referencias persistentes entre
+  renders
 ---
 
 # useRef
@@ -12,8 +14,8 @@ let ref = useRef(optionalCurrent);
 
 Donde:
 
-* `ref` es un objeto que no muta entre renders
-* `opcionalCurrent` es el estado inicial de la propiedad `ref.current`
+* `ref`  : Object, que puede contener referencias persistentes entre renders
+* `opcionalCurrent` : Any, es el estado inicial de la propiedad `ref.current`
 
 ### Ejemplo
 
