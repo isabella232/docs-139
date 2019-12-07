@@ -6,9 +6,3 @@ description: >-
 
 # Hooks
 
-### ¿Por que hooks en web-components?
-
-...
-
-#### Ciclo del hooks
-
