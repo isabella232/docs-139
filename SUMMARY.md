@@ -14,6 +14,7 @@
   * [useCallback](guides/hooks/usecallback.md)
   * [useReducer](guides/hooks/usereducer.md)
   * [useEvent](guides/hooks/useevent.md)
+  * [usePublic](guides/hooks/usepublic.md)
 
 ## Comparisons and migrations
 
