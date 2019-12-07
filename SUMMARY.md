@@ -11,6 +11,7 @@
   * [useEffect](guides/hooks/useeffect.md)
   * [useRef](guides/hooks/useref.md)
   * [useMemo](guides/hooks/usememo.md)
+  * [useCallback](guides/hooks/usecallback.md)
 
 ## Comparisons and migrations
 
