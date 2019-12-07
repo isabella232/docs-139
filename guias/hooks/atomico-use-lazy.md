@@ -32,7 +32,10 @@ return <host>
 </host>
 ```
 
-Permite aplicar dinamic import solo si el nodo es representado en el DOM.
+Permite aplicar dinamic import solo si el nodo es representado en el DOM, donde:
+
+* `loading`: Any, permite enseñar esta propiedad mientras se espera por el import.
+* `error` : Any, permite enseñar esta propiedad si se genera un error.
 
 
 
