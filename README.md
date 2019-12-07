@@ -26,7 +26,7 @@ customElement("any-name", WebComponent);
 
 ### ¿Por que Atomico?
 
-Atómico se presenta como una micro librería para  un desarrollo moderno, con una curva de aprendizaje baja, logica altamente componetizable y sintaxis heredada de React, algunos de los beneficios de Atomico son: 
+Atomico se presenta como una micro librería para un desarrollo moderno, con una curva baja curva de aprendizaje y sintaxis heredada de React, algunos de los beneficios de Atomico son:
 
 #### virtual-dom pensado para el web-component
 
@@ -42,9 +42,13 @@ Atomico introduce el uso del tag `host` y el uso de propiedades especiales como 
 </host>
 ```
 
-#### Propiedades como objeto
+#### Declaración de propiedades atributos como objeto
 
-Ud podra declarar propiedades y atributos mediante un objeto, esto beneficia le uso de validación de tipos, reflejo de propiedades como atributos, valores por default, asociación de eventos y más.
+Atomico permite definir comportamientos especiales como la  **validación de tipos, reflejo de propiedades como atributos, valores por default, asociación de eventos y más.**
+
+#### Hooks
+
+Este patrón moderno le permitirá crear logica reutilizable  que mejora la experiencia de composición  funcional
 
 #### Render asíncrono
 
@@ -54,7 +58,7 @@ Atomico procesa las actualizaciones de forma eficiente, agrupándola y ejecután
 
 Atomico posee código débilmente acoplado, lo que facilita la eliminación de funcionalidades y reducción de su tamaño sin generar conflicto.
 
-#### Ejecutable en browser
+#### Uso sin herramientas de bundle
 
 La distribución de Atomico es centralizada en un solo package, esto permite que los módulos internos como atomico/html, atomico/use-lazy, atomico/use-router y otros.  se puedan ejecutar directo en el navegador, esto facilita la generación de prototipos, ej:
 
@@ -68,20 +72,4 @@ function WebComponent(){
 
 customElement("my-tag",WebComponent);
 ```
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
 

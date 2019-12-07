@@ -31,5 +31,5 @@ let data = useMemo({
 },[length]);
 ```
 
-callbackHighCostProcess, puede ser una iteración de alto costo en rendimiento que dependa del scope del render, esto permite evitar segundas ejecuciones condicionadas por los argumentos del segundo parámetro de useMemo
+Se recomienda su uso en proceso de alto costo, como una iteración de alto costo en rendimiento que dependa del scope del render, esto permite evitar segundas ejecuciones condicionadas por los argumentos del segundo parámetro de useMemo
 
