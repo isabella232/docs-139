@@ -1,7 +1,8 @@
 ---
 description: >-
-  Atomico aplica parte del api de hooks de react y añade nuevos hooks para
-  mejorar la experiencia de desarrollo con web-components
+  Atomico allows highly composed logic, thanks to the application of the hook
+  pattern inherited from React and adds new hooks designed to improve the user
+  experience of web components
 ---
 
 # Hooks
