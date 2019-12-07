@@ -13,13 +13,13 @@ description: >-
 let memo = useMemo(callback, args);
 ```
 
-Donde:
+Where :
 
-* `callback`:  Funcion que sera llamada al inicializar o cada vez que uno de los elementos de la lista de argumentos cambie en función de su largo o indice 
-* `args`: lista de argumentos a comparar entre renders por useMemo
-* `memo`: retorno de la ejecución de callback.
+* `callback`:  Function, this is called upon initialization or each time one of the items in the argument list changes depending on its length or index
+* `args`: list of arguments to compare between renders by useMemo
+* `memo`: callback execution return.
 
-### Ejemplo
+### Example
 
 ```javascript
 let data = useMemo({
@@ -31,5 +31,5 @@ let data = useMemo({
 },[length]);
 ```
 
-callbackHighCostProcess, puede ser una iteración de alto costo en rendimiento que dependa del scope del render, esto permite evitar segundas ejecuciones condicionadas por los argumentos del segundo parámetro de useMemo
+It is recommended to use it in a high-cost process, as a high-cost iteration in performance that depends on the scope of the render, this allows to avoid second executions conditioned by the arguments of the second parameter of useMemo
 
