@@ -26,7 +26,7 @@ customElement("any-name", WebComponent);
 
 ### Why Atomico?
 
-Atomico se presenta como una micro librería para un desarrollo moderno, con una curva baja curva de aprendizaje y sintaxis heredada de React, algunos de los beneficios de Atomico son:
+Atomico is presented as a micro library for a modern development, with a low learning curve and syntax inherited from React, some of the benefits of Atomico are:
 
 #### virtual-dom designed for the web-component
 
