@@ -16,6 +16,7 @@
   * [useEvent](guides/hooks/useevent.md)
   * [usePublic](guides/hooks/usepublic.md)
   * [atomico/use-lazy](guides/hooks/atomico-use-lazy.md)
+  * [atomico/use-router](guides/hooks/atomico-use-router.md)
 
 ## Comparisons and migrations
 
