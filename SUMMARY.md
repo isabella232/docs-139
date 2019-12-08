@@ -2,6 +2,11 @@
 
 * [Atomico](README.md)
 
+## Get started
+
+* [Installation](get-started/installation.md)
+* [Without bundle](get-started/without-bundle.md)
+
 ## Guides
 
 * [Props](guides/props.md)
