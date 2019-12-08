@@ -1,6 +1,12 @@
+---
+description: >-
+  Atomico allows an uncomplicated migration with React, for this you must follow
+  the following steps based on the following example.
+---
+
 # From React to Atomico
 
-Atomico allows an uncomplicated migration with React, for this you must follow the following steps based on the following example:
+### Code to migrate
 
 ```jsx
 import React, { useEffect, useState} from "react";
