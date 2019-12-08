@@ -43,12 +43,12 @@ Permite la creación de web-components y/o aplicaciones con Atomico, el siguient
 {% embed url="https://github.com/atomicojs/base" %}
 
 ```bash
+# Primero
 git clone https://github.com/atomicojs/base
+# abra la carpeta clonada
+npm install
+# espere la instalacion...
+npm run dev
+# check localhost: 8080
 ```
-
-
-
-
-
-
 

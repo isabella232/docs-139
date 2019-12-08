@@ -185,5 +185,3 @@ await node.rendered;
 Su WebComponent no recibe referencias de las props, cada render recibe una instantánea inmutable.
 {% endhint %}
 
-
-
