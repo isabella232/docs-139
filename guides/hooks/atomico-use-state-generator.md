@@ -1,7 +1,7 @@
 ---
 description: >-
-  use generadores recursivos y asincronos para componer de componer logica de 
-  stream, en resumen una monada.
+  use recursive and asynchronous generators to compose stream logic, in short
+  one monad.
 ---
 
 # atomico/use-state-generator
