@@ -1,7 +1,7 @@
 ---
 description: >-
-  use generadores recursivos y asincronos para componer de componer logica de
-  stream, en resumen una monada.
+  use generadores recursivos y asíncronos para componer logica de stream, en
+  resumen una monada.
 ---
 
 # atomico/use-state-generator
@@ -28,7 +28,7 @@ Donde :
 import { useStateGenerator, delay} from "atomico/use-state-generator";
 /** inside web-component */
 let length = 10;
-let [state] = useStateGenerator((state)=>{
+let [state] = useStateGenerator(function *(state){
 	while(--state){
         yield delay(1000);
         yield state;
@@ -38,4 +38,12 @@ let [state] = useStateGenerator((state)=>{
 ```
 
 El ejemplo anterior genera una cuenta regresiva de 10..1, cada paso es de 1000ms.
+
+### Avanzado
+
+ **recursión**, ud puede conocer el estado asociado al generador retornando una función, esta sera analizada para componer un nuevo estado.
+
+
+
+
 
