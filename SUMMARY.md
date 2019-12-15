@@ -23,9 +23,9 @@
   * [atomico/use-lazy](guias/hooks/atomico-use-lazy.md)
   * [atomico/use-router](guias/hooks/atomico-use-router.md)
   * [atomico/use-state-generator](guias/hooks/atomico-use-state-generator.md)
+* [Virtual dom](guias/virtual-dom.md)
 * [Ejemplos](guias/ejemplos/README.md)
-  * [Hola mundo](guias/ejemplos/hola-mundo.md)
-  * [Contador](guias/ejemplos/contador.md)
+  * [Input personalizado](guias/ejemplos/hola-mundo.md)
   * [Request](guias/ejemplos/request.md)
 
 ## Comparaciones y migraciones

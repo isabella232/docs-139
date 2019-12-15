@@ -26,11 +26,11 @@ customElement("any-name", WebComponent);
 
 ### ¿Por que Atomico?
 
-Atomico se presenta como una micro librería para un desarrollo moderno, con una curva baja curva de aprendizaje y sintaxis heredada de React, algunos de los beneficios de Atomico son:
+Atomico se presenta como una micro librería para un desarrollo moderno, con una curva baja curva de aprendizaje y sintaxis heredada de React, que busca solucionar los problemas tradicionales al momento de crear web-components de forma inteligente, algunos de los beneficios de Atomico son:
 
 #### virtual-dom pensado para el web-component
 
-Atomico introduce el uso del tag `host` y el uso de propiedades especiales como `shadowDom` o `styleSheet`  que permite manipular mejor el estado del web-component, como cualquier nodo del virtual-dom, ej:
+El virtual-dom de Atomico se diferencia de otras bibliotecas\(Preact, Lit-html o React\), en que permite la manipulación desde el mismo contenedor asignado , en el caso general de Atomico el web-component, esto permite que ud declare el estado total del web-component desde el mismo virtual-dom mediante el tag host, ej:
 
 ```jsx
 <host
@@ -38,29 +38,47 @@ Atomico introduce el uso del tag `host` y el uso de propiedades especiales como 
     onclick={handler}
     styleSheet={style}
     >
-    ...inside web-component
+    ...children
 </host>
 ```
 
+Done:
+
+* host\[shadowDom\] : permite activar o desactivar el shadowDom de su web-component.
+* host\[styleSheet\] : permite relacionar el css a un web-component de forma eficiente, usando por ejemplo Constructable Stylesheets cuando este disponible.
+* host\[onclick\] : permite asociar un evento al web-component
+
 #### Declaración de propiedades atributos como objeto
 
-Atomico permite definir comportamientos especiales como la  **validación de tipos, reflejo de propiedades como atributos, valores por default, asociación de eventos y más.**
+Atomico permite definir comportamientos especiales como la  **validación de tipos, reflejo de propiedades como atributos, valores por default, asociación de eventos y más, ej:**
+
+```jsx
+WebComponent.props = {
+    myString : String, // 
+    myObject : {
+        type : Object,
+        reflect : true,
+        event : true,
+        value : ()=>({...initialState})
+    }
+}
+```
 
 #### Hooks
 
-Este patrón moderno le permitirá crear logica reutilizable  que mejora la experiencia de composición  funcional
+Este patrón moderno le permitirá crear logica reutilizable  que mejora la experiencia de composición  funcional, este modelo de programacion supera las limitaciones naturales de una clase, sea contexto\(this\) y mejora la modularizacion de funcionalidades mediante custom-hooks\(scope logicos\).
 
 #### Render asíncrono
 
-Atomico procesa las actualizaciones de forma eficiente, agrupándola y ejecutándolas en función de la concurrencia, esto logra un efecto similar al de React Fiber.
+Atomico procesa las actualizaciones de forma eficiente, agrupándola y ejecutándolas en función de la concurrencia, manejando las tareas de forma inteligente, esto logra un efecto similar al de React Fiber.
 
 #### Tree shaking
 
 Atomico posee código débilmente acoplado, lo que facilita la eliminación de funcionalidades y reducción de su tamaño sin generar conflicto.
 
-#### Uso sin herramientas de bundle
+#### Sistema de distribución moderno.
 
-La distribución de Atomico es centralizada en un solo package, esto permite que los módulos internos como atomico/html, atomico/use-lazy, atomico/use-router y otros.  se puedan ejecutar directo en el navegador, esto facilita la generación de prototipos, ej:
+La distribución de Atomico es centralizada en un solo package en formato msj, esto permite que los módulos internos como atomico/html, atomico/use-lazy, atomico/use-router y otros.  se puedan ejecutar directo en el navegador, esto facilita la generación de prototipos, ej:
 
 ```javascript
 import { customElement } from "https://unpkg.com/atomico";
@@ -72,4 +90,6 @@ function WebComponent(){
 
 customElement("my-tag",WebComponent);
 ```
+
+
 
