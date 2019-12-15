@@ -50,7 +50,12 @@ Done:
 
 #### Declaración de propiedades atributos como objeto
 
-Atomico permite definir comportamientos especiales como la  **validación de tipos, reflejo de propiedades como atributos, valores por default, asociación de eventos y más, ej:**
+Atomico permite definir comportamientos especiales como : 
+
+1. Validación de tipos en tiempo de ejecución. 
+2. Reflejo de propiedades como atributos.
+3. Valores por default.
+4. Asociación de eventos simples y avanzados
 
 ```jsx
 WebComponent.props = {
