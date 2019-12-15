@@ -23,6 +23,7 @@
   * [atomico/use-lazy](guides/hooks/atomico-use-lazy.md)
   * [atomico/use-router](guides/hooks/atomico-use-router.md)
   * [atomico/use-state-generator](guides/hooks/atomico-use-state-generator.md)
+* [Virtual dom](guides/virtual-dom.md)
 
 ## Comparisons and migrations
 

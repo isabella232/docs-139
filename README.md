@@ -26,11 +26,11 @@ customElement("any-name", WebComponent);
 
 ### Why Atomico?
 
-Atomico is presented as a micro library for a modern development, with a low learning curve and syntax inherited from React, some of the benefits of Atomico are:
+Atomico is presented as a micro library for a modern development, with a low learning curve and syntax inherited from React, which seeks to solve traditional problems when creating web-components intelligently, some of the benefits of Atomico are:
 
 #### virtual-dom designed for the web-component
 
-Atomico introduces the use of the `host` tag and the use of special properties such as `shadowDom` or `styleSheet` that allows you to better manipulate the state of the web-component, eg:
+The Atomico [**virtual-dom**](guides/virtual-dom.md) differs from other libraries \(Preact, Lit-html or React\), in that it allows manipulation from the same assigned container, in the general case of Atomico the web-component, this allows you to declare the state of the web-component from the same virtual-dom using the host tag, eg:
 
 ```jsx
 <host
@@ -42,13 +42,31 @@ Atomico introduces the use of the `host` tag and the use of special properties s
 </host>
 ```
 
+Where:
+
+* `host[shadowDom]` : Allows you to enable or disable the shadowDom of your web-component.
+* `host[styleSheet]` : allows you to relate the css to a web-component efficiently, using for example Constructable Stylesheets when available.
+* `host[onclick]` : allows you to associate an event with the web-component
+
 #### Declaration of properties and attributes using an object
 
 Atomico allows you to define special behaviors such as type validation, reflection of properties such as attributes, default values, association of events and more.
 
+```javascript
+WebComponent.props = {
+    myString : String, // basic statement
+    myObject : {       // advanced statement
+        type : Object,
+        reflect : true,
+        event : true,
+        value : ()=>({...initialState})
+    }
+}
+```
+
 #### Hooks
 
-This modern pattern will allow you to create reusable logic that improves the experience of functional composition
+This modern pattern will allow you to create reusable logic that improves the experience of functional composition, this programming model overcomes the natural limitations of a Class such as context\(this\) and improves the modularization of functionalities through custom-hooks\(logical scope\).
 
 #### Asynchronous render
 
@@ -58,7 +76,7 @@ Atomico processes the updates efficiently, grabbing it and running according to 
 
 Atomico has weakly coupled code, which facilitates the elimination of functionalities and reduction of its size without generating conflict.
 
-#### Use without bundle tools
+#### Modern distribution system
 
 The distribution of Atomico is centralized in a single package, this allows internal modules such as atomico/html, atomico/use-lazy, atomico/use-router and others. can be run directly in the browser, this facilitates the generation of prototypes, eg:
 
