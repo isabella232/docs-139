@@ -61,7 +61,7 @@ The render process reuses existing nodes when a new children map is generated, e
 
 This brings problems when each node retains an independent state, since each new list does not reference the node based on its state.
 
-This is solved with the use of the key property, this property allows Atomic to reference the node not by position in the list, but by the referential index, this index must meet the following requirements:
+This is solved with the use of the key property, this property allows Atomico to reference the node not by position in the list, but by the referential index, this index must meet the following requirements:
 
 1. Unique among all the brothers
 2. All brothers must also have an index
