@@ -50,7 +50,12 @@ Where:
 
 #### Declaration of properties and attributes using an object
 
-Atomico allows you to define special behaviors such as type validation, reflection of properties such as attributes, default values, association of events and more.
+Atomico allows to define special behaviors such as:
+
+1.  Type validation at runtime
+2. Reflection of properties such as attributes, 
+3. Default values.
+4. Automatic event system with simple or advanced configuration
 
 ```javascript
 WebComponent.props = {
