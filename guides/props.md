@@ -140,15 +140,13 @@ WebComponents.props = {
     },
     valueObject : {
         type : Object,
-        get value(){
-            return { ...defaultState }
-        }
+        value : ()=>({ ...defaultState })
     }  
 }
 ```
 
 {% hint style="warning" %}
-Use **getter** if you want the value to be unique between instances, this is required if you use **Array** and **Object** types.
+to prevent an object from having reference use a function to generate the initial state
 {% endhint %}
 
 ### Effects of prop mutation
