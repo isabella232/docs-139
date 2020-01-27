@@ -28,7 +28,8 @@
 * [Ejemplos](guias/ejemplos/README.md)
   * [Input personalizado](guias/ejemplos/hola-mundo.md)
   * [Request](guias/ejemplos/request.md)
-* [Base](guias/base.md)
+* [atomicojs/base](guias/base/README.md)
+  * [tree/create-webcomponents](guias/base/tree-create-webcomponents.md)
 
 ## Comparaciones y migraciones
 
