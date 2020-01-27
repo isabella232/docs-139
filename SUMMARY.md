@@ -4,6 +4,7 @@
 
 ## Comenzando
 
+* [Inicio rapido](comenzando/inicio-rapido.md)
 * [Instalación](comenzando/instalacion.md)
 * [Uso sin bundle](comenzando/browser.md)
 
