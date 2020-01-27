@@ -28,7 +28,7 @@
 * [Ejemplos](guias/ejemplos/README.md)
   * [Input personalizado](guias/ejemplos/hola-mundo.md)
   * [Request](guias/ejemplos/request.md)
-* [Recomendaciones](guias/recomendaciones.md)
+* [Base](guias/base.md)
 
 ## Comparaciones y migraciones
 

@@ -4,7 +4,7 @@ description: >-
   algunos tips utils para proyectos con Atomico.
 ---
 
-# Recomendaciones
+# Base
 
 ### Instalación
 
