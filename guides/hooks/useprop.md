@@ -1,7 +1,7 @@
 ---
 description: >-
-  Use prop permite reflejar parte del comportamiento de useState a una propiedad
-  del web-component.
+  useProp allows you to reflec|t part of the useState behavior to a
+  web-component property.
 ---
 
 # useProp
