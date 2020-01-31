@@ -27,6 +27,7 @@
 * [Virtual dom](guides/virtual-dom.md)
 * [Code style](guides/code-style/README.md)
   * [Atomico + Typescript](guides/code-style/atomico-+-typescript.md)
+* [Publish webcomponent](guides/publish-webcomponent.md)
 
 ## Comparisons and migrations
 
