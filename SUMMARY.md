@@ -25,6 +25,8 @@
   * [atomico/use-router](guides/hooks/atomico-use-router.md)
   * [atomico/use-state-generator](guides/hooks/atomico-use-state-generator.md)
 * [Virtual dom](guides/virtual-dom.md)
+* [Code style](guides/code-style/README.md)
+  * [Atomico + Typescript](guides/code-style/atomico-+-typescript.md)
 
 ## Comparisons and migrations
 
