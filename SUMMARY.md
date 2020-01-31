@@ -29,7 +29,7 @@
   * [Input personalizado](guias/ejemplos/hola-mundo.md)
 * [Estilo de código](guias/estilo-de-codigo/README.md)
   * [Atomico + Typescript](guias/estilo-de-codigo/atomico-+-typescript.md)
-* [Publicar webcomponente](guias/publicar-webcomponente.md)
+* [Publicar webcomponent](guias/publicar-webcomponente.md)
 
 ## Comparaciones y migraciones
 

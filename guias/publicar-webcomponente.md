@@ -1,2 +1,2 @@
-# Publicar webcomponente
+# Publicar webcomponent
 
