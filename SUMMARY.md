@@ -28,8 +28,8 @@
 * [Ejemplos](guias/ejemplos/README.md)
   * [Input personalizado](guias/ejemplos/hola-mundo.md)
 * [Estilo de código](guias/estilo-de-codigo/README.md)
-  * [Publicar webcomponente](guias/estilo-de-codigo/publicar-webcomponente.md)
   * [Atomico + Typescript](guias/estilo-de-codigo/atomico-+-typescript.md)
+* [Publicar webcomponente](guias/publicar-webcomponente.md)
 
 ## Comparaciones y migraciones
 
