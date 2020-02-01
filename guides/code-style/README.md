@@ -101,5 +101,5 @@ export default customElement("my-component", MyComponent);
 
 ```
 
-El uso del JSDOC sea \`@type {import\("atomico"\).Component}\` importara las reglas de Typescript para auto-completado, considérelo opcional 
+using this `@type {import("atomico").Component}` fragment in the jsdoc, import the autocomplete rules for Typescript, **consider it optional.**
 
