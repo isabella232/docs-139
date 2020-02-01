@@ -18,6 +18,8 @@ description: >-
 
 La documentacion de atomico se encuentra disponible en gitbook en la siguiente url [**atomico.gitbook.io/doc**](https://atomico.gitbook.io/doc/v/es/), **puede solicitar apoyo directo mediante twitter a** [**@Uppercod**](https://twitter.com/uppercod) **o** [**@Atomicojs**](https://twitter.com/atomicojs)**, no dudes en preguntar, estaré encantado de ayudarte.**
 
+[![my first webcomponent with Atomico](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/1-es.png)](https://atomico.gitbook.io/doc/v/es/comenzando/inicio-rapido)
+
 ![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/1-es.png)
 
 ![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/2-es.png)
