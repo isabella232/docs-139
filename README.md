@@ -1,42 +1,98 @@
 ---
 description: >-
-  A microlibrería inspired by React Hooks, designed and optimized for the
-  creation of webcomponents
+  Atomico is a micro library of 3.7kB in size that allows the creation of
+  web-components based on functional code enhanced with the use of Props and
+  Hooks
 ---
 
 # Atomico
 
-![](https://atomicojs.github.io/atomico/docs/brand/logo-header.svg)
+### Overview
 
-[![CircleCI](https://circleci.com/gh/atomicojs/atomico.svg?style=svg)](https://circleci.com/gh/atomicojs/atomico) [![npm](https://badgen.net/npm/v/atomico)](http://npmjs.com/atomico) [![gzip](https://badgen.net/bundlephobia/minzip/atomico)](https://bundlephobia.com/result?p=atomico)
+```jsx
+import { h, customElement } from "atomico";
 
-## A microlibrería inspired by React Hooks, designed and optimized for the creation of webcomponents
+function WebComponent({ value }) {
+  return <host>Hi! {value}!</host>;
+}
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580099299/github/atomico/hello.png)
+WebComponent.props = {
+  value: String
+};
 
-## Documentation
+customElement("any-name", WebComponent);
 
-Atomico documentation is available on gitbook in the following URL [**atomico.gitbook.io/doc**](https://atomico.gitbook.io/doc), **you can request direct support via twitter to** [**@ Uppercod**](https://twitter.com/uppercod) **or** [**@Atomicojs**](https://twitter.com/atomicojs)**, don't hesitate to ask, I'll be happy to help you!**
+```
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/1.png)
+### Why Atomico?
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/2.png)
+Atomico is presented as a micro library for a modern development, with a low learning curve and syntax inherited from React, which seeks to solve traditional problems when creating web-components intelligently, some of the benefits of Atomico are:
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/3.png)
+#### virtual-dom designed for the web-component
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/4.png)
+The Atomico [**virtual-dom**](guides/virtual-dom.md) differs from other libraries \(Preact, Lit-html or React\), in that it allows manipulation from the same assigned container, in the general case of Atomico the web-component, this allows you to declare the state of the web-component from the same virtual-dom using the host tag, eg:
 
-## Why Atomico?
+```jsx
+<host
+    shadowDom 
+    onclick={handler}
+    styleSheet={style}
+    >
+    ...inside web-component
+</host>
+```
 
-### With only 3kb you can start with:
+Where:
 
-**Virtual-dom** designed to facilitate the definition of the DOM state of the webcomponent, eg:
+* `host[shadowDom]` : Allows you to enable or disable the shadowDom of your web-component.
+* `host[styleSheet]` : allows you to relate the css to a web-component efficiently, using for example Constructable Stylesheets when available.
+* `host[onclick]` : allows you to associate an event with the web-component
 
-![Atomico diff](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580060796/github/atomico/diff-code.png)
+#### Declaration of properties and attributes using an object
 
-**9 different types hooks** to create highly reusable logic, useProp, useState, useReducer, useEffect, useRef, useHost, useMemo, useCallback, useEvent and usePublic.
+Atomico allows to define special behaviors such as:
 
-![Atomico hooks](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580099064/github/atomico/hook-use-state.png)
+1.  Type validation at runtime
+2. Reflection of properties such as attributes, 
+3. Default values.
+4. Automatic event system with simple or advanced configuration
 
-**Declaration of types as objects**, supporting type validation, reflection of properties as attribute, default values, value options, automatic emission of events when the property changes and more.
+```javascript
+WebComponent.props = {
+    myString : String, // basic statement
+    myObject : {       // advanced statement
+        type : Object,
+        reflect : true,
+        event : true,
+        value : ()=>({...initialState})
+    }
+}
+```
+
+#### Hooks
+
+This modern pattern will allow you to create reusable logic that improves the experience of functional composition, this programming model overcomes the natural limitations of a Class such as context\(this\) and improves the modularization of functionalities through custom-hooks\(logical scope\).
+
+#### Asynchronous render
+
+Atomico processes the updates efficiently, grabbing it and running according to the concurrence, this achieves an effect similar to that of React Fiber.
+
+#### Tree shaking
+
+Atomico has weakly coupled code, which facilitates the elimination of functionalities and reduction of its size without generating conflict.
+
+#### Modern distribution system
+
+The distribution of Atomico is centralized in a single package, this allows internal modules such as atomico/html, atomico/use-lazy, atomico/use-router and others. can be run directly in the browser, this facilitates the generation of prototypes, eg:
+
+```javascript
+import { customElement } from "https://unpkg.com/atomico";
+import html from "https://unpkg.com/atomico/html"
+
+function WebComponent(){
+    return html`<host>no bundle!</host>`
+}
+
+customElement("my-tag",WebComponent);
+```
 
