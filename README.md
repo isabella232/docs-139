@@ -28,8 +28,6 @@ Atomico documentation is available on gitbook in the following URL [**atomico.gi
 
 {% page-ref page="guides/code-style/" %}
 
-
-
 ### Why Atomico?
 
 #### With only 3kb you can start with:
