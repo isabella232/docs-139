@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introducción](README.md)
+* [Atomico](README.md)
 
 ## Comenzando
 
@@ -27,7 +27,7 @@
 * [Virtual dom](guias/virtual-dom.md)
 * [Ejemplos](guias/ejemplos/README.md)
   * [Input personalizado](guias/ejemplos/hola-mundo.md)
-* [Guías de estilo](guias/estilo-de-codigo/README.md)
+* [Guías de estilo](guias/guias-de-estilo/README.md)
   * [Atomico + Typescript](guias/estilo-de-codigo/atomico-+-typescript.md)
 * [Publicar webcomponent](guias/publicar-webcomponente.md)
 

@@ -62,6 +62,14 @@ Los webcomponents son ideales para la generación de apis transparentes, permiti
 **Ejemplo de componente**
 
 ```jsx
+import { h, customElement, useProp } from "atomico";
+import style from "./";
+/**
+ * @type {import("atomico").Component}
+ * @param {Object} props
+ * @param {string} props.type
+ * @param {value} props.value
+ */
 const MyComponent = ({ type }) => {
   let [value, setValue] = useProp("value");
   return (
@@ -75,7 +83,7 @@ const MyComponent = ({ type }) => {
     </host>
   );
 };
-​
+
 MyComponent.props = {
   type: {
     type: String,
@@ -88,7 +96,10 @@ MyComponent.props = {
     value: "default message"
   }
 };
+
+export default customElement("my-component", MyComponent);
+
 ```
 
-
+El uso de este fragmento `@type {import("atomico").Component}` en el jsdoc, importa las reglas de autocompletado para Typescript, **considérelo opcional**
 
