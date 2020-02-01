@@ -27,8 +27,8 @@
 * [Virtual dom](guias/virtual-dom.md)
 * [Ejemplos](guias/ejemplos/README.md)
   * [Input personalizado](guias/ejemplos/hola-mundo.md)
-* [Estilo de código](guias/estilo-de-codigo/README.md)
-  * [Atomico + Typescript](guias/estilo-de-codigo/atomico-+-typescript.md)
+* [Guías de estilo](guias/guias-de-estilo/README.md)
+  * [Atomico + Typescript](guias/guias-de-estilo/atomico-+-typescript.md)
 * [Publicar webcomponent](guias/publicar-webcomponente.md)
 
 ## Comparaciones y migraciones
