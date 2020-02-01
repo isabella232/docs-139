@@ -28,8 +28,6 @@ La documentacion de atomico se encuentra disponible en gitbook en la siguiente u
 
 {% page-ref page="guias/guias-de-estilo/" %}
 
-
-
 ### ¿Por que Atomico?
 
 #### Con solo 3kb puede comenzar con:
