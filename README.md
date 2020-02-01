@@ -14,23 +14,25 @@ description: >-
 
 ![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580099299/github/atomico/hello.png)
 
-## Documentación
+### Documentación
 
 La documentacion de atomico se encuentra disponible en gitbook en la siguiente url [**atomico.gitbook.io/doc**](https://atomico.gitbook.io/doc/v/es/), **puede solicitar apoyo directo mediante twitter a** [**@Uppercod**](https://twitter.com/uppercod) **o** [**@Atomicojs**](https://twitter.com/atomicojs)**, no dudes en preguntar, estaré encantado de ayudarte.**
 
-[![my first webcomponent with Atomico](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/1-es.png)](https://atomico.gitbook.io/doc/v/es/comenzando/inicio-rapido)
+{% page-ref page="comenzando/inicio-rapido.md" %}
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/1-es.png)
+{% page-ref page="guias/virtual-dom.md" %}
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/2-es.png)
+{% page-ref page="guias/guia-de-props.md" %}
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/3-es.png)
+{% page-ref page="guias/hooks/" %}
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580061091/github/atomico/4-es.png)
+{% page-ref page="guias/guias-de-estilo/" %}
 
-## ¿Por que Atomico?
 
-### Con solo 3kb puede comenzar con:
+
+### ¿Por que Atomico?
+
+#### Con solo 3kb puede comenzar con:
 
 **Virtual-dom** diseñado para facilitar la definición del estado DOM del webcomponente, ej:
 
