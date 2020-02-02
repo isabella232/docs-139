@@ -63,7 +63,7 @@ Los webcomponents son ideales para la generación de apis transparentes, permiti
 
 ```jsx
 import { h, customElement, useProp } from "atomico";
-import style from "./";
+import style from "./my-component";
 /**
  * @type {import("atomico").Component}
  * @param {Object} props
