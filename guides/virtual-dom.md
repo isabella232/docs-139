@@ -6,7 +6,7 @@ description: Efficient and extremely small.
 
 
 
-The Atomico virtual-dom is small and is only processed when the object is sent for rendering, you can manifest the virtual-dom using jsx, template-string or a flat object.
+The Atomico virtual-dom is small and is only processed when the object is sent for rendering, you can manifest the virtual-dom using jsx, template-string, Function or a flat object.
 
 ### Syntax
 
@@ -22,6 +22,12 @@ html`
         <button onclick=${handler}>text</button>
     </host>
 `
+
+// Function
+
+h("host",null,
+    h("button",{onclick: handler},"text")
+);
 
 // Object
 
@@ -134,6 +140,4 @@ The association of events in Atomico requires 2 conditions:
 {% hint style="danger" %}
 Atomico does not apply additional transformers outside of removing the prefix **on** to subscribe the event.
 {% endhint %}
-
-
 
