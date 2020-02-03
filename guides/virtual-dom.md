@@ -75,7 +75,7 @@ h("host",null,
 All the exposed syntaxes are considered valid, the Atomico virtual-dom does not maintain references so you can reuse a node without problems between components, this is highly efficient if you want the render process to ignore static nodes, eg:
 
 ```jsx
-let static = <h1>node!</h1>
+let staticVnode = <h1>node!</h1>
 
 function WebComponent({value}){
     return <host>
