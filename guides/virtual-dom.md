@@ -27,6 +27,8 @@ import { h } from "atomico";
 
 **Template string**
 
+The use of [template-string](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings) is achieved thanks to the [HTM ](https://github.com/developit/htm)library, the `html` function will build an object equivalent to [object example](https://atomico.gitbook.io/doc/guides/virtual-dom#object)
+
 ```jsx
 import html from "atomico/html";
 
@@ -41,9 +43,9 @@ html`
 `;
 ```
 
-The use of template-string is achieved thanks to the [HTM ](https://github.com/developit/htm)library, the `html` function will build an object equivalent to object example
-
 **Function h**
+
+Function by default that has atomico to declare the virtual-dom, used for the[ configuration of the JSX pragma](https://atomico.gitbook.io/doc/get-started/installation#step-2-configure-babel-jsx-pragma),  the `h` function will build an object equivalent to [object example](https://atomico.gitbook.io/doc/guides/virtual-dom#object)
 
 ```jsx
 import { h } from "atomico";
