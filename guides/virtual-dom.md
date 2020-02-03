@@ -1,5 +1,5 @@
 ---
-description: Efficient and extremely small.
+description: 'Efficient, extremely small and designed for webcomponents'
 ---
 
 # Virtual dom
