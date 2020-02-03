@@ -6,37 +6,69 @@ description: Efficient and extremely small.
 
 
 
-The Atomico virtual-dom is small and is only processed when the object is sent for rendering, you can manifest the virtual-dom using jsx, template-string, Function or a flat object.
+The virtual-dom is simply a light and declarative representation of the DOM, which can be declared by using Jsx, Template stringm, function or object eg:
 
 ### Syntax
 
+#### **JSX**
+
 ```jsx
-// JSX
-<host>
-    <button onclick={handler}>text</button>
+/*@jsx h*/
+import { h } from "atomico";
+
+<host>    
+    my button
+    <button onclick={handler}>
+        { icon && <i class="icons">{icon}</i> }
+        { title }
+    </button>
 </host>
+```
 
-// Template string
+**Template string**
+
+```jsx
+import html from "atomico/html";
+
 html`
-    <host>
-        <button onclick=${handler}>text</button>
-    </host>
-`
+<host>    
+    my button
+    <button onclick={handler}>
+        ${ icon && <i class="icons">{icon}</i> }
+        ${ title }
+    </button>
+</host>
+`;
+```
 
-// Function
+The use of template-string is achieved thanks to the [HTM ](https://github.com/developit/htm)library, the `html` function will build an object equivalent to object example
+
+**Function h**
+
+```jsx
+import { h } from "atomico";
 
 h("host",null,
-    h("button",{onclick: handler},"text")
+  "my button",
+  h("button",{onclick: handler},
+    icon &&h("i",{class: "icons"},icon),
+    title
+  )
 );
+```
 
-// Object
+#### Object
 
+```jsx
 {
-    nodeType : "host",
-    children : [{
-        nodeType : "button",
-        onclick : handler
-    }]
+  nodeName: "host",
+  children: [
+    {
+      nodeName: "button",
+      onclick: handler,
+      children: [icon && { nodeName: "i", class: "icons" }, title]
+    }
+  ]
 }
 ```
 
