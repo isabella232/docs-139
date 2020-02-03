@@ -146,7 +146,7 @@ let styleSheet = `
 Each time Atomico processes the variable as String, cache the StyleSheet instance by building a single instance that can be associated with multiple web-components.
 
 {% hint style="danger" %}
-To use **styleSheet** only works together with the **shadowDom** property
+To use **styleSheet** only works together with the **shadowDom** property, 
 {% endhint %}
 
 ### is
