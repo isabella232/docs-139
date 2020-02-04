@@ -8,7 +8,7 @@ The virtual-dom is simply a light and declarative representation of the DOM, whi
 
 ### Syntax
 
-**Function h**: This function is to create the virtual-dom and is used for the configuration of JSX pragma, **you can use h without the need of JSX**, eg:
+**h function** : This function is to create the virtual-dom and is used for the configuration of JSX pragma, **you can use h without the need of JSX**, eg:
 
 ```javascript
 import { h } from "atomico";
@@ -54,7 +54,7 @@ function Component() {
 
 ```
 
-**Object virtual-dom**: you can analyze the output of the function `h` to know the structure of this object, you can declare the virtual-dom maintaining the same structure that returns the function `h`
+**Virtual-dom object**: you can analyze the output of the `h` function to know the structure of this object, you can declare that the virtual-dom maintains the same structure that returns the `h` function
 
 ```jsx
 function Component() {
