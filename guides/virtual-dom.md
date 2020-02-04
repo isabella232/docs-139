@@ -4,7 +4,7 @@ description: 'Efficient, extremely small and designed for webcomponents'
 
 # Virtual dom
 
-The virtual-dom is simply a light and declarative representation of the DOM, which can be declared by using Jsx, Template stringm, function or object eg:
+The virtual-dom is simply a light and declarative representation of the DOM, which can be declared using Jsx, Template string, h function  or as an object.
 
 ### Syntax
 
