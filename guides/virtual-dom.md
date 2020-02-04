@@ -22,7 +22,7 @@ function Component() {
 
 ```
 
-**JSX**
+**JSX,** Syntax inherited from React.
 
 ```jsx
 /*@jsx h*/
