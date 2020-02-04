@@ -8,67 +8,63 @@ The virtual-dom is simply a light and declarative representation of the DOM, whi
 
 ### Syntax
 
-#### **JSX**
+**Function h**: This function is to create the virtual-dom and is used for the configuration of JSX pragma, **you can use h without the need of JSX**, eg:
+
+```javascript
+import { h } from "atomico";
+
+function Component() {
+  return h("host",null,
+    "i'm text",
+    h("div",{ onclick: handler },"i'm div, click me!")
+  );
+}
+
+```
+
+**JSX**
 
 ```jsx
 /*@jsx h*/
 import { h } from "atomico";
 
-<host>    
-    my button
-    <button onclick={handler}>
-        { icon && <i class="icons">{icon}</i> }
-        { title }
-    </button>
-</host>
+function Component() {
+  return (
+    <host>
+      i'm text
+      <div onclick={handler}>i'm div, click me!</div>
+    </host>
+  );
+}
 ```
 
-**Template string**
-
-The use of [template-string](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings) is achieved thanks to the [HTM ](https://github.com/developit/htm)library, the `html` function will build an object equivalent to [object example](https://atomico.gitbook.io/doc/guides/virtual-dom#object)
+**Template String:** use the `html` function to create the virtual-dom using a template-string, this is thanks to the [**htm** ](https://github.com/developit/htm)library, eg:
 
 ```jsx
 import html from "atomico/html";
 
-html`
-<host>    
-    my button
-    <button onclick={handler}>
-        ${ icon && <i class="icons">{icon}</i> }
-        ${ title }
-    </button>
-</host>
-`;
+function Component() {
+  return html`
+    <host>
+      i'm text
+      <div onclick="{handler}">i'm div, click me!</div>
+    </host>
+  `;
+}
+
 ```
 
-**Function h**
-
-Function by default that has atomico to declare the virtual-dom, used for the[ configuration of the JSX pragma](https://atomico.gitbook.io/doc/get-started/installation#step-2-configure-babel-jsx-pragma),  the `h` function will build an object equivalent to [object example](https://atomico.gitbook.io/doc/guides/virtual-dom#object)
+**Object virtual-dom**: you can analyze the output of the function `h` to know the structure of this object, you can declare the virtual-dom maintaining the same structure that returns the function `h`
 
 ```jsx
-import { h } from "atomico";
-
-h("host",null,
-  "my button",
-  h("button",{onclick: handler},
-    icon &&h("i",{class: "icons"},icon),
-    title
-  )
-);
-```
-
-#### Object
-
-```jsx
-{
-  nodeName: "host",
-  children: [
-    {
-      nodeName: "button",
-      onclick: handler,
-      children: [icon && { nodeName: "i", class: "icons" }, title]
-    }
-  ]
+function Component() {
+  return {
+    nodeType: "host",
+    children: [
+      "i'm text",
+      { nodeType: "div", onclick: handler, children: ["i'm div, click me!"] }
+    ]
+  };
 }
 ```
 
