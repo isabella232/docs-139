@@ -21,6 +21,8 @@
   * [useCallback](guides/hooks/usecallback.md)
   * [useReducer](guides/hooks/usereducer.md)
   * [useEvent](guides/hooks/useevent.md)
+  * [useStyleSheet](guides/hooks/usestylesheet.md)
+  * [useDelegateFocus](guides/hooks/usedelegatefocus.md)
 * [Virtual dom](guides/virtual-dom.md)
 * [Code style](guides/code-style/README.md)
   * [Atomico + Typescript](guides/code-style/atomico-+-typescript.md)
