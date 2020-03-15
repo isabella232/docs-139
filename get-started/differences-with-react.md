@@ -6,6 +6,29 @@ description: >-
 
 # Differences with React
 
+### Composition
+
+Atomico uses customElements as a component system, this creates a simple rule - [**hooks can be used only inside of host-level components.**](https://github.com/atomicojs/atomico/issues/29#issuecomment-599152021)\*\*\*\*
+
+```jsx
+// host
+function WebComponent(){
+    const [count,setCount] = useProp("count");
+    const increment = ()=>setCount(count+1);
+    
+    return <host>
+        {count}
+        <Button onclick={increment}>+</Button>
+    </host>
+}
+// no host
+function Button({onclick, children}){
+    return <button onclick={onclick}>{children}</button>
+}
+
+customElement("web-component", WebComponent);
+```
+
 ### Event handling
 
 ```jsx
@@ -21,27 +44,6 @@ Atomico detects events based on 2 conditions that the prop begins with the prefi
 ```jsx
 <button onMyEvent={handler}>...</button> // addEventListener("MyEvent",handler)
 ```
-
-### Composition
-
-Atomico uses customElements as a component system, this forces the host to exist to associate a life cycle and use hooks, eg:
-
-```jsx
-function WebComponent(){
-    return <host>
-        web-component
-        <Button onclick={handler}>...</Button>
-    </host>
-}
-
-function Button({onclick, children}){
-    return <button onclick={onclick}>{children}</button>
-}
-```
-
-The previous example shows a valid composition syntax for Atomico, but **you will not be able to use Hooks inside components that are not a customElement**, in the previous case  you will not be able to use hooks. if you want button to contain hooks declare it as customElement, eg
-
-{% embed url="https://webcomponents.dev/edit/zaXQCViR8OuiPMeHLK1R" %}
 
 #### Slots y Children 
 
