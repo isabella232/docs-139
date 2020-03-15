@@ -18,8 +18,6 @@ description: >-
 
 Atomico documentation is available on gitbook in the following URL [**atomico.gitbook.io/doc**](https://atomico.gitbook.io/doc), **you can request direct support via twitter to** [**@ Uppercod**](https://twitter.com/uppercod) **or** [**@Atomicojs**](https://twitter.com/atomicojs)**, don't hesitate to ask, I'll be happy to help you!**
 
-{% page-ref page="get-started/quick-start.md" %}
-
 {% page-ref page="guides/virtual-dom.md" %}
 
 {% page-ref page="guides/props.md" %}
