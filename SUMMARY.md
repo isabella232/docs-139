@@ -7,6 +7,7 @@
 * [Quick start](get-started/quick-start.md)
 * [Installation](get-started/installation.md)
 * [Without bundle](get-started/without-bundle.md)
+* [Differences with React](get-started/differences-with-react.md)
 
 ## Guides
 
