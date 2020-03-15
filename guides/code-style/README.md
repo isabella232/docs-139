@@ -17,7 +17,7 @@ src
 │           ${my-component}.js
 │           ${my-component}.css
 │           ${my-component}.md 
-└───custom-hooks
+└───hooks
     └───${my-hook}
             ${my-hook}.js
             ${my-hook}.md 
@@ -27,7 +27,7 @@ src
 
 1. Only include one component per file.
 2. Only include one component per directory
-3. Define custom-hooks in an isolated way to the components, in a different file and directory, a file if it can contain more than one hook
+3. Define hooks in an isolated way to the components, in a different file and directory, a file if it can contain more than one hook
 
 ### Component name
 
