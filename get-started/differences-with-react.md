@@ -55,7 +55,7 @@ You can use Slots if you declare the shadowDom property on the host tag, the adv
 
 **The use of Slot vs Children is recommended since the slot is agnostic to libraries.**
 
-Can children be used between custom elements? Yes, but only between customElements declared with Atomico, for example:
+Can children be used between customElements? Yes, but only between customElements declared with Atomico, for example:
 
 ```jsx
 function WebComponent1(){
