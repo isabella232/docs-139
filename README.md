@@ -1,100 +1,44 @@
 ---
 description: >-
-  Atómico es una micro librería de 3.7kB que permite la creación de
-  web-components a base de código funcional potenciado con el uso de Props y
-  Hooks
+  Una microlibrería inspirada en React Hooks, diseñada y optimizada para la
+  creación de webcomponentes.
 ---
 
-# Introducción
+# Atomico
 
-### Vista general
+![](https://atomicojs.github.io/atomico/docs/brand/logo-header.svg)
 
-```jsx
-import { h, customElement } from "atomico";
+[![CircleCI](https://circleci.com/gh/atomicojs/atomico.svg?style=svg)](https://circleci.com/gh/atomicojs/atomico) [![npm](https://badgen.net/npm/v/atomico)](http://npmjs.com/atomico) [![gzip](https://badgen.net/bundlephobia/minzip/atomico)](https://bundlephobia.com/result?p=atomico)
 
-function WebComponent({ value }) {
-  return <host>Hi! {value}!</host>;
-}
+## Una microlibrería inspirada en React Hooks, diseñada y optimizada para la creación de webcomponentes.
 
-WebComponent.props = {
-  value: { type: String, value: "Atomico" }
-};
+![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580099299/github/atomico/hello.png)
 
-customElement("any-name", WebComponent);
+### Documentación
 
-```
+La documentacion de atomico se encuentra disponible en gitbook en la siguiente url [**atomico.gitbook.io/doc**](https://atomico.gitbook.io/doc/v/es/), **puede solicitar apoyo directo mediante twitter a** [**@Uppercod**](https://twitter.com/uppercod) **o** [**@Atomicojs**](https://twitter.com/atomicojs)**, no dudes en preguntar, estaré encantado de ayudarte.**
+
+{% page-ref page="comenzando/inicio-rapido.md" %}
+
+{% page-ref page="guias/virtual-dom.md" %}
+
+{% page-ref page="guias/guia-de-props.md" %}
+
+{% page-ref page="guias/hooks/" %}
+
+{% page-ref page="guias/guias-de-estilo/" %}
 
 ### ¿Por que Atomico?
 
-Atomico se presenta como una micro librería para un desarrollo moderno, con una curva baja curva de aprendizaje y sintaxis heredada de React, que busca solucionar los problemas tradicionales al momento de crear web-components de forma inteligente, algunos de los beneficios de Atomico son:
+#### Con solo 3kb puede comenzar con:
 
-#### virtual-dom pensado para el web-component
+**Virtual-dom** diseñado para facilitar la definición del estado DOM del webcomponente, ej:
 
-El virtual-dom de Atomico se diferencia de otras bibliotecas\(Preact, Lit-html o React\), en que permite la manipulación desde el mismo contenedor asignado , en el caso general de Atomico el web-component, esto permite que ud declare el estado total del web-component desde el mismo virtual-dom mediante el tag host, ej:
+![Atomico diff](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580060796/github/atomico/diff-code.png)
 
-```jsx
-<host
-    shadowDom 
-    onclick={handler}
-    styleSheet={style}
-    >
-    ...children
-</host>
-```
+**9 tipos diferentes de hooks** para crear una lógica altamente reutilizable, useProp, useState, useReducer, useEffect, useRef, useHost, useMemo, useCallback, useEvent and usePublic.
 
-Done:
+![Atomico hooks](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580099064/github/atomico/hook-use-state.png)
 
-* host\[shadowDom\] : permite activar o desactivar el shadowDom de su web-component.
-* host\[styleSheet\] : permite relacionar el css a un web-component de forma eficiente, usando por ejemplo Constructable Stylesheets cuando este disponible.
-* host\[onclick\] : permite asociar un evento al web-component
-
-#### Declaración de propiedades atributos como objeto
-
-Atomico permite definir comportamientos especiales como : 
-
-1. Validación de tipos en tiempo de ejecución. 
-2. Reflejo de propiedades como atributos.
-3. Valores por default.
-4. Asociación de eventos simples y avanzados
-
-```jsx
-WebComponent.props = {
-    myString : String, // 
-    myObject : {
-        type : Object,
-        reflect : true,
-        event : true,
-        value : ()=>({...initialState})
-    }
-}
-```
-
-#### Hooks
-
-Este patrón moderno le permitirá crear logica reutilizable  que mejora la experiencia de composición  funcional, este modelo de programacion supera las limitaciones naturales de una clase, sea contexto\(this\) y mejora la modularizacion de funcionalidades mediante custom-hooks\(scope logicos\).
-
-#### Render asíncrono
-
-Atomico procesa las actualizaciones de forma eficiente, agrupándola y ejecutándolas en función de la concurrencia, manejando las tareas de forma inteligente, esto logra un efecto similar al de React Fiber.
-
-#### Tree shaking
-
-Atomico posee código débilmente acoplado, lo que facilita la eliminación de funcionalidades y reducción de su tamaño sin generar conflicto.
-
-#### Sistema de distribución moderno.
-
-La distribución de Atomico es centralizada en un solo package en formato msj, esto permite que los módulos internos como atomico/html, atomico/use-lazy, atomico/use-router y otros.  se puedan ejecutar directo en el navegador, esto facilita la generación de prototipos, ej:
-
-```javascript
-import { customElement } from "https://unpkg.com/atomico";
-import html from "https://unpkg.com/atomico/html"
-
-function WebComponent(){
-    return html`<host>no bundle!</host>`
-}
-
-customElement("my-tag",WebComponent);
-```
-
-
+**Declaración de tipos como objetos**, validación de tipo , reflejo de propiedades como atributo, valores predeterminados, opciones de valor, emisión automática de eventos cuando la propiedad cambia y más.
 
