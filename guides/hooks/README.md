@@ -7,5 +7,3 @@ description: >-
 
 # Hooks
 
-s
-
