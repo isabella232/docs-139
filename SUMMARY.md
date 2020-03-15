@@ -20,6 +20,7 @@
   * [useMemo](guides/hooks/usememo.md)
   * [useCallback](guides/hooks/usecallback.md)
   * [useReducer](guides/hooks/usereducer.md)
+  * [useHost](guides/hooks/usehost.md)
   * [useEvent](guides/hooks/useevent.md)
   * [useStyleSheet](guides/hooks/usestylesheet.md)
   * [useDelegateFocus](guides/hooks/usedelegatefocus.md)
