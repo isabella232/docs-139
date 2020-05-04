@@ -126,24 +126,19 @@ Special property of virtual-dom that allows to activate the shadowDom of a node,
 
 This property can be used on any node that supports attachShadow
 
-### styleSheet
-
-It allows to optimize the use of the css associated to the web-component, allowing to use [**Constructable StyleSheet**](https://developers.google.com/web/updates/2019/02/constructable-stylesheets) only when it is available in the browser, to improve the experience without using Polyfill of Constructable Stylesheets it is advisable to use styleSheet as a String, eg
+### Css
 
 ```jsx
 let styleSheet = `
     :host{width:100px;height:100px}
 `
-<host shadowDom styleSheet={styleSheet}>
-
+<host shadowDom>
+    <style>${styleSheet}</style>
+    children...
 </host>
 ```
 
-Each time Atomico processes the variable as String, cache the StyleSheet instance by building a single instance that can be associated with multiple web-components.
 
-{% hint style="danger" %}
-To use **styleSheet** only works together with the **shadowDom** property, 
-{% endhint %}
 
 ### is
 
