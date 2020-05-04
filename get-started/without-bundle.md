@@ -12,8 +12,16 @@ description: >-
 import { customElement } from "https://unpkg.com/atomico";
 import html from "https://unpkg.com/atomico/html"
 
+let style = `
+    :host{
+        color: black;
+    }
+`;
 function WebComponent(){
-    return html`<host>no bundle!</host>`
+    return html`<host>
+        <style>${style}</style>
+        no bundle!
+    </host>`
 }
 
 customElement("my-tag",WebComponent);
