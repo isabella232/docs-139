@@ -1,26 +1,27 @@
 ---
-description: estándar para la generación de componentes con Atomico
+description: >-
+  En esta  guía define un estándar para la generación de componentes con
+  Atomico, con el objetivo facilitar el desarrollo colaborativo, escalabilidad y
+  mantenimiento de sus componentes, lo entregado en
 ---
 
 # Guías de estilo
 
-En esta  guía define un estándar para la generación de componentes con Atomico, con el objetivo facilitar el desarrollo colaborativo, escalabilidad y mantenimiento de sus componentes, lo entregado en esta guía no se define como regla, ya que lo aplicado puede variar entre desarrollador.
-
 ### Estructura recomendada
 
-La distribución directorio es un elemento importante al momento de construir componentes, lo ideal es que este sea declarativo en contenido, eg:
+La distribución del directorio es un elemento importante al momento de construir componentes, lo ideal es que este sea declarativo en contenido, ej:
 
 ```bash
 src
 ├───components
 │   └───${my-component}
-│           ${my-component}.js
+│           ${my-component}.jsx
 │           ${my-component}.css
-│           ${my-component}.md # export with dev:doc
+│           ${my-component}.md
 └───custom-hooks
     └───${my-hook}
-            ${my-hook}.js
-            ${my-hook}.md # export with dev:doc
+            ${my-hook}.jsx
+            ${my-hook}.md 
 ```
 
 **Recuerde**
@@ -31,7 +32,7 @@ src
 
 ### Nombre de componente
 
-Es ideal que como autor ud **defina un nombre o prefijo que agrupé uno o mas componente**, siempre defina a continuación del nombre principal el objetivo a representar en la UI, ej:
+Los componentes normalmente son unidades independientes
 
 ```bash
 # Naming

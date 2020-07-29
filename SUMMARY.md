@@ -7,25 +7,11 @@
 * [Inicio rapido](comenzando/inicio-rapido.md)
 * [Instalación](comenzando/instalacion.md)
 
-## Guias
+## Api <a id="guias"></a>
 
 * [Props](guias/guia-de-props.md)
-* [Hooks](guias/hooks/README.md)
-  * [useProp](guias/hooks/useprop.md)
-  * [useState](guias/hooks/usestate.md)
-  * [useEffect](guias/hooks/useeffect.md)
-  * [useRef](guias/hooks/useref.md)
-  * [useMemo](guias/hooks/usememo.md)
-  * [useCallback](guias/hooks/usecallback.md)
-  * [useReducer](guias/hooks/usereducer.md)
-  * [useEvent](guias/hooks/useevent.md)
-  * [usePublic](guias/hooks/usepublic.md)
-  * [atomico/use-lazy](guias/hooks/atomico-use-lazy.md)
-  * [atomico/use-router](guias/hooks/atomico-use-router.md)
-  * [atomico/use-state-generator](guias/hooks/atomico-use-state-generator.md)
+* [Hooks](guias/untitled.md)
 * [Virtual dom](guias/virtual-dom.md)
-* [Ejemplos](guias/ejemplos/README.md)
-  * [Input personalizado](guias/ejemplos/hola-mundo.md)
 * [Guías de estilo](guias/guias-de-estilo/README.md)
   * [Atomico + Typescript](guias/guias-de-estilo/atomico-+-typescript.md)
 * [Publicar webcomponent](guias/publicar-webcomponente.md)
