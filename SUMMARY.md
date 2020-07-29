@@ -2,22 +2,20 @@
 
 * [Atomico](README.md)
 
-## Comenzando
+## Guias <a id="guias-2"></a>
 
-* [Inicio rapido](comenzando/inicio-rapido.md)
-* [Instalación](comenzando/instalacion.md)
+* [Inicio rapido](guias-2/inicio-rapido.md)
+* [Manejo de CSS](guias-2/uso-de-css.md)
+* [Manejo de eventos](guias-2/manejo-de-eventos.md)
+* [Comunicacion entre webcomponents](guias-2/comunicacion-entre-webcomponents.md)
+* [Creacion de hooks personalizados](guias-2/creacion-de-hooks-personalizados.md)
 
 ## Api <a id="guias"></a>
 
 * [Props](guias/guia-de-props.md)
 * [Hooks](guias/untitled.md)
 * [Virtual dom](guias/virtual-dom.md)
-* [Guías de estilo](guias/guias-de-estilo/README.md)
-  * [Atomico + Typescript](guias/guias-de-estilo/atomico-+-typescript.md)
 * [Publicar webcomponent](guias/publicar-webcomponente.md)
 
-## Comparaciones y migraciones
-
-* [Atomico vs](comparaciones-y-migraciones/atomico-vs.md)
-* [De React a Atomico](comparaciones-y-migraciones/de-react-a-atomico.md)
+## Artículos
 
