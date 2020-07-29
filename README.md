@@ -18,7 +18,7 @@ description: >-
 
 La documentacion de atomico se encuentra disponible en gitbook en la siguiente url [**atomico.gitbook.io/doc**](https://atomico.gitbook.io/doc/v/es/), **puede solicitar apoyo directo mediante twitter a** [**@Uppercod**](https://twitter.com/uppercod) **o** [**@Atomicojs**](https://twitter.com/atomicojs)**, no dudes en preguntar, estaré encantado de ayudarte.**
 
-{% page-ref page="guias-2/inicio-rapido.md" %}
+{% page-ref page="guias-2/generador-de-proyecto.md" %}
 
 {% page-ref page="guias/virtual-dom.md" %}
 
