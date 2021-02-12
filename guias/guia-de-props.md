@@ -72,14 +72,14 @@ component.props = { myName : {type : String} }
 
 | Tipo | Acepta `reflect` |
 | :--- | :--- |
-| String | Si |
-| Number | Si |
-| Boolean | Si |
-| Object | Si |
-| Array | Si |
-| Promise | No |
-| Symbol | No |
-| Function | No |
+| **String** | Si |
+| **Number** | Si |
+| **Boolean** | Si |
+| **Object** | Si |
+| **Array** | Si |
+| **Promise** | No |
+| **Symbol** | No |
+| **Function** | No |
 
 #### Prop.reflect
 
