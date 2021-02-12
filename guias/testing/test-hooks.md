@@ -60,7 +60,7 @@ export function useCounter(initialValue) {
 }
 ```
 
-**./use-counter.test.js:** Se recomienda el uso del entorno de test [@web/test-runner](https://modern-web.dev/docs/test-runner/overview/) para realizar pruebas para Atomico.
+**./use-counter.test.js:** el  ejemplo se basa en el entorno de test de [@web/test-runner](https://modern-web.dev/docs/test-runner/overview/).64
 
 ```javascript
 import { expect } from "@esm-bundle/chai";
