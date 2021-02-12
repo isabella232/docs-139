@@ -10,11 +10,11 @@ description: >-
 
 [![CircleCI](https://circleci.com/gh/atomicojs/atomico.svg?style=svg)](https://circleci.com/gh/atomicojs/atomico) [![npm](https://badgen.net/npm/v/atomico)](http://npmjs.com/atomico) [![gzip](https://badgen.net/bundlephobia/minzip/atomico)](https://bundlephobia.com/result?p=atomico)
 
-## Una microlibrería inspirada en React Hooks, diseñada y optimizada para la creación de webcomponentes.
+### Api
 
-![](https://res.cloudinary.com/dz0i8dmpt/image/upload/v1580099299/github/atomico/hello.png)
+{% page-ref page="guias/props.md" %}
 
-### Documentación
+{% page-ref page="guias/hooks/" %}
 
-{% page-ref page="guias/guia-de-props.md" %}
+
 
