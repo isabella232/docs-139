@@ -4,8 +4,6 @@ description: Emite eventos desde el webcomponent sin referenciar el contexto(thi
 
 # useEvent
 
-useEvent permite desde el webcomponent según la lógica del webcomponent. 
-
 ### Sintaxis
 
 ```javascript
@@ -36,5 +34,21 @@ function component() {
 }
 ```
 
+### Customización del evento
 
+La configuración del evento se memoriza al momento de crear dicho evento, mediante un objeto ud puede dar comportamientos especiales como:
+
+```typescript
+interface EventInit {
+  bubbles?: boolean;
+  composed?: boolean;
+  cancelable?: boolean;
+  base?: Event | CustomEvent;
+}
+```
+
+* **bubbles**: permite que el evento sea despachado de forma ascendente hacia los contenedores del nodo.
+* **composed**: permite que el evento atraviese la captura de eventos del shadowDOM.
+* **cancelable**:  permite que el evento sea cancelado.
+* **base**: permite personalizar el constructor del evento, ideal para comunicación basada en instancia de eventos.
 
