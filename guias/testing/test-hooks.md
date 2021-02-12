@@ -39,7 +39,7 @@ interface Hooks {
 Donde
 
 * **load**:  función que asocia permite asociar el scope del callback a un habito de contexto global temporal. 
-* **clearEffect:** funcion que permite recolectar los efectos de useLayoutEffect, **al ejecutar clearEffect se retornara un callback que permite finalizar la recoleccion final de useEffect cerrando el ciclo del hook.**
+* **clearEffect:** funcion que permite recolectar los efectos de useLayoutEffect, **al ejecutar clearEffect se retornara un callback que permite finalizar la recoleccion final de useEffect cerrando el ciclo de efectos secundarios.**
 
   Opcionalmente clearEffect acepta un parámetro booleano que comunica que la colección de Hooks ha debe ser desmontada si este se define como true.
 
