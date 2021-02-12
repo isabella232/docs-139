@@ -10,6 +10,9 @@
   * [useEvent](guias/hooks/useevent.md)
   * [useHost](guias/hooks/usehost.md)
   * [useState](guias/hooks/usestate.md)
+  * [useReducer](guias/hooks/usereducer.md)
+  * [useRef](guias/hooks/useref.md)
   * [useEffect y useLayoutEffect](guias/hooks/useeffect-y-uselayouteffect.md)
   * [useMemo y useCallback](guias/hooks/usememo-y-usecallback.md)
+* [Testing](guias/testing.md)
 
