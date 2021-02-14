@@ -69,17 +69,6 @@ Una regla importante del virtualDOM de Atomico es que **todo webcomponent debe r
 
 ## Template
 
-### Propiedad shadowDom
-
-Esta propiedad permite declarar el uso del shadowDom, ejemplo:
-
-```jsx
-<host shadowDom></host>;
-// El uso de shadowDom no es esclusivo para el tag host 
-// puede ser usado para cualquier nodo que lo soporte
-<div shadowDom></div>;
-```
-
 ### Asociación de eventos
 
 Atomico considera que una propiedad debe ser asociada como evento si esta es del tipo función y comienza con el prefijo 'on', ejemplo:
@@ -88,7 +77,7 @@ Atomico considera que una propiedad debe ser asociada como evento si esta es del
 <host onclick={() => console.log("click!")}></host>;
 <host onMyEvent={() => console.log("MyEvent!")}></host>;
 <input oninput={() => console.log("click!")} />;
-<slot onslotchange ={() => console.log("update slot!")} />;
+<slot onslotchange={() => console.log("update slot!")} />;
 ```
 
 ### Listas simples
@@ -111,7 +100,7 @@ Atomico considera que una propiedad debe ser asociada como evento si esta es del
 </host>;
 ```
 
-la propiedad key puede recibir cualquier tipo de valor que permita generar una referencia sobre el nodo, ejemplo:
+la propiedad key puede recibir valores del tipo de cualquier tipo que permita generar una referencia d el nodo, ejemplo:
 
 ```jsx
 <host>
@@ -120,4 +109,28 @@ la propiedad key puede recibir cualquier tipo de valor que permita generar una r
   ))}
 </host>;
 ```
+
+### Propiedad shadowDom
+
+Esta propiedad permite declarar el uso del shadowDom, ejemplo:
+
+```jsx
+<host shadowDom></host>;
+// El uso de shadowDom no es esclusivo para el tag host 
+// puede ser usado para cualquier nodo que lo soporte
+<div shadowDom></div>;
+```
+
+### Asociación de métodos
+
+Puede declarar un método definiendo el el tag host una función  sin el uso del prefijo on en su nombre, ejemplo:
+
+```jsx
+// Template
+<host myMethod={() => console.log("method!")}></host>;
+// Uso desde el nodo
+document.querySelector("my-component").myMethod();
+```
+
+
 
