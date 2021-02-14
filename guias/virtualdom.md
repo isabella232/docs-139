@@ -123,7 +123,7 @@ Esta propiedad permite declarar el uso del shadowDom, ejemplo:
 
 ### Asociación de métodos
 
-Puede declarar un método definiendo el el tag host una función  sin el uso del prefijo on en su nombre, ejemplo:
+Puede declarar un método declarando en el tag host una función  sin el uso del prefijo on en su nombre, ejemplo:
 
 ```jsx
 // Template
@@ -132,5 +132,15 @@ Puede declarar un método definiendo el el tag host una función  sin el uso del
 document.querySelector("my-component").myMethod();
 ```
 
+Si al momento de la creacion o actualización del DOM no detecta la propiedad en el prototipo se asociara como un método del nodo permitiendo asi que este pueda ser recuperado desde el nodo, ejemplo:
 
+```jsx
+const myElement = new MyElement();
+
+await myElement.updated;
+
+myElement.myMethod();
+```
+
+Para acceder al DOM de forma segura espere la resolución de la propiedad updated creada por el [ciclo de render de Atomico](testing/test-dom.md)
 
