@@ -47,7 +47,7 @@ await myElement.unmounted;
 console.log("unmounted!");
 ```
 
-## DOM
+
 
 
 
