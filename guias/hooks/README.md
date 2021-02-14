@@ -19,6 +19,10 @@ description: >-
 
 {% page-ref page="usestate.md" %}
 
+{% page-ref page="usereducer.md" %}
+
+{% page-ref page="useref.md" %}
+
 {% page-ref page="useeffect-y-uselayouteffect.md" %}
 
 {% page-ref page="usememo-y-usecallback.md" %}
