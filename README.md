@@ -12,5 +12,9 @@ description: >-
 
 {% page-ref page="guias/hooks/" %}
 
+{% page-ref page="guias/testing/" %}
+
+{% page-ref page="guias/virtualdom.md" %}
+
 
 
