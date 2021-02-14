@@ -87,7 +87,7 @@ Atomico considera que una propiedad debe ser asociada como evento si esta es del
   {[1, 2, 3].map((value) => (
     <span>{value}</span>
   ))}
-</host>;
+</host>
 ```
 
 ### Listas con clave
@@ -97,7 +97,7 @@ Atomico considera que una propiedad debe ser asociada como evento si esta es del
   {[1, 2, 3].map((value) => (
     <span key={value}>{value}</span>
   ))}
-</host>;
+</host>
 ```
 
 la propiedad key puede recibir valores del tipo de cualquier tipo que permita generar una referencia d el nodo, ejemplo:
@@ -107,7 +107,7 @@ la propiedad key puede recibir valores del tipo de cualquier tipo que permita ge
   {listaInmutable.map((objeto) => (
     <span key={objeto}>{objeto.value}</span>
   ))}
-</host>;
+</host>
 ```
 
 ### Propiedad shadowDom
@@ -116,14 +116,14 @@ Esta propiedad permite declarar el uso del shadowDom, ejemplo:
 
 ```jsx
 <host shadowDom></host>;
-// El uso de shadowDom no es esclusivo para el tag host 
+// El uso de shadowDom no es esclusivo para el tag host
 // puede ser usado para cualquier nodo que lo soporte
 <div shadowDom></div>;
 ```
 
 ### Asociación de métodos
 
-Puede declarar un método declarando en el tag host una función  sin el uso del prefijo on en su nombre, ejemplo:
+Puede declarar un método declarando en el tag host una función sin el uso del prefijo on en su nombre, ejemplo:
 
 ```jsx
 // Template
@@ -143,4 +143,3 @@ myElement.myMethod();
 ```
 
 Para acceder al DOM de forma segura espere la resolución de la propiedad updated creada por el [ciclo de render de Atomico](testing/test-dom.md)
-

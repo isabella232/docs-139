@@ -59,7 +59,7 @@ component.props = {
 };
 ```
 
-### Declaraciones estructuradas 
+### Declaraciones estructuradas
 
 Mejora la definición simple añadiendo declaraciones utilitarias, permitiendo declarar en un objeto asociado a la prop, tipo, reflejo como atributo, valor por defecto y emisión de eventos ante el cambio.
 
@@ -72,16 +72,16 @@ component.props = { myName: String };
 component.props = { myName: { type: String } };
 ```
 
-| Tipo | Acepta `reflect` |
-| :--- | :--- |
-| **String** | Si |
-| **Number** | Si |
-| **Boolean** | Si |
-| **Object** | Si |
-| **Array** | Si |
-| **Promise** | No |
-| **Symbol** | No |
-| **Function** | No |
+| Tipo         | Acepta `reflect` |
+| :----------- | :--------------- |
+| **String**   | Si               |
+| **Number**   | Si               |
+| **Boolean**  | Si               |
+| **Object**   | Si               |
+| **Array**    | Si               |
+| **Promise**  | No               |
+| **Symbol**   | No               |
+| **Function** | No               |
 
 #### Prop.reflect
 
@@ -117,15 +117,15 @@ component.props = {
 nodeComponent.addEventListener("change", handler);
 ```
 
-Donde : 
+Donde :
 
-* `event.type` : String - opcional, nombre del evento a emitir ante el cambio de la prop
-* `event.bubbles` : Boolean - opcional,  indica que el evento puede ser escuchado por los contenedores. 
-* `event.detail` : Any - opcional, permite adjuntar informacion custom del evento
-* `event.cancelable` : Boolean  - opcional, indica que el evento puede ser cancelado por algun oyente
-* `event.composed` :  Boolean - opcional, permite que el evento sobrepase el limite del shadow-root
+- `event.type` : String - opcional, nombre del evento a emitir ante el cambio de la prop
+- `event.bubbles` : Boolean - opcional, indica que el evento puede ser escuchado por los contenedores.
+- `event.detail` : Any - opcional, permite adjuntar informacion custom del evento
+- `event.cancelable` : Boolean - opcional, indica que el evento puede ser cancelado por algun oyente
+- `event.composed` : Boolean - opcional, permite que el evento sobrepase el limite del shadow-root
 
-Las propiedades especiales del evento son las conocidas  `EventInit` , puede conocer mas detalle en la [documentación adjunta](https://developer.mozilla.org/en-US/docs/Web/API/Event/Event)
+Las propiedades especiales del evento son las conocidas `EventInit` , puede conocer mas detalle en la [documentación adjunta](https://developer.mozilla.org/en-US/docs/Web/API/Event/Event)
 
 #### Prop.value
 
@@ -163,6 +163,3 @@ function component() {
 
 component.props = { message: String };
 ```
-
-
-
