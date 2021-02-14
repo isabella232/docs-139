@@ -6,7 +6,7 @@ description: >-
 
 # Test hooks
 
-Atomico ofrece un submodulo llamado "atomico/test-hooks", este modulo es parte directa del core de Atomico y agnóstica al uso de webcomponents.
+Atomico ofrece un submodulo llamado "atomico/test-hooks", este modulo es parte directa del core de Atomico y le permitirá ejecutar el customHook de forma controlada sin la necesidad de webcomponents.
 
 ```javascript
 import { createHooks } from "atomico/test-hooks";
@@ -24,8 +24,8 @@ const hooks = createHooks(opcionalRender, opcionalHost);
 
 Donde:
 
-* **optionalRender**: Callback que permite reiniciar el ciclo de vida del hook, este callback será ejecutado cada vez que un hook como [useState ](../hooks/usestate.md)o [useReducer ](../hooks/usereducer.md)soliciten la actualización del scope.
-* **opcionalHost**: ****permite dar un objeto a ser compartido mediante el hook [useHost](../hooks/usehost.md).
+* **optionalRender**: Callback que permite reiniciar el ciclo de vida del hook, este callback será ejecutado cada vez que un hook como [useState ](../hooks/usestate.md)o [useReducer ](../hooks/usereducer.md)soliciten la actualización del scope, Atomico lo usa para renderizar nuevamente el webcomponent.
+* **opcionalHost**: ****permite dar un objeto a ser compartido mediante el hook [useHost](../hooks/usehost.md), Atomico lo usa para compartir la instancia del webcomponent.
 
 #### Retorno 
 
