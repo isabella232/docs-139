@@ -20,12 +20,10 @@ console.log("component mounted!");
 
 ### HTMLElement.updated
 
-Esta promesa sera 
+Esta promesa será resuelta luego de mounted y se creara cada vez que exista una tarea de renderización, las tareas son acumulable por lo que ud puede modificar múltiples actualizaciones y estas se resolverán en un solo render.
 
 ```jsx
 const myElement = new MyElement();
-
-await myElement.unmounted;
 
 myElement.myProp1 = "value 1";
 myElement.myProp2 = "value 2";
@@ -35,9 +33,9 @@ await myElement.updated;
 console.log("webcomponent updated");
 ```
 
-### 
-
 ### HTMLElement.unmounted
+
+Esta promesa será resuelta una vez que el webcomponent haya sido desmontado del Documento.
 
 ```jsx
 const myElement = new MyElement();
