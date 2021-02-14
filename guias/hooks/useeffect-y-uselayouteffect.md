@@ -1,3 +1,7 @@
+---
+description: Ejecute efectos secundarios después del render sincrona o asincronamente.
+---
+
 # useEffect y useLayoutEffect
 
 ### Sintaxis
