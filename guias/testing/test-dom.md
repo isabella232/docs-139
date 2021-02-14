@@ -4,6 +4,8 @@ description: Observe y compruebe los cambios del DOM manualmente.
 
 # Test DOM
 
+## Ciclo de renderización
+
 Para leer el DOM del webcomponent generado con Atomico es necesario conocer el ciclo de renderización a base de promesas.
 
 ### HTMLElement.mounted
@@ -15,7 +17,7 @@ const myElement = new MyElement();
 
 await myElement.mounted;
 
-console.log("component mounted!");
+console.log("mounted!");
 ```
 
 ### HTMLElement.updated
@@ -30,7 +32,7 @@ myElement.myProp2 = "value 2";
 
 await myElement.updated;
 
-console.log("webcomponent updated");
+console.log("updated");
 ```
 
 ### HTMLElement.unmounted
@@ -42,8 +44,10 @@ const myElement = new MyElement();
 
 await myElement.unmounted;
 
-console.log("component unmounted!");
+console.log("unmounted!");
 ```
+
+## DOM
 
 
 
