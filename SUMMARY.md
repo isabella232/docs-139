@@ -16,4 +16,5 @@
   * [useMemo y useCallback](guias/hooks/usememo-y-usecallback.md)
 * [Testing](guias/testing/README.md)
   * [Test hooks](guias/testing/test-hooks.md)
+* [VirtualDOM](guias/virtualdom.md)
 
