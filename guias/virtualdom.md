@@ -116,7 +116,7 @@ la propiedad key puede recibir cualquier tipo de valor que permita generar una r
 ```jsx
 <host>
   {listaInmutable.map((objeto) => (
-    <span key={objeto}>{objeto.label}</span>
+    <span key={objeto}>{objeto.value}</span>
   ))}
 </host>;
 ```
