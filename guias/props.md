@@ -1,15 +1,14 @@
 ---
 description: >-
-  Las props en Atomico son la forma que poseen Atomico de asociar al
-  webcomponent propiedades y atributos reactivos que permiten efectos
-  secundarios como estados del DOM.
+  Las props en Atomico son la forma de asociar al webcomponent propiedades y
+  atributos reactivos que detonan la lógica o interfaz del webcomponent.
 ---
 
 # Props\(Propiedades\)
 
 ### Sintaxis
 
-Atomico detectara que la función posee la asociación del objeto props y creara las propiedades reactivas del webcomponent, ejemplo:
+Toda función que represente el webcomponent podrá asociar el objeto estático props para la declaración de propiedades y atributos reactivos, ejemplo:
 
 ```jsx
 import { c } from "atomico";
@@ -41,6 +40,8 @@ Considere que:
 
 1. Todo nombre de prop Camel case será traducido a para su uso como atributo al formato Kebab case, este comportamiento puede ser modificado mediante la propiedad "attr" al usar una declaración estructurada.
 2. Las declaraciones estructuradas requieren mínimamente la propiedad "type".
+3. No todos los tipos pueden usar la propiedades "reflect".
+4. La forma de declarar la propiedad "value" puede variar según el tipo.
 
 ### Declaraciones simple
 
@@ -84,7 +85,7 @@ component.props = { myName: { type: String } };
 
 #### Prop.reflect
 
-De ser true, reflejara la propiedad como atributo, esto es util para la declaración de estados del CSS, eg:
+si la propiedad reflect se define como true, se reflejara su valor como atributo del webcomponent, esto es util para la declaración de estados del CSS, ejemplo:
 
 ```jsx
 component.props = {
@@ -97,7 +98,7 @@ component.props = {
 
 #### Prop.event
 
-Permite despachar un evento ante el cambio de valor del prop.
+Permite despachar un evento automatico ante el cambio de valor del prop, ejemplo:
 
 ```javascript
 component.props = {
@@ -143,11 +144,11 @@ WebComponents.props = {
 };
 ```
 
-La asociación de callback como value permiten generar valores únicos para cada instancia del webcomponent, esto es útil con los tipos Object y Array ya que elimina las referencias.
+La asociación de callback como value permiten generar valores únicos para cada instancia del webcomponent, esto es útil con los tipos Object y Array ya que elimina las referencias entre instancias.
 
 ### Reactividad en el scope del webcomponent
 
-Atomico elimina el uso de "this" dado su enfoque funcional, pero añade el hook useProp el que permite referenciar una prop para su uso. la sintaxis es similar a useState, ejemplo:
+Atomico elimina el uso de "this" dado su enfoque funcional, pero añade el hook [useProp ](hooks/useprop.md)el que permite referenciar una prop para su uso con una sintaxis es similar a useState, ejemplo:
 
 ```jsx
 function component() {
@@ -162,4 +163,6 @@ function component() {
 
 component.props = { message: String };
 ```
+
+
 
