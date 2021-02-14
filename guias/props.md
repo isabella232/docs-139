@@ -48,13 +48,14 @@ Las declaraciones simples permiten asociar solo la validación de tipo.
 
 ```javascript
 component.props = {
-    propString : String, 
-    propNumber : Number, 
-    propObject : Object, 
-    propArray  : Array,  
-    propDate   : Date,   
-    propBool   : Boolean 
-}
+  propString: String,
+  propNumber: Number,
+  propObject: Object,
+  propArray: Array,
+  propDate: Date,
+  propBool: Boolean,
+  propCallback: Function,
+};
 ```
 
 ### Declaraciones estructuradas 
@@ -65,9 +66,9 @@ Mejora la definición simple añadiendo declaraciones utilitarias, permitiendo d
 
 ```javascript
 // valid declaration
-component.props = { myName : String }
+component.props = { myName: String };
 // valid declaration
-component.props = { myName : {type : String} }
+component.props = { myName: { type: String } };
 ```
 
 | Tipo | Acepta `reflect` |
