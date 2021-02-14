@@ -15,6 +15,7 @@
   * [useEffect y useLayoutEffect](guias/hooks/useeffect-y-uselayouteffect.md)
   * [useMemo y useCallback](guias/hooks/usememo-y-usecallback.md)
 * [Testing](guias/testing/README.md)
-  * [Test hooks](guias/testing/test-hooks.md)
+  * [Test DOM](guias/testing/test-dom.md)
+  * [Test Hooks](guias/testing/test-hooks.md)
 * [VirtualDOM](guias/virtualdom.md)
 

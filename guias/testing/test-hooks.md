@@ -4,7 +4,7 @@ description: >-
   predecible
 ---
 
-# Test hooks
+# Test Hooks
 
 Atomico ofrece un submodulo llamado "atomico/test-hooks", este modulo es parte directa del core de Atomico y le permitirá ejecutar el customHook de forma controlada sin la necesidad de webcomponents.
 
@@ -45,7 +45,7 @@ Donde
 
 ### Ejemplo:
 
-**./use-counter.js**
+**./use-counter.js:** customHook a testear.
 
 ```typescript
 import { useState } from "atomico";
