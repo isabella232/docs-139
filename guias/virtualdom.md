@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atomico's virtualDOM is designed to enhance the use of webcomponents.
+description: Atomico's virtualDOM is designed to enhance the use of webcomponents.
 ---
 
 # VirtualDOM
@@ -142,3 +141,4 @@ myElement.myMethod();
 ```
 
 To access the DOM safely wait for the resolution of the updated property created by the [render cycle](testing/test-dom.md).
+

@@ -6,19 +6,19 @@ description: Reactivity in the scope of the webcomponent without the use of cont
 
 useProp allows you to work with a prop\(property\) of the webcomponent in a similar way to useState.
 
-### Syntax
+## Syntax
 
-```js
+```javascript
 const [value, setValue] = useProp(myProp);
 ```
 
 Where :
 
-- value: Current value of the prop.
-- setValue: Callback to update the value of the prop.
-- myProp: string, defines the name of the prop to be used by the hook.
+* value: Current value of the prop.
+* setValue: Callback to update the value of the prop.
+* myProp: string, defines the name of the prop to be used by the hook.
 
-### Example
+## Example
 
 ```jsx
 import { useProp } from "atomico";
@@ -53,3 +53,4 @@ Where:
 1. **useCounter is a customHook** and that it can work with any property of the webcomponent of type Number.
 2. useCounter returns 2 methods increment and decrement that modify the value of the prop.
 3. **useCounter can be instantiated multiple times** for different properties.
+

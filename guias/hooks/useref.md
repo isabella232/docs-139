@@ -1,18 +1,18 @@
 ---
 description: >-
-  Create a persistent object between renders to capture from a node
-  from VirtualDOM
+  Create a persistent object between renders to capture from a node from
+  VirtualDOM
 ---
 
 # useRef
 
-### Syntax
+## Syntax
 
 ```javascript
 const ref = useRef(optionalCurrent);
 ```
 
-### Example
+## Example
 
 ```jsx
 import { useRef, useEffect, useState } from "atomico";
@@ -38,6 +38,7 @@ function component() {
 }
 ```
 
-### Observation
+## Observation
 
 The reference object is useful for referencing nodes between customHooks.
+

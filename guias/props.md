@@ -6,7 +6,7 @@ description: >-
 
 # Props\(Properties\)
 
-### Syntax
+## Syntax
 
 Any function that represents the webcomponent will be able to associate the static object props for the declaration of reactive properties and attributes, for example:
 
@@ -43,7 +43,7 @@ Consider that:
 3. Not all types can use the "reflect" properties.
 4. The declaration of the "value" property can vary depending on the type.
 
-### Simple statements
+## Simple statements
 
 Las declaraciones simples permiten asociar solo la validación de tipo.
 
@@ -59,11 +59,11 @@ component.props = {
 };
 ```
 
-### Structured declaration
+## Structured declaration
 
 Improve the definition by adding utility declarations, allowing for example to reflect the property's value as attributes, automatically emit events or associate default values. Remember these types of declarations minimally require the use of the type property.
 
-#### Prop.type
+### Prop.type
 
 ```javascript
 // valid declaration
@@ -72,18 +72,18 @@ component.props = { myName: String };
 component.props = { myName: { type: String } };
 ```
 
-| Type         | Supports reflect |
-| :----------- | :--------------- |
-| **String**   | ✔️               |
-| **Number**   | ✔️               |
-| **Boolean**  | ✔️               |
-| **Object**   | ✔️               |
-| **Array**    | ✔️               |
-| **Promise**  | ❌               |
-| **Symbol**   | ❌               |
-| **Function** | ❌               |
+| Type | Supports reflect |
+| :--- | :--- |
+| **String** | ✔️ |
+| **Number** | ✔️ |
+| **Boolean** | ✔️ |
+| **Object** | ✔️ |
+| **Array** | ✔️ |
+| **Promise** | ❌ |
+| **Symbol** | ❌ |
+| **Function** | ❌ |
 
-#### Prop.reflect
+### Prop.reflect
 
 If the "reflect" property is set to true, its value is reflected as an attribute of the webcomponent, this is useful for the declaration of CSS states, example:
 
@@ -96,7 +96,7 @@ component.props = {
 };
 ```
 
-#### Prop.event
+### Prop.event
 
 It allows dispatching an automatic event before the prop value change, example:
 
@@ -119,15 +119,15 @@ nodeComponent.addEventListener("change", handler);
 
 Donde :
 
-- `event.type`: String - optional, name of the event to be emitted when the prop is changed
-- `event.bubbles`: Boolean - optional, indicates that the event can be listened to by containers.
-- `event.detail`: Any - optional, allows to attach a custom detail for the event
-- `event.cancelable`: Boolean - optional, indicates that the event can be canceled by any listener
-- `event.composed`: Boolean - optional, allows the event to exceed the shadow-root limit
+* `event.type`: String - optional, name of the event to be emitted when the prop is changed
+* `event.bubbles`: Boolean - optional, indicates that the event can be listened to by containers.
+* `event.detail`: Any - optional, allows to attach a custom detail for the event
+* `event.cancelable`: Boolean - optional, indicates that the event can be canceled by any listener
+* `event.composed`: Boolean - optional, allows the event to exceed the shadow-root limit
 
 The special properties of the event are the well-known `Event Init`, you can know more details in the [attached documentation](https://developer.mozilla.org/en-US/docs/Web/API/Event/Event).
 
-#### Prop.value
+### Prop.value
 
 Atomico allows the definition of default values of the props.
 
@@ -146,9 +146,9 @@ WebComponents.props = {
 
 The association of callback as value allows generating unique values for each instance of the webcomponent, this is useful with the Object and Array types since it eliminates the references between instances.
 
-### Reactivity in the scope of the webcomponent
+## Reactivity in the scope of the webcomponent
 
-Atomico removes the use of "this" given its functional approach, but adds the hook [useProp] (hooks / useprop.md) which allows to reference a prop for use with a functional syntax, eg:
+Atomico removes the use of "this" given its functional approach, but adds the hook \[useProp\] \(hooks / useprop.md\) which allows to reference a prop for use with a functional syntax, eg:
 
 ```jsx
 function component() {
@@ -163,3 +163,4 @@ function component() {
 
 component.props = { message: String };
 ```
+

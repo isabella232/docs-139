@@ -4,7 +4,7 @@ description: Dispatch events from the webcomponent without referencing the conte
 
 # useEvent
 
-### Syntax
+## Syntax
 
 ```javascript
 const dispatchEvent = useEvent(myEvent, eventInit);
@@ -12,11 +12,11 @@ const dispatchEvent = useEvent(myEvent, eventInit);
 
 Where:
 
-- dispatchEvent: **callback,** dispatch the event from the webcomponent.
-- myEvent: **string**, name of the event to dispatch.
-- eventInit: **optional object**, event configuration.
+* dispatchEvent: **callback,** dispatch the event from the webcomponent.
+* myEvent: **string**, name of the event to dispatch.
+* eventInit: **optional object**, event configuration.
 
-### Example
+## Example
 
 ```jsx
 import { useEvent } from "atomico";
@@ -34,7 +34,7 @@ function component() {
 }
 ```
 
-### Event customization
+## Event customization
 
 The second parameter of `useEvent` allows customizing the behavior of the even:
 
@@ -50,3 +50,4 @@ interface EventInit {
   base?: Event | CustomEvent;
 }
 ```
+
