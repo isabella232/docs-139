@@ -1,132 +1,131 @@
 ---
 description: >-
-  Atomico improves the experience of defining properties associated with the
-  web-component, by using the props object, you can define attributes and
-  properties.
+  The props in Atomico are the way to associate the webcomponent properties and
+  reactive attributes that trigger the logic or interface of the webcomponent.
 ---
 
-# Props
+# Props\(Properties\)
 
 ### Syntax
 
-```javascript
-WebComponent.props = {
-    simpleProp : String,
-    advaceProp : {
-        type : String,
-        reflect : true,
-        value : "default string",
-        event : {
-            type : "UpdateAdvanceProp",
-            bubbles : true,
-         }
-    }
+Any function that represents the webcomponent will be able to associate the static object props for the declaration of reactive properties and attributes, for example:
+
+```jsx
+import { c } from "atomico";
+
+function component() {
+  return <host />;
 }
+
+component.props = {
+  // Simple statement
+  value1: String,
+  // Structured statement
+  value2: {
+    type: String,
+    reflect: true,
+    attr: "advaceprop",
+    value: "default string",
+    event: {
+      type: "UpdateAdvanceProp",
+      bubbles: true,
+    },
+  },
+};
+
+customElement.define("web-component", c(component));
 ```
 
-### Simple definition
+Consider that:
 
-The simple definition accelerates the reading of the property, this will not include associated effects as a default value, reflect as an attribute or issue events before the change, eg:
+1. The prop names in Camel Case format will be translated to for use as an attribute to the Kebab Case format, this behavior can be modified through the "attr" property when using a structured declaration.
+2. Structured declarations require the "type" property minimally.
+3. Not all types can use the "reflect" properties.
+4. The declaration of the "value" property can vary depending on the type.
+
+### Simple statements
+
+Las declaraciones simples permiten asociar solo la validación de tipo.
 
 ```javascript
-WebComponents.props = {
-    propString : String, // attribute, eg: prop-string='hi!'
-    propNumber : Number, // attribute, eg: prop-number='10'
-    propObject : Object, // attribute, eg: prop-object='{}'
-    propArray  : Array,  // attribute eg: prop-array='[]'
-    propDate   : Date,   // attribute eg: prop-date='2019-12-05',
-    propBool   : Boolean // attribute eg: prop-bool
-}
+component.props = {
+  propString: String,
+  propNumber: Number,
+  propObject: Object,
+  propArray: Array,
+  propDate: Date,
+  propBool: Boolean,
+  propCallback: Function,
+};
 ```
 
-### Advanced definition of props
+### Structured declaration
 
-It improves the simple definition by adding utilitarian declarations, allowing to declare in an object associated to the prop, type, reflection as attribute, default value and emission of events before the change.
+Improve the definition by adding utility declarations, allowing for example to reflect the property's value as attributes, automatically emit events or associate default values. Remember these types of declarations minimally require the use of the type property.
 
 #### Prop.type
 
 ```javascript
 // valid declaration
-WebComponents.props = { myName : String }
+component.props = { myName: String };
 // valid declaration
-WebComponents.props = { myName : {type : String} }
+component.props = { myName: { type: String } };
 ```
 
-| Type | `reflect` |
-| :--- | :--- |
-| String | Si |
-| Number | Si |
-| Boolean | Si |
-| Date | Si |
-| Object | Si |
-| Array | Si |
-| Promise | No |
-| Symbol | No |
-| RegExp | No |
+| Type         | Supports reflect |
+| :----------- | :--------------- |
+| **String**   | ✔️               |
+| **Number**   | ✔️               |
+| **Boolean**  | ✔️               |
+| **Object**   | ✔️               |
+| **Array**    | ✔️               |
+| **Promise**  | ❌               |
+| **Symbol**   | ❌               |
+| **Function** | ❌               |
 
 #### Prop.reflect
 
-If `true`, it will reflect the property as an attribute, this is useful for the declaration of CSS states, eg:
+If the "reflect" property is set to true, its value is reflected as an attribute of the webcomponent, this is useful for the declaration of CSS states, example:
 
 ```jsx
-let styleSheet = /*css*/`
-    :host{
-        background:black;
-    }
-    :host([checked]){
-        blackground:white;
-    }
-`;
-WebComponent.props = {
-    checked : {
-        type : Boolean,
-        reflect : true
-    }
-}
+component.props = {
+  checked: {
+    type: Boolean,
+    reflect: true,
+  },
+};
 ```
 
 #### Prop.event
 
-It allows dispatching an event before the change of value of the prop, if it is defined as true the event to be emitted will take the name of the prop.
+It allows dispatching an automatic event before the prop value change, example:
 
 ```javascript
-WebComponent.props = {
-    simpleEvent : {
-        type : String,
-        event : true,
-    }
-}
-// listener example
-
-nodeWebComponent.addEventListener('simpleEvent',handler); 
+component.props = {
+  value: {
+    type: String,
+    event: {
+      type: "change",
+      bubbles: true,
+      composed: true,
+      detail: "any value",
+      cancelable: true,
+    },
+  },
+};
+// listener
+nodeComponent.addEventListener("change", handler);
 ```
 
-if defined by an `object`, you can configure the type and behavior of the event
+Donde :
 
-```jsx
-WebCompoent.props = {
-    advanceEvent : {
-        type : String, 
-        event : {
-            type : "myCustomEvent",
-            bubbles : true,
-            detail : "any message",
-            cancelable : true,
-            composed: true
-        }
-    }
-}
-```
+- `event.type`: String - optional, name of the event to be emitted when the prop is changed
+- `event.bubbles`: Boolean - optional, indicates that the event can be listened to by containers.
+- `event.detail`: Any - optional, allows to attach a custom detail for the event
+- `event.cancelable`: Boolean - optional, indicates that the event can be canceled by any listener
+- `event.composed`: Boolean - optional, allows the event to exceed the shadow-root limit
 
-Where: 
-
-* `event.type` : String - optional, name of the event to be emitted before the change of the prop
-* `event.bubbles` : Boolean - optional, indicates that the event can be subscribed by the containers.
-* `event.detail` : Any - optional, allows you to attach custom event information.
-* `event.cancelable` : Boolean - optional, indicates that the event can be canceled by a listener
-* `event.composed` :  Boolean - optional, allows the event to exceed the shadow-root limit
-
-The special properties of the event are known as the EventInit standard, you can find out more detail in the[ attached documentation](https://developer.mozilla.org/en-US/docs/Web/API/Event/Event)
+The special properties of the event are the well-known `Event Init`, you can know more details in the [attached documentation](https://developer.mozilla.org/en-US/docs/Web/API/Event/Event).
 
 #### Prop.value
 
@@ -134,54 +133,33 @@ Atomico allows the definition of default values of the props.
 
 ```javascript
 WebComponents.props = {
-    valueNormal : {
-        type : Number,
-        value : 100
-    },
-    valueObject : {
-        type : Object,
-        value : ()=>({ ...defaultState })
-    }  
+  valueNormal: {
+    type: Number,
+    value: 100,
+  },
+  valueObject: {
+    type: Object,
+    value: () => ({}),
+  },
+};
+```
+
+The association of callback as value allows generating unique values for each instance of the webcomponent, this is useful with the Object and Array types since it eliminates the references between instances.
+
+### Reactivity in the scope of the webcomponent
+
+Atomico removes the use of "this" given its functional approach, but adds the hook [useProp] (hooks / useprop.md) which allows to reference a prop for use with a functional syntax, eg:
+
+```jsx
+function component() {
+  const [message, setMessage] = useProp("message");
+  return (
+    <host>
+      Hello, {message}
+      <input oninput={({ target }) => setMessage(target.value)} />
+    </host>
+  );
 }
+
+component.props = { message: String };
 ```
-
-{% hint style="warning" %}
-to prevent an object from having reference use a function to generate the initial state
-{% endhint %}
-
-### Effects of prop mutation
-
-It is common to see this type of behavior when working with web-components, eg
-
-```javascript
-let node = document.querySelector("custom-element");
-
-node.checked = true;
-
-node.checked = !node.checked;
-```
-
-they are considered valid, but to create a functional orientation the atomico props can be defined as state reducers, eg:
-
-```javascript
-node.checked = (currentState)=>!currentState;
-```
-
-Atomico groups the updates coming from the props to generate a single render, if you want to see the side effect of your update on the props you should do the following:
-
-```javascript
-node.prop1 = 1;
-node.prop2 = 2;
-node.prop3 = 3;
-
-await node.rendered;
-
-/** any side effects, eg: analysis of the resulting DOM **/
-```
-
-{% hint style="warning" %}
-Your WebComponent does not receive references from the props, each render receives an immutable snapshot.
-{% endhint %}
-
-
-

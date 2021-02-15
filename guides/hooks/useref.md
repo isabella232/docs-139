@@ -1,7 +1,7 @@
 ---
 description: >-
-  allows you to create an object that can contain persistent references between
-  renders
+  Create a persistent object between renders to capture from a node
+  from VirtualDOM
 ---
 
 # useRef
@@ -9,32 +9,35 @@ description: >-
 ### Syntax
 
 ```javascript
-let ref = useRef(optionalCurrent);
+const ref = useRef(optionalCurrent);
 ```
-
-Where:
-
-* `ref` : Object, this may contain persistent references between renders.
-* `opcionalCurrent` : Any optional, is the initial state of the ref.current property.
 
 ### Example
 
 ```jsx
-let ref = useRef();
+import { useRef, useEffect, useState } from "atomico";
 
-useEffect(
-  () => {
-    ref.current.addEventListener("click", ({ target }) => {
-      console.log({ target });
+function component() {
+  const ref = useRef();
+  const [message, setMessage] = useState();
+  useEffect(() => {
+    const { current } = ref;
+    current.addEventListener("input", () => {
+      if (current.validity.typeMismatch) {
+        setMessage("Invalid!");
+      }
+      current.setCustomValidity("");
     });
-  },
-  [ref]
-);
-
-<host>
-  <button ref={ref}> click </button>
-</host>;
+  }, []);
+  return (
+    <host>
+      <input type="email" ref={ref} />
+      {message && <h1>{message}</h1>}
+    </host>
+  );
+}
 ```
 
-In the example the variable ref is delivered to the virtual-dom, this will define at the time of rendering the node as ref.current, allowing access to it after the render.
+### Observation
 
+The reference object is useful for referencing nodes between customHooks.

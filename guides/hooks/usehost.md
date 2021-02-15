@@ -1,33 +1,31 @@
 ---
 description: >-
-  It allows obtaining a reference to the host without the need to associate with
-  reference
+  Hook that creates a reference that curren is the instance of the webcomponent.
 ---
 
 # useHost
 
 ### Syntax
 
-```jsx
-const host = useHost();
-
-console.log(host.current) // <web-component/>
+```javascript
+const refHost = useHost();
 ```
 
-### Usage
+Returns the instance of the webcomponent in reference format, this reference allows to extend behaviors when creating customHooks.
 
-Improve the custom-hooks experience for web-components, since it allows direct access to the host, eg:
+### Example
 
-```jsx
- function useProp(name) {
-    let ref = useHost();
-    if (name in ref.current) {
-        if (!ref[name]) {
-            ref[name] = [null, nextValue => (ref.current[name] = nextValue)];
-        }
-        ref[name][0] = ref.current[name];
-        return ref[name];
-    }
+```typescript
+import { useHost, useEffect } from "atomico";
+
+function useListener(type: string, callback: (ev: Event) => void) {
+  const ref = useHost();
+  useEffect(() => {
+    const { current } = ref;
+    current.addEventListener(type, callback);
+    return () => current.removeEventListener(type, callback);
+  }, []);
 }
 ```
 
+From the example we can highlight that **useListener is a customHook** that allows listening to an event from the webcomponent without the need to link said event to the VirtualDOM.

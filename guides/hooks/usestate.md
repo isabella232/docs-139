@@ -1,47 +1,24 @@
----
-description: Create a local state in the web-component
----
-
 # useState
 
 ### Syntax
 
 ```javascript
-let [state, setState] = useState(initialState);
+const [state, setState] = useState(optionalInitialState);
 ```
 
 Where:
 
-* `state` : Any,  is the current state of the hook.
-* `setState` : Function, allows to modify the current state.
+1. `const [state,setState]` : Return of `useState`, the arguments allow reading and updating of the state associated with the hook instance.
+   - `state` : Current state.
+   - `setState`: Current status updater.
+2. `useState( optionalInitialState )`: Function that associates the state to the webcomponent:
+   - `optionalInitialState`: Optional parameter that defines the initial state associated to the hook instance, **If `optionalInitialState` is a function it will be executed in order to obtain the initial state only at the moment of the hook instance for the first time**.
 
-  > if it is a function it will be executed receiving as argument the current state to return the next state
-
-* `initialState` : Any, is the initial state.
-
-  > If it is a function, it will be executed to return the initial state
-
-### Example
+#### Example
 
 ```jsx
-import { h, useState } from "atomico";
-
-function WebComponent(){
-  let [count, setCount] = useState(0);
-  
-  function increment() {
-    setCount(count + 1);
-  }
-  
-  return <host>
-    count : {count}
-    <button onclick={increment}>increment</button>
-  </host>;
+function MyComponent() {
+  const [count, setCount] = useState(0);
+  return <host onclick={() => setCount(count + 1)}> {count} </host>;
 }
 ```
-
-Where:
-
-* `count` : Number, is the current state,  initialized as 0.
-* `increment` : Function, callback dispatching the state increase .
-
