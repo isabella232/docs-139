@@ -2,7 +2,7 @@
 description: Allows to run side effects after rendering
 ---
 
-# useEffect y useLayoutEffect
+# useEffect and useLayoutEffect
 
 ## Syntax
 

@@ -1,4 +1,4 @@
-# useMemo y useCallback
+# useMemo and useCallback
 
 ## Syntax
 
