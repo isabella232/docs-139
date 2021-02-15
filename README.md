@@ -4,7 +4,7 @@ description: >-
   creation of webcomponents.
 ---
 
-# Atomico
+# 👋 Atomico
 
 ```jsx
 import { c } from "atomico"; // 2.5kB

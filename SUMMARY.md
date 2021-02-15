@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Atomico](README.md)
+* [👋 Atomico](README.md)
 
 ## Api <a id="guides"></a>
 
