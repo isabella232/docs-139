@@ -4,7 +4,7 @@ description: >-
   reactive attributes that trigger the logic or interface of the webcomponent.
 ---
 
-# Props\(Properties\)
+# 🧬 Props\(Properties\)
 
 ## Syntax
 

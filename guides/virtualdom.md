@@ -2,7 +2,7 @@
 description: Atomico's virtualDOM is designed to enhance the use of webcomponents.
 ---
 
-# VirtualDOM
+# 🧩 VirtualDOM
 
 ## Syntax
 
