@@ -8,11 +8,11 @@ description: >-
 
 ## Api
 
-{% page-ref page="guias/props.md" %}
+{% page-ref page="guides/props.md" %}
 
-{% page-ref page="guias/hooks/" %}
+{% page-ref page="guides/hooks/" %}
 
-{% page-ref page="guias/virtualdom.md" %}
+{% page-ref page="guides/virtualdom.md" %}
 
-{% page-ref page="guias/testing/" %}
+{% page-ref page="guides/testing/" %}
 
