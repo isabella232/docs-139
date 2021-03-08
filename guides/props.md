@@ -53,7 +53,6 @@ component.props = {
   propNumber: Number,
   propObject: Object,
   propArray: Array,
-  propDate: Date,
   propBool: Boolean,
   propCallback: Function,
 };
