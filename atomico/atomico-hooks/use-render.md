@@ -1,24 +1,24 @@
 ---
 description: >-
-  Run a second render before the webcomponent render, ideal for
-   collaborative work between shadowDOM and lightDOM
+  Run a second render before the webcomponent render, ideal for  collaborative
+  work between shadowDOM and lightDOM
 ---
 
 # use-render
 
-### Modulo
+## Modulo
 
 ```javascript
 import { useRender } from "@atomico/hooks/use-render";
 ```
 
-### Syntax
+## Syntax
 
 ```jsx
 useRender(() => <input type="text" />, optionalArguments);
 ```
 
-### Example
+## Example
 
 Sometimes you work with shadowDOM inputs, the shadowDOM prevents the communication of events with a form superior to the shadowDOM, `useRender`, it allows you to create inputs in the lightDOM and thus maintain the desired effects.
 
@@ -44,3 +44,4 @@ myInput.props = {
   checked: Boolean,
 };
 ```
+

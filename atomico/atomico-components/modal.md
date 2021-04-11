@@ -16,7 +16,6 @@ import {
 
 {% tabs %}
 {% tab title="HTML" %}
-
 ```markup
 <atomico-modal show-after-ms="5000">
     <div>
@@ -25,17 +24,14 @@ import {
     </div>
 </atomico-modal>
 ```
-
 {% endtab %}
 
 {% tab title="IMPORT" %}
-
 ```javascript
 import { Modal } from "@atomico/components/modal";
 
 customElements.define("atomico-modal", Modal);
 ```
-
 {% endtab %}
 {% endtabs %}
 
@@ -62,3 +58,4 @@ customElements.define("atomico-modal", Modal);
 **fullSize / full-size**: `Boolean`, It enables the use of background in the modal, this is complemented by the background slot to attach personalized content in the background.
 
 **fullSizeClosed / full-size-closed**: `Boolean`, defines whether clicking on the background hides the modal.
+

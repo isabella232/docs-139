@@ -20,7 +20,6 @@ import {
 
 {% tabs %}
 {% tab title="HTML" %}
-
 ```markup
 <router-redirect>
     <a href="/">home</a>
@@ -31,11 +30,9 @@ import {
     </router-switch>
 </router-redirect>
 ```
-
 {% endtab %}
 
 {% tab title="IMPORT" %}
-
 ```javascript
 import {
   RouterCase,
@@ -47,29 +44,29 @@ customElements.define("router-redirect", RouterRedirect);
 customElements.define("router-switch", RouterSwitch);
 customElements.define("router-case", RouterCase);
 ```
-
 {% endtab %}
 {% endtabs %}
 
 ### router-redirect
 
-Redirect every `onclick` event that declares the` href` property in its target, example tag `<a>`.
+Redirect every `onclick` event that declares the`href` property in its target, example tag `<a>`.
 
-| Props | Type   | Description                                                                                  |
-| :---- | :----- | :------------------------------------------------------------------------------------------- |
-| path  | String | Define a `path` to concatenate to the nested` path`, either by redirection or router-switch. |
+| Props | Type | Description |
+| :--- | :--- | :--- |
+| path | String | Define a `path` to concatenate to the nested`path`, either by redirection or router-switch. |
 
 ### router-switch
 
 Controla la ruta a mostrar o montar según la expresión del path
 
-| Props | Type   | Description                                                                                  |
-| :---- | :----- | :------------------------------------------------------------------------------------------- |
-| path  | String | Define a `path` to concatenate to the nested` path`, either by redirection or router-switch. |
+| Props | Type | Description |
+| :--- | :--- | :--- |
+| path | String | Define a `path` to concatenate to the nested`path`, either by redirection or router-switch. |
 
 ### router-case
 
-| Props | Type    | Description                                                                                       |
-| :---- | :------ | :------------------------------------------------------------------------------------------------ |
-| load  | `String | ()=>Promise<any>`                                                                                 |
-| for   | String  | Content to show at the time of the match by `path`,` for` must point to a slot within the parent. |
+| Props | Type | Description |
+| :--- | :--- | :--- |
+| load | \`String | \(\)=&gt;Promise\` |
+| for | String | Content to show at the time of the match by `path`,`for` must point to a slot within the parent. |
+

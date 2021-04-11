@@ -4,7 +4,7 @@ description: Observe the size change of a reference.
 
 # use-resize-observer
 
-### Modulo
+## Modulo
 
 ```javascript
 import {
@@ -13,9 +13,9 @@ import {
 } from "@atomico/hooks/use-resize-observer";
 ```
 
-### Syntax
+## Syntax
 
-#### useResizeObserver
+### useResizeObserver
 
 ```javascript
 useResizeObserver(
@@ -26,18 +26,18 @@ useResizeObserver(
 
 Where:
 
-- `ref`: `Ref`, reference to observe the resizing.
-- `rect`: `Object`, the return of `DOMRectReadOnly.toJSON()`, documentation of [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly)
-  - width
-  - height
-  - x
-  - y
-  - top
-  - right
-  - bottom
-  - left
+* `ref`: `Ref`, reference to observe the resizing.
+* `rect`: `Object`, the return of `DOMRectReadOnly.toJSON()`, documentation of [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly)
+  * width
+  * height
+  * x
+  * y
+  * top
+  * right
+  * bottom
+  * left
 
-#### useResizeObserverState
+### useResizeObserverState
 
 ```javascript
 const rect = useResizeObserverState(ref);
@@ -45,13 +45,14 @@ const rect = useResizeObserverState(ref);
 
 Where:
 
-- `ref`: `Ref`, reference to observe the resizing.
-- `rect`: `Object`, the return of `DOMRectReadOnly.toJSON()`, documentation of [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly)
-  - width
-  - height
-  - x
-  - y
-  - top
-  - right
-  - bottom
-  - left
+* `ref`: `Ref`, reference to observe the resizing.
+* `rect`: `Object`, the return of `DOMRectReadOnly.toJSON()`, documentation of [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly)
+  * width
+  * height
+  * x
+  * y
+  * top
+  * right
+  * bottom
+  * left
+
