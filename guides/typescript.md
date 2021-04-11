@@ -38,12 +38,12 @@ Where:
 2. `noImplicitAny`, to complete the return of the props use the type `Props`. It is valid to eliminate the use of `noImplicityAny`, since sometimes it can be very strict in situations of various types, we must remember that JS by nature is dynamic.
 
 {% hint style="info" %}
-Atomico has a type construction based on my experience ([@uppercod](https://twitter.com/uppercod)), I am attentive to your recommendations since I seek to give full support to Typescript.
+Atomico has a type construction based on my experience \([@uppercod](https://twitter.com/uppercod)\), I am attentive to your recommendations since I seek to give full support to Typescript.
 {% endhint %}
 
 ## Component
 
-### `Props<typeof component.props>`;
+### `Props<typeof component.props>`
 
 Allows you to retrieve the types of the `props` object associated with the function.
 
@@ -115,3 +115,4 @@ const ref = useRef < HTMLInputElement > useRef();
 ```
 
 Forces **ref.current** to be `HTMLInputElement`.
+
