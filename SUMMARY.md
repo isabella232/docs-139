@@ -40,7 +40,7 @@
   * [modal](atomico/atomico-components/modal.md)
   * [send-form](atomico/atomico-components/send-form.md)
 
-## guías
+## guías <a id="guides"></a>
 
-* [Typescript](guias/typescript.md)
+* [Typescript](guides/typescript.md)
 
