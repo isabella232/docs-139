@@ -21,5 +21,3 @@
 
 ## @atomico
 
-* [Untitled](atomico/untitled.md)
-
