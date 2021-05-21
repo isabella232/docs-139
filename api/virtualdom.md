@@ -67,8 +67,6 @@ An important rule of Atomico's virtualDOM is that **every webcomponent must retu
 
 ## Template
 
-### 
-
 ### Event Association
 
 Atomico considers that a property must be associated as an event if it is of the function type and begins with the prefix 'on', eg:
@@ -110,19 +108,20 @@ the key property can receive values of the type of any type that allows generati
 </host>
 ```
 
-### Referencias de nodos
+### Node references
 
-Una técnica heredada de React, permite obtener la referencia del nodo a quien se le asocia el objeto Ref a travez de la propiedad ref, ejemplo:
+A technique inherited from React, it allows obtaining the reference of the node to which the Ref object is associated through the ref property, example:
 
 ```jsx
 const ref = useRef();
 
-<host ref={ref}></host>; // La referencia será la instancia del custom Element
+<host ref={ref}></host>; // The reference will be the instance 
+                         // of the custom Element
 
-<input ref={ref}/>; // La referencia será el input
+<input ref={ref}/>; // The reference will be the input
 ```
 
-Las referencias deben ser objetos inmutables, para crearlo existe el **hook** [**useRef** ](hooks/useref.md)que crea una referencia para cada instancia del webcomponent.
+The references must be immutable objects, to create it there is the [**useRef** ](hooks/useref.md)hook that creates a reference for each instance of the webcomponent.
 
 ### shadowDom property
 
