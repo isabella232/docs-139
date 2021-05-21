@@ -49,17 +49,17 @@ From the example we will highlight the following practices:
 
 Now suppose that this button is part of our design system, which we must modify before the arrival of a new project
 
-### ¿Cómo modificar la apariencia de mi customElement creado con Atomico?
+### How to modify the appearance of my Custom element created with Atomico?
 
-Las técnicas que puedes aplicar con Atomico son:
+The techniques that you can apply with Atomico are:
 
 1. Custom properties\(Variables de css\)
 2. Herencia de clase
 3. Selector part
 
-#### Custom properties\(Variables de css\) - [compatibilidad del 95.15%](https://caniuse.com/css-variables)
+Custom properties \(CSS variables\) 
 
-Estas nos permiten modificar aspectos ya referenciados fisilmente mediante declaraciones de customProperties y el mayor potencial de estas es la herencia descendente, ejemplo:
+These allow us to modify aspects already referenced through the customProperties declarations. The greatest potential of these is descending inheritance, example:
 
 ```markup
 <style>
