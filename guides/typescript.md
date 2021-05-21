@@ -34,7 +34,7 @@ Typescript supports React with a type system for JSX leveraged to TS, Atomico in
 
 Where:
 
-1. `jsx` and `jsxImportSource` enables the use of jsx-runtime with Atomic in Typescript, eliminated the need to use jsxFactory when using JSX.
+1. `jsx` and `jsxImportSource` enables the use of jsx-runtime with Atomico in Typescript, eliminated the need to use jsxFactory when using JSX.
 2. `noImplicitAny`, to complete the return of the props use the type `Props`. It is valid to eliminate the use of `noImplicityAny`, since sometimes it can be very strict in situations of various types, we must remember that JS by nature is dynamic.
 
 {% hint style="info" %}
