@@ -2,7 +2,7 @@
 description: Types for functional webcomponents created with Atomico + Typescript.
 ---
 
-# Typescript
+# 📜 Typescript
 
 ## Tsx or Ts?
 
