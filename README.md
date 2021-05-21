@@ -57,6 +57,23 @@ component.props = {
 customElements.define("my-component", c(component));
 ```
 {% endtab %}
+
+{% tab title="Browser" %}
+```javascript
+import { c, html } from "https://unpkg.com/atomico"; // 4.0kB
+
+
+function component({ name }) {
+  return html`<host shadowDom>Hello, ${name}</host>`;
+}
+
+component.props = {
+  name: String,
+};
+
+customElements.define("my-component", c(component));
+```
+{% endtab %}
 {% endtabs %}
 
 
