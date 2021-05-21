@@ -47,7 +47,7 @@ From the example we will highlight the following practices:
 3. The button content is referenced by using the slot tag.
 4. `MyButton` is a Custom Element, so it can be instantiated or extended.
 
-Now suppose that this button is part of our design system, which we must modify before the arrival of a new project
+Now suppose that `MyButton` button is part of our design system and we must modify before the arrival of a new project but without completely rewriting the code.
 
 ## How to modify the appearance of my Custom element created with Atomico?
 
