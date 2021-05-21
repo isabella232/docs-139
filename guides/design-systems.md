@@ -1,4 +1,4 @@
-# Design systems
+# ✨ Design systems
 
 Atomico to facilitate the use of webcomponents through a functional API, but the result is always a Standard and Optimized Custom Element useful for representing design systems.
 
