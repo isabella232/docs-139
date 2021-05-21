@@ -152,7 +152,7 @@ my-card::part(header){
 
 ```
 
-It is likely that your component has variable appearances, example a dark mode and the problem is that part limits its effect to only native states, so `::part(header).dark` will not work, to escape this alone apply logic in your template, example:
+It is probable that your component has variable appearances, for example a dark mode and the problem is that part limits its effect to only a [**pseudoclass**](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes), to escape this limitation you can use the reflect property in the props \(Properties\) of your component, example:
 
 ```jsx
 function card({ dark }) {
