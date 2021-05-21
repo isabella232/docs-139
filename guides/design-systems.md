@@ -100,13 +100,13 @@ import { MyButton } from "./src/my-button/my-button.js";
 class MyNewButton extends MyButton {
   static styles = [
     /**
-     * super.styles permite cargar los estilos anteriores
-     * esta propiedad estática es creada internamente por atomico
+     * super.styles allows to load the previous styles
+     * this static property is created internally by atomico
      */
     ...super.styles,
     /**
-     * De la siguiente manera estamos asociados a un nuevo
-     * styleSheet a nuestro customElement
+     * In the following way we are associated with a new
+     * styleSheet to our customElement
      */
     css`
       :host {
@@ -124,7 +124,7 @@ From the example we will highlight the following:
 
 **Selector ::part**
 
-Este nos permite modificar la apariencia de los elementos dentro del shadowDOM que hagan uso del atributo `part="<identificador>"`,  ejemplo:
+This allows us to modify the appearance of the elements within the shadowDOM that make use of the `part="<identificador>"` attribute, example:
 
 ```jsx
 import { c } from "atomico";
@@ -142,7 +142,7 @@ function card() {
 customElements.define("my-card", c(card));
 ```
 
-Gracias al uso del atributo `part`, podremos modificar toda la apariencia del Elemento que referencie el atributo, ejemplo:
+Thanks to the use of the part attribute, we will be able to modify the entire appearance of the Element that the attribute references, example:
 
 ```css
 my-card::part(header){
@@ -152,7 +152,7 @@ my-card::part(header){
 
 ```
 
-Es probable de que su componente posea apariencias variables, ejemplo un modo dark y el problema es que part limita su efecto a solo a estados nativos, por lo que \`::part\(header\).dark\` no funcionara, para escapar de esto solo aplique lógica en su plantilla, ejemplo
+It is likely that your component has variable appearances, example a dark mode and the problem is that part limits its effect to only native states, so `::part(header).dark` will not work, to escape this alone apply logic in your template, example:
 
 ```jsx
 function card({ dark }) {
@@ -170,7 +170,5 @@ cart.props = {
 };
 ```
 
-### Conclusión
-
-hemos conocido brevemente el como  a estilizar componentes para sistemas de diseño, en la siguiente guía conocerás como estructurar y documentar Sistemas de diseño 
+Atomico seeks to facilitate the creation of useful webcomponents for design systems in the following guide you will learn how to structure and document Design Systems
 
