@@ -91,7 +91,7 @@ From the example we will highlight the following:
 
 ### Class inheritance outside of Atomico
 
-El custom element creado por atomico posee la propiedad `static get styles`, que ante una herencia permite modificar completamente la apariencia de su componente, ejemplo:
+The custom element created by atomico has the static get styles property, which before an inheritance allows to completely modify the appearance of its component, example:
 
 ```javascript
 import { css } from "atomico";
@@ -117,14 +117,12 @@ class MyNewButton extends MyButton {
 }
 ```
 
-Del ejemplo destacaremos lo siguiente:
+From the example we will highlight the following:
 
 1. MyNewButton heredara todo del componente anterior props estilos siempre y cuando use `super.styles`.
-2. El css creado asocia la customPropertie `--button-background: teal`, creando una variación en el componente principal.
+2. The created css associates the custom properties `--button-background: teal`, creating a variation on the main component.
 
-**Esta herencia también es valida entre componentes de Atomico**, pero esta rescribirá el render, considérela si su busca referenciar variables de css o props\(Propiedades\).
-
-**Selector ::part -** [**compatibilidad del 90%**](https://caniuse.com/mdn-api_element_part)\*\*\*\*
+**Selector ::part**
 
 Este nos permite modificar la apariencia de los elementos dentro del shadowDOM que hagan uso del atributo `part="<identificador>"`,  ejemplo:
 
