@@ -49,7 +49,7 @@ From the example we will highlight the following practices:
 
 Now suppose that this button is part of our design system, which we must modify before the arrival of a new project
 
-### How to modify the appearance of my Custom element created with Atomico?
+## How to modify the appearance of my Custom element created with Atomico?
 
 The techniques that you can apply with Atomico are:
 
@@ -57,7 +57,7 @@ The techniques that you can apply with Atomico are:
 2. Herencia de clase
 3. Selector part
 
-Custom properties \(CSS variables\) 
+### Custom properties \(CSS variables\) 
 
 These allow us to modify aspects already referenced through the customProperties declarations. The greatest potential of these is descending inheritance, example:
 
@@ -122,7 +122,7 @@ From the example we will highlight the following:
 1. MyNewButton heredara todo del componente anterior props estilos siempre y cuando use `super.styles`.
 2. The created css associates the custom properties `--button-background: teal`, creating a variation on the main component.
 
-**Selector ::part**
+### **Selector ::part**
 
 This allows us to modify the appearance of the elements within the shadowDOM that make use of the `part="<identificador>"` attribute, example:
 
