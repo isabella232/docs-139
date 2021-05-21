@@ -84,14 +84,14 @@ These allow us to modify aspects already referenced through the customProperties
 </body>
 ```
 
-Del ejemplo destacaremos lo siguiente:
+From the example we will highlight the following:
 
-1. El selector `.theme` declara customProperties visibles solo para el selector, **esto posee un efecto positivo vs `:root` porque reduce el conflicto de nombre de las customProperties y limita su uso solo al contenedor asociado**
-2. El selector `my-button[small]` activa las customProperties solo si declaramos la prop small en la instancia del customElement.
+1. The selector `.theme` declares custom properties visible only to the selector, this has a positive effect vs: root because it reduces the name conflict of the custom properties and limits its use only to the associated container.
+2. The `my-button[small]` selector activates custom properties only if we declare the `small` prop in the custom element instance.
 
-#### Herencia fuera de Atomico - [compatibilidad del 94%](https://caniuse.com/shadowdomv1)
+### Class inheritance outside of Atomico
 
-El creado creado por atomico posee la propiedad `static get styles`, que al extender el customElement creado por atomico peude ser definida para modificar completamente su apariencia, ejemplo:
+El custom element creado por atomico posee la propiedad `static get styles`, que ante una herencia permite modificar completamente la apariencia de su componente, ejemplo:
 
 ```javascript
 import { css } from "atomico";
