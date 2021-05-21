@@ -42,6 +42,6 @@
 
 ## Guides
 
-* [Typescript](guides/typescript.md)
 * [✨ Design systems](guides/design-systems.md)
+* [Typescript](guides/typescript.md)
 
