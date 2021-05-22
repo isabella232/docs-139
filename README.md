@@ -89,13 +89,13 @@ Atomico simplifies learning, workflow and maintenance when creating webcomponent
 
 {% page-ref page="api/props.md" %}
 
+{% page-ref page="guides/design-systems.md" %}
+
 {% page-ref page="api/virtualdom.md" %}
 
 {% page-ref page="api/hooks/" %}
 
 {% page-ref page="api/testing/" %}
-
-{% page-ref page="guides/design-systems.md" %}
 
 
 
