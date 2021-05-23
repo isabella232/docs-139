@@ -6,7 +6,7 @@ description: >-
 
 # 👋 Atomico
 
-![](.gitbook/assets/h4.svg)
+![](.gitbook/assets/header-2.svg)
 
 {% tabs %}
 {% tab title="JSX" %}
