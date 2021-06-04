@@ -1,3 +1,7 @@
+---
+description: Facilitates the distribution of webcomponents
+---
+
 # @atomico/exports
 
 ![](../.gitbook/assets/grupo-2.png)
