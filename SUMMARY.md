@@ -23,6 +23,7 @@
 
 * [✨ Design systems](guides/design-systems.md)
 * [📜 Typescript](guides/typescript.md)
+* [⚛️ From React to Atomico](guides/de-react-a-atomico.md)
 
 ## @atomico
 
@@ -51,8 +52,4 @@
 * [Discord](https://discord.gg/7z3rNhmkNE)
 * [Github](https://github.com/atomicojs/atomico)
 * [Twitter](https://twitter.com/atomicojs)
-
----
-
-* [⚛️ De React a Atomico](de-react-a-atomico.md)
 
