@@ -23,6 +23,7 @@
 
 * [✨ Design systems](guides/design-systems/README.md)
   * [Custom properties](guides/design-systems/custom-properties.md)
+  * [Slot](guides/design-systems/slot.md)
 * [📜 Typescript](guides/typescript.md)
 * [⚛️ From React to Atomico](guides/de-react-a-atomico.md)
 
