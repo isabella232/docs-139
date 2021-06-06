@@ -1,6 +1,6 @@
 # Slot
 
-The use of slots improves the composition allowing you to mirror the content exposed in the `lightDOM` of the component in the `shadowDOM`, example:
+The use of slots improves the composition allowing to reflect the content exposed in the `lightDOM` of the component in the `shadowDOM` of this, example:
 
 ![](../../.gitbook/assets/web_1366_7.png)
 
