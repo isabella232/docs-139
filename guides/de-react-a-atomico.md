@@ -1,3 +1,9 @@
+---
+description: >-
+  Atomico inherits part of the React syntax and applies it to webcomponents,
+  with a closer to standard approach.
+---
+
 # ⚛️ From React to Atomico
 
 ### If you develop with React, you will know 80% Atomico ... now why use Atomico?:
