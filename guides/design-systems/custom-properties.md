@@ -1,5 +1,5 @@
 ---
-description: Teoriza de forma practica la definición de variables para sistemas de diseño
+description: Theory of practical form the definition of variables for design systems
 ---
 
 # Custom properties
