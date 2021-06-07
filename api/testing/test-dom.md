@@ -2,7 +2,7 @@
 description: Check DOM changes manually.
 ---
 
-# Test DOM
+# Render cycle
 
 ## Render cycle
 

@@ -16,8 +16,9 @@
   * [useEffect and useLayoutEffect](api/hooks/useeffect-y-uselayouteffect.md)
   * [useMemo and useCallback](api/hooks/usememo-y-usecallback.md)
 * [🔬 Testing](api/testing/README.md)
-  * [Test DOM](api/testing/test-dom.md)
+  * [Render cycle](api/testing/test-dom.md)
   * [atomico/test-hooks](api/testing/test-hooks.md)
+  * [atomico/test-dom](api/testing/atomico-test-dom.md)
 
 ## Guides
 
@@ -54,8 +55,4 @@
 * [Discord](https://discord.gg/7z3rNhmkNE)
 * [Github](https://github.com/atomicojs/atomico)
 * [Twitter](https://twitter.com/atomicojs)
-
----
-
-* [atomico/test-dom](atomico-test-dom.md)
 
