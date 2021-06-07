@@ -17,7 +17,7 @@
   * [useMemo and useCallback](api/hooks/usememo-y-usecallback.md)
 * [🔬 Testing](api/testing/README.md)
   * [Test DOM](api/testing/test-dom.md)
-  * [Test Hooks](api/testing/test-hooks.md)
+  * [atomico/test-hooks](api/testing/test-hooks.md)
 
 ## Guides
 
