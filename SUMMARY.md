@@ -55,3 +55,7 @@
 * [Github](https://github.com/atomicojs/atomico)
 * [Twitter](https://twitter.com/atomicojs)
 
+---
+
+* [atomico/test-dom](atomico-test-dom.md)
+
