@@ -6,16 +6,6 @@ description: Manage routes for applications simply and declaratively.
 
 ## Modulo
 
-```javascript
-import {
-  getPath, // ()=>string
-  redirect, // (path:string)=>void
-  RouterCase, // HTMLElement
-  RouterSwitch, // HTMLElement
-  RouterRedirect, // HTMLElement
-} from "@atomico/components/router";
-```
-
 {% tabs %}
 {% tab title="Default" %}
 ```javascript
