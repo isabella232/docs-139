@@ -10,7 +10,7 @@ description: Responsive generic modal component.
 {% tab title="Default" %}
 ```javascript
 import {
-  Modal, // HTMLElement
+  Modal // HTMLElement
 } from "@atomico/components/modal";
 ```
 {% endtab %}
@@ -18,7 +18,7 @@ import {
 {% tab title="React" %}
 ```jsx
 import {
-  Modal, 
+  Modal 
 } from "@atomico/components/modal.react";
 ```
 {% endtab %}

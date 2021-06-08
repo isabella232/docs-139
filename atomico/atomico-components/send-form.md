@@ -6,11 +6,23 @@ description: Send forms using fetch and know the status of this and its response
 
 ## Modulo
 
+{% tabs %}
+{% tab title="Default" %}
 ```javascript
 import {
-  SendForm, // HTMLElement
+  SendForm // HTMLElement
 } from "@atomico/components/send-form";
 ```
+{% endtab %}
+
+{% tab title="React" %}
+```javascript
+import {
+  SendForm 
+} from "@atomico/components/send-form.react";
+```
+{% endtab %}
+{% endtabs %}
 
 ## Example
 
