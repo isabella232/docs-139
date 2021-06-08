@@ -16,6 +16,30 @@ import {
 } from "@atomico/components/router";
 ```
 
+{% tabs %}
+{% tab title="Default" %}
+```javascript
+import {
+  getPath, // ()=>string
+  redirect, // (path:string)=>void
+  RouterCase, // HTMLElement
+  RouterSwitch, // HTMLElement
+  RouterRedirect, // HTMLElement
+} from "@atomico/components/router";
+```
+{% endtab %}
+
+{% tab title="React" %}
+```javascript
+import {
+  RouterCase,
+  RouterSwitch, 
+  RouterRedirect, 
+} from "@atomico/components/router.react";
+```
+{% endtab %}
+{% endtabs %}
+
 ## Example
 
 {% tabs %}
