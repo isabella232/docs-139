@@ -6,11 +6,23 @@ description: Responsive generic modal component.
 
 ## Modulo
 
+{% tabs %}
+{% tab title="Default" %}
 ```javascript
 import {
   Modal, // HTMLElement
 } from "@atomico/components/modal";
 ```
+{% endtab %}
+
+{% tab title="React" %}
+```jsx
+import {
+  Modal, 
+} from "@atomico/components/modal.react";
+```
+{% endtab %}
+{% endtabs %}
 
 ## Example
 
