@@ -42,15 +42,15 @@ customElements.define("send-form", SendForm);
 
 ### Properties
 
-| Props | Tipo | Descripción |
+| Property | Type | Description |
 | :--- | :--- | :--- |
-| response | Any | Refleja la respuesta del fetch en la propiedad response. |
-| action | String | destino del request |
-| json | Boolean | Envia el contenido serializado en JSON, por defecto se envia el FormData |
+| response | Any | Reflect the response of the fetch in the response property. |
+| action | String | Request destination |
+| json | Boolean | Sends the content serialized in JSON, by default the FormData is sent |
 | mode | String | Request.mode |
 | cache | String | Request.mode |
 | headers | Object | Request.mode |
 | method | String | Request.mode |
 | credentials | String | Request.mode |
-| status | `"" \| "pending" \| "rejected" \| "fulfilled"` | Promise.status |
+| status | `"" | "pending" | "rejected" | "fulfilled"` | Promise.status |
 
