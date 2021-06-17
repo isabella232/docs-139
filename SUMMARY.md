@@ -5,7 +5,8 @@
 ## Api
 
 * [🧬 Props\(Properties\)](api/props.md)
-* [🧩 VirtualDOM](api/virtualdom.md)
+* [🧩 VirtualDOM](api/virtualdom/README.md)
+  * [Advanced](api/virtualdom/advanced.md)
 * [🎣 Hooks](api/hooks/README.md)
   * [useProp](api/hooks/useprop.md)
   * [useEvent](api/hooks/useevent.md)

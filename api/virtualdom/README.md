@@ -121,7 +121,7 @@ const ref = useRef();
 <input ref={ref}/>; // The reference will be the input
 ```
 
-The references must be immutable objects, to create it there is the [**useRef** ](hooks/useref.md)hook that creates a reference for each instance of the webcomponent.
+The references must be immutable objects, to create it there is the [**useRef** ](../hooks/useref.md)hook that creates a reference for each instance of the webcomponent.
 
 ### shadowDom property
 
@@ -155,5 +155,5 @@ await myElement.updated;
 myElement.myMethod();
 ```
 
-To access the DOM safely wait for the resolution of the updated property created by the [render cycle](testing/test-dom.md).
+To access the DOM safely wait for the resolution of the updated property created by the [render cycle](../testing/test-dom.md).
 
