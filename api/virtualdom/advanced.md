@@ -24,7 +24,7 @@ function App(){
 Advantage : 
 
 1. Remove leverage from tag-name 
-2. Infer the types of the props and autocomplete only if you use JSX and Atomic.
+2. Infer the types of the props and autocomplete only if you use JSX and Atomico.
 
 ### Constructor with DOM
 
