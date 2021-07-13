@@ -45,6 +45,7 @@
   * [use-async-effect](atomico/atomico-hooks/use-async-effect.md)
   * [use-mutation-observer](atomico/atomico-hooks/use-mutation-observer.md)
   * [use-css-light-dom](atomico/atomico-hooks/use-css-light-dom.md)
+  * [use-controller](atomico/atomico-hooks/use-controller.md)
 * [@atomico/components](atomico/atomico-components/README.md)
   * [router](atomico/atomico-components/router.md)
   * [modal](atomico/atomico-components/modal.md)
