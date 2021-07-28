@@ -1,3 +1,7 @@
+---
+description: Improve the interaction with the forms and accessibility of your components.
+---
+
 # Forms and shadowDOM
 
 It is normal that we use the technique of dispatching events from the component to communicate states and more, but when using forms this changes since the events inside the shadowDOM do not interact with the form outside of it, example:
