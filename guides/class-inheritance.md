@@ -104,13 +104,13 @@ import { MyButton } from "./src/my-button/my-button.js";
 class MyNewButton extends MyButton {
   static styles = [
     /**
-     * super.styles permite cargar los estilos anteriores
-     * esta propiedad estática es creada internamente por atomico
+     * super.styles allows to load the previous styles
+     * this static property is created internally by atomico
      */
     ...super.styles,
     /**
-     * De la siguiente manera estamos asociados a un nuevo
-     * styleSheet a nuestro webcomponent
+     * In the following way we are associated with a new
+     * styleSheet to our customElement
      */
     css`
       :host {
