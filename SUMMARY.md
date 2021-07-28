@@ -28,6 +28,7 @@
   * [Slot](guides/design-systems/slot.md)
 * [📜 Typescript](guides/typescript.md)
 * [⚛️ From React to Atomico](guides/de-react-a-atomico.md)
+* [Class inheritance](guides/class-inheritance.md)
 
 ## @atomico
 
