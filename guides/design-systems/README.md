@@ -122,6 +122,8 @@ From the example we will highlight the following:
 1. MyNewButton heredara todo del componente anterior props estilos siempre y cuando use `super.styles`.
 2. The created css associates the custom properties `--button-background: teal`, creating a variation on the main component.
 
+Learn more about inheritance in the [**class inheritance guide**](../class-inheritance.md)\*\*\*\*
+
 ### **Selector ::part**
 
 This allows us to modify the appearance of the elements within the shadowDOM that make use of the `part="<identificador>"` attribute, example:
