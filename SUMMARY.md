@@ -28,6 +28,8 @@
   * [Slot](guides/design-systems/slot.md)
 * [📜 Typescript](guides/typescript.md)
 * [⚛️ From React to Atomico](guides/de-react-a-atomico.md)
+* [Forms and shadowDOM](guides/forms-and-shadowdom.md)
+* [Class inheritance](guides/class-inheritance.md)
 
 ## @atomico
 
@@ -45,6 +47,7 @@
   * [use-async-effect](atomico/atomico-hooks/use-async-effect.md)
   * [use-mutation-observer](atomico/atomico-hooks/use-mutation-observer.md)
   * [use-css-light-dom](atomico/atomico-hooks/use-css-light-dom.md)
+  * [use-controller](atomico/atomico-hooks/use-controller.md)
 * [@atomico/components](atomico/atomico-components/README.md)
   * [router](atomico/atomico-components/router.md)
   * [modal](atomico/atomico-components/modal.md)

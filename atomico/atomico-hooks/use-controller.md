@@ -22,4 +22,3 @@ const { a } = useA('a');
 Where:
 
 * `AController`: `ReactiveController`, A [ReactiveController](https://lit.dev/docs/composition/controllers/) with property `a`.
-
