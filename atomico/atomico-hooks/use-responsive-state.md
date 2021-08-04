@@ -40,3 +40,29 @@ Where:
     * "50rem": `(min-width: 50rem)`
     * "50em": `(min-width: 50em)`
 
+### Example
+
+The following example shows the use of useResponsiveState, to display a message based on the mediaquery. [**Livepreview**](https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/collection/n2tZyzx4LMKqk1jNE0e9/gGV9X6OW5gINqRBFp8mK)**.**
+
+```jsx
+import { c } from "atomico";
+import { useResponsiveState } from "@atomico/hooks/use-responsive-state";
+
+function myComponent() {
+  const state = useResponsiveState("phone, tablet 720px, desktop 1080px");
+  return (
+    <host>
+      <center>
+        <h1>{state}</h1>
+        <p>
+          👋 To see the effect it is necessary to resize the preview, more info
+
+        </p>
+      </center>
+    </host>
+  );
+}
+```
+
+
+
