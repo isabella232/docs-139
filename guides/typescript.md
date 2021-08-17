@@ -63,29 +63,6 @@ component.props = {
 customElements.define("my-component", c(component));
 ```
 
-### `c(component)`
-
-`c` will evaluate if the component has a valid format and returns the customElements with the property types declared in the props.
-
-```typescript
-// CASO 1
-function component(props) {}
-
-c(component); // ✔️
-
-// CASO 3
-function component(props) {}
-
-component.props = {
-  value: {
-    type: Number,
-    value: "...",
-  },
-};
-
-c(component); // ❌ -  the value property must be according to the type
-```
-
 ## Hooks
 
 Most hooks infer the types, but others require a declaration to improve the typing experience, example:
