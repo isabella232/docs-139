@@ -8,7 +8,7 @@ description: Types for functional webcomponents created with Atomico + Typescrip
 
 Typescript supports React with a type system for JSX leveraged to TS, Atomico inherits those benefits when using JSX allowing to win jsx-runtime, autocompletion of properties, attributes and events when building its code using TSX. This does not invalidate the use of TS when creating webcomponents with Atomico, the selection will depend directly on the developer.
 
-### Recommended configuration
+### Configuration example
 
 ```javascript
 {
@@ -38,7 +38,7 @@ Where:
 2. `noImplicitAny`, to complete the return of the props use the type `Props`. It is valid to eliminate the use of `noImplicityAny`, since sometimes it can be very strict in situations of various types, we must remember that JS by nature is dynamic.
 
 {% hint style="info" %}
-Atomico has a type construction based on my experience \([@uppercod](https://twitter.com/uppercod)\), I am attentive to your recommendations since I seek to give full support to Typescript.
+If you've used the Atomico CLI `npm init @atomico`, it already has Typescript support thanks to Vite.
 {% endhint %}
 
 ## Component
