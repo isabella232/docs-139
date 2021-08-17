@@ -47,10 +47,14 @@ If you've used the Atomico CLI `npm init @atomico`, it already has Typescript su
 
 Allows you to retrieve the types of the `props` object associated with the function.
 
-```typescript
+```jsx
 import { Props, c } from "atomico";
 
-function component(props: Props<typeof component.props>) {}
+function component(props: Props<typeof component.props>) {
+  return <host shadowDom>
+    Atomico + Typescript
+  </host>
+}
 
 component.props = {
   propString: String,
