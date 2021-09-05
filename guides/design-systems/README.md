@@ -1,3 +1,9 @@
+---
+description: >-
+  I will show you a series of useful techniques to start programming your design
+  systems with Atomico, analyzing the recommended structure and its files.
+---
+
 # ✨ Design systems
 
 ### Recommended structure
