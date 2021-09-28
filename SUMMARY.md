@@ -27,7 +27,7 @@
   * [Slot](guides/design-systems/slot.md)
 * [📜 Typescript](guides/typescript.md)
 * [⚛️ From React to Atomico](guides/de-react-a-atomico/README.md)
-  * [VirtualDOM api differences](guides/de-react-a-atomico/untitled.md)
+  * [VirtualDOM api differences](guides/de-react-a-atomico/virtualdom-api-differences.md)
 * [Forms and shadowDOM](guides/forms-and-shadowdom.md)
 * [Class inheritance](guides/class-inheritance.md)
 

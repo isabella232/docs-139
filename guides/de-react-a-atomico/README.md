@@ -238,7 +238,3 @@ export const Button = c(button);
 {% endtab %}
 {% endtabs %}
 
-In Atomico to declare css it is recommended that you associate the styles property to your function, this allows you to associate standard CSS if you want to learn more about this we recommend you see the design systems guide.
-
-{% page-ref page="../design-systems/" %}
-
