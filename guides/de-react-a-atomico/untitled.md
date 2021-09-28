@@ -1,4 +1,10 @@
-# Untitled
+---
+description: >-
+  Guide that defines some differences that exist between Atomico and React when
+  working with the DOM.
+---
+
+# VirtualDOM api differences
 
 Atomico's virtualDOM is: 
 

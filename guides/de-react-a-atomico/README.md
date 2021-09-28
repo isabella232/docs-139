@@ -158,7 +158,7 @@ In Atomico you will have the most useful React hooks such as:
 5. useEffect
 6. useMemo
 7. useCallback
-8. ~~useContext~~ : **Not supported**, event api is better practice than context when using webcomponents, example [**useChannel**](../atomico/atomico-hooks/use-channel.md)\*\*\*\*
+8. ~~useContext~~ : **Not supported**, event api is better practice than context when using webcomponents, example [**useChannel**](../../atomico/atomico-hooks/use-channel.md)\*\*\*\*
 
 ### CSS-in-JS
 
@@ -240,5 +240,5 @@ export const Button = c(button);
 
 In Atomico to declare css it is recommended that you associate the styles property to your function, this allows you to associate standard CSS if you want to learn more about this we recommend you see the design systems guide.
 
-{% page-ref page="design-systems/" %}
+{% page-ref page="../design-systems/" %}
 
