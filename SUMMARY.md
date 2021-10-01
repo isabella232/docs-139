@@ -35,6 +35,7 @@
 ## @atomico
 
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
+  * [use-copy](atomico/atomico-hooks/use-copy.md)
   * [use-debounce-state](atomico/atomico-hooks/use-debounce-state.md)
   * [use-form](atomico/atomico-hooks/use-form.md)
   * [use-listener](atomico/atomico-hooks/use-listener.md)
