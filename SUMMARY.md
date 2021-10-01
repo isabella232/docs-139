@@ -34,6 +34,7 @@
 ## @atomico
 
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
+  * [use-css](atomico/atomico-hooks/use-css.md)
   * [use-channel](atomico/atomico-hooks/use-channel.md)
   * [use-force-render](atomico/atomico-hooks/use-force-render.md)
   * [use-child-nodes](atomico/atomico-hooks/use-child-nodes.md)
