@@ -30,3 +30,9 @@ retrieve the serialization of the value of a form and create a hidden input to s
 const [value, setValue] = useFormValue("my-field");
 ```
 
+### Example
+
+{% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/NuVzTC7iXlKSxhl112pJ/src/index.jsx" %}
+
+
+
