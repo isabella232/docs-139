@@ -4,13 +4,13 @@ description: Consumes a promise reflecting the return and status of this.
 
 # use-promise
 
-## Modulo
+### Modulo
 
 ```javascript
 import { usePromise } from "@atomico/hooks/use-promise";
 ```
 
-## Syntax
+### Syntax
 
 ```jsx
 const [result, status] = usePromise(
@@ -31,4 +31,10 @@ Where :
 * `asyncFunction`: asynchronous function.
 * `runFunction`: `Booleano`, if `true` it will execute the promise and define the status.
 * `optionalArguments`: Optional `any[]`, allows to regenerate the promise through arguments.
+
+### Example
+
+{% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/PWFshi0MYl0CTbwlXIN6/src/index.jsx" %}
+
+
 
