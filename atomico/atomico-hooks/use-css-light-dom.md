@@ -34,7 +34,7 @@ return (
 
 ### **Example** 
 
-{% embed url="https://webcomponents.dev/edit/odaNplBxuGgwsqkbHiLu/src/index.jsx" %}
+{% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/odaNplBxuGgwsqkbHiLu/src/index.jsx" %}
 
 \*\*\*\*
 
