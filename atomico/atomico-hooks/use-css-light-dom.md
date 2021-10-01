@@ -4,7 +4,7 @@ description: use CSS in the lightDOM locally in the webcomponent.
 
 # use-css-light-dom
 
-## Modulo
+## Module
 
 ```javascript
 import { useCssLightDom } from "@atomico/hooks/use-css-light-dom";
