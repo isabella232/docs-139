@@ -6,13 +6,13 @@ description: >-
 
 # use-render
 
-## Modulo
+### Modulo
 
 ```javascript
 import { useRender } from "@atomico/hooks/use-render";
 ```
 
-## Syntax
+### Syntax
 
 ```jsx
 useRender(() => <input type="text" />, optionalArguments);
@@ -20,28 +20,7 @@ useRender(() => <input type="text" />, optionalArguments);
 
 ## Example
 
-Sometimes you work with shadowDOM inputs, the shadowDOM prevents the communication of events with a form superior to the shadowDOM, `useRender`, it allows you to create inputs in the lightDOM and thus maintain the desired effects.
+{% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/7gvo9ZRp6LbECIxlUTiV/src/index.jsx" %}
 
-```jsx
-import { useProp } from "atomico";
-import { useRender } from "@atomico/hooks/use-render";
 
-function myInput({ name }) {
-  const [checked, setChecked] = useProp("checked");
-  const toggle = () => setChecked(!checked);
-  // The state of the webcomponent could be reflected
-  // in the example form using formData
-  useRender(() => <input type="checkbox" name={name} checked={checked} />);
-  return (
-    <host shadowDom>
-      <button onclick={toggle}>{checked ? "✔️" : "❌"}</button>
-    </host>
-  );
-}
-
-myInput.props = {
-  name: String,
-  checked: Boolean,
-};
-```
 

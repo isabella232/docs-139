@@ -56,3 +56,9 @@ Where:
   * bottom
   * left
 
+### Example
+
+{% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/7paZN6WNOQxE0HYmxmek/src/index.jsx" %}
+
+
+
