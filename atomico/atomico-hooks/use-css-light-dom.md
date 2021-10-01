@@ -4,13 +4,17 @@ description: use CSS in the lightDOM locally in the webcomponent.
 
 # use-css-light-dom
 
-## Module
+This hook aims to give css coverage in situations where the use of the lightDOM is required, **you always prefer to use the shadowDOM to give a general appearance to your component.**
+
+### Module
 
 ```javascript
 import { useCssLightDom } from "@atomico/hooks/use-css-light-dom";
 ```
 
-## Syntax
+### Syntax
+
+This hook will wrap each css instance in a different className
 
 ```jsx
 const css = useCssLightDom();
@@ -24,13 +28,13 @@ return (
         background: red;
       }
     `}
-  >
-    <slot ref={ref}></slot>
-  </host>
+  ></host>
 );
 ```
 
-{% hint style="info" %}
-The CSS format is Atomico to class, so avoid using tree selectors.
-{% endhint %}
+### **Example** 
+
+{% embed url="https://webcomponents.dev/edit/odaNplBxuGgwsqkbHiLu/src/index.jsx" %}
+
+\*\*\*\*
 
