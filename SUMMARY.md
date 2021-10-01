@@ -34,6 +34,7 @@
 ## @atomico
 
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
+  * [use-disabled](atomico/atomico-hooks/use-disabled.md)
   * [use-css](atomico/atomico-hooks/use-css.md)
   * [use-channel](atomico/atomico-hooks/use-channel.md)
   * [use-promise](atomico/atomico-hooks/use-promise.md)
@@ -45,8 +46,8 @@
   * [use-mutation-observer](atomico/atomico-hooks/use-mutation-observer.md)
   * [use-css-light-dom](atomico/atomico-hooks/use-css-light-dom.md)
   * [use-controller](atomico/atomico-hooks/use-controller.md)
-  * [use-async-effect](atomico/atomico-hooks/use-async-effect.md)
   * [use-router](atomico/atomico-hooks/use-router.md)
+  * [use-async-effect](atomico/atomico-hooks/use-async-effect.md)
   * [use-child-nodes](atomico/atomico-hooks/use-child-nodes.md)
   * [use-force-render](atomico/atomico-hooks/use-force-render.md)
 * [@atomico/components](atomico/atomico-components/README.md)
