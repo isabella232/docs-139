@@ -4,7 +4,7 @@ description: Consumes a promise reflecting the return and status of this.
 
 # use-promise
 
-### Modulo
+### Module
 
 ```javascript
 import { usePromise } from "@atomico/hooks/use-promise";

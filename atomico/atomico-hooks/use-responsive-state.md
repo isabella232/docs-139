@@ -6,13 +6,13 @@ description: >-
 
 # use-responsive-state
 
-## Modulo
+### Module
 
 ```javascript
 import { useResponsiveState } from "@atomico/hooks/use-responsive-state";
 ```
 
-## Syntax
+### Syntax
 
 ```jsx
 const expression = "phone, tablet 720px, destop 1080px";
@@ -24,7 +24,7 @@ Where:
 * `state`: `String`, Current state according to the comparison between experiment and matchMedia.
 * `expression`: `String`, An expression that declares the serialized states.
 
-## Expressions
+### Expressions
 
 ```text
 "<defaultState>, <caseState> <size>"
