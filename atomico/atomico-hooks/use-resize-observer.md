@@ -4,7 +4,7 @@ description: Observe the size change of a reference.
 
 # use-resize-observer
 
-## Modulo
+## Module
 
 ```javascript
 import {

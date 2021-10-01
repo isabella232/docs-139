@@ -24,7 +24,7 @@ Where:
 
 ### Example
 
-{% embed url="https://webcomponents.dev/edit/OVpU1DQvmGjhYSf3Iqbu/src/index.jsx" %}
+{% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/OVpU1DQvmGjhYSf3Iqbu/src/index.jsx" %}
 
 
 
