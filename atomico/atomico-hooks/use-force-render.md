@@ -7,7 +7,7 @@ description: >-
 # use-force-render
 
 {% hint style="danger" %}
-Since the version of atomico@1.14.\* there is the useUpdate hook, with the same functionality but in the core of Atomico.
+Since the version of atomico@1.14.\* there is the [**useUpdate**](../../api/hooks/useupdate.md) hook, with the same functionality but in the core of Atomico.
 {% endhint %}
 
 ### Modulo
