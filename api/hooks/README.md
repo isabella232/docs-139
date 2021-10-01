@@ -14,6 +14,8 @@ description: >-
 
 {% page-ref page="usehost.md" %}
 
+{% page-ref page="useupdate.md" %}
+
 ## Hooks homogolates of React
 
 {% page-ref page="usestate.md" %}
