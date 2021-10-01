@@ -4,7 +4,7 @@ description: Observe the size change of a reference.
 
 # use-resize-observer
 
-## Module
+### Module
 
 ```javascript
 import {
@@ -13,7 +13,7 @@ import {
 } from "@atomico/hooks/use-resize-observer";
 ```
 
-## Syntax
+### Syntax
 
 ### useResizeObserver
 

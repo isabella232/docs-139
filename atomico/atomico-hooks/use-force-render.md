@@ -6,21 +6,17 @@ description: >-
 
 # use-force-render
 
-> ⚠️ Since the version of `atomico@1.14.*` there is the useUpdate hook, with the same functionality but in the core of Atomico.
+{% hint style="danger" %}
+Since the version of atomico@1.14.\* there is the useUpdate hook, with the same functionality but in the core of Atomico.
+{% endhint %}
 
-## Installation
-
-```bash
-npm install @atomico/hooks
-```
-
-## Modulo
+### Modulo
 
 ```javascript
 import { useForceRender } from "@atomico/hooks/use-force-render";
 ```
 
-## Syntax
+### Syntax
 
 ```javascript
 const forceRender = useForceRender();
@@ -30,7 +26,7 @@ Where:
 
 1. `forceRender`: `Callback` to force rendering of the webcomponent.
 
-## Example
+### Example
 
 Sometimes the rendering of the webcomponent does not depend on a state or property of this, to reflect these changes you can use `useForceRender` to regenerate the DOM, example:
 

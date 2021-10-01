@@ -16,6 +16,7 @@
   * [useReducer](api/hooks/usereducer.md)
   * [useEffect and useLayoutEffect](api/hooks/useeffect-y-uselayouteffect.md)
   * [useMemo and useCallback](api/hooks/usememo-y-usecallback.md)
+  * [useUpdate](api/hooks/useupdate.md)
 * [🔬 Testing](api/testing/README.md)
   * [Render cycle](api/testing/test-dom.md)
   * [atomico/test-hooks](api/testing/test-hooks.md)
@@ -34,6 +35,7 @@
 ## @atomico
 
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
+  * [use-listener](atomico/atomico-hooks/use-listener.md)
   * [use-disabled](atomico/atomico-hooks/use-disabled.md)
   * [use-css](atomico/atomico-hooks/use-css.md)
   * [use-channel](atomico/atomico-hooks/use-channel.md)

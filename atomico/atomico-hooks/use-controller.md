@@ -4,13 +4,13 @@ description: Use a ReactiveController.
 
 # use-controller
 
-## Modulo
+### Modulo
 
 ```javascript
 import { useController } from "@atomico/hooks/use-controller";
 ```
 
-## Syntax
+### Syntax
 
 ```jsx
 class AController {/*...*/}

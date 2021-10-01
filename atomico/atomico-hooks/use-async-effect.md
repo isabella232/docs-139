@@ -4,13 +4,13 @@ description: Execute useEffect but asynchronously
 
 # use-async-effect
 
-## Modulo
+### Modulo
 
 ```javascript
 import { useAsyncEffect } from "@atomico/hooks/use-async-effect";
 ```
 
-## Syntax
+### Syntax
 
 ```javascript
 useAsyncEffect(async () => {

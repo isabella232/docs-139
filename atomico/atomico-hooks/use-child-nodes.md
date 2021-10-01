@@ -6,13 +6,13 @@ description: >-
 
 # use-child-nodes
 
-## Modulo
+### Modulo
 
 ```javascript
 import { useChildNodes } from "@atomico/hooks/use-child-nodes";
 ```
 
-## Syntax
+### Syntax
 
 ```javascript
 const [childNodes, update] = useChildNodes();
@@ -23,7 +23,7 @@ Where :
 1. `childNodes` : List of nodes that do not belong to the webcomponent render.
 2. `update`: Callback that forces a new `childNodes` scan.
 
-## Example
+### Example
 
 ```jsx
 function component() {
