@@ -87,7 +87,7 @@ Consider the following effects when using this inheritance model:
 2. The `props` are inherited, Atomico will reuse the previously declared props. 
 3. `Styles` are inherited. Atomico will merge the stylesheets.
 
-### Inheritance outside of Atomic
+### Inheritance outside of Atomico
 
 The `c` function creates an optimized standard custom element, which can be extended to modify its behavior, be:
 
