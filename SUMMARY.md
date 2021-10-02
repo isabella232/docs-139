@@ -1,6 +1,7 @@
 # Table of contents
 
 * [👋 Atomico](README.md)
+* [🚀 Getting started with Atomico](getting-started-with-atomico.md)
 
 ## Api
 
