@@ -54,13 +54,6 @@ export const tokensInput = css`
     --radius: var(--my-ds-input--radius, 0.5rem);
     --min-height: var(--my-ds-input--min-height, 40px);
   }
-  .input-box {
-    background: var(--background);
-    min-height: var(--min-height);
-  }
-  .input-box--use-border {
-    border: var(--border-width) solid var(--border-color);
-  }
 `;
 
 export const tokenColors = css`
@@ -75,11 +68,7 @@ export const tokenColors = css`
 `;
 ```
 
-From the previous example I highlight
-
-#### 1. Classes of utilities in in tokensInput
-
-#### 2. Declaration pattern of custom properties
+From the example above I highlight the custom property declaration pattern
 
 ```css
 :host {
@@ -133,7 +122,7 @@ import { tokensColor, tokensInput } from "../tokens";
 function button(props) {
 
   return html`<host shadowDom>
-    <button ...${props} class="input-box input-box--use-border">
+    <button ...${props} class="input-box">
       <slot name="icon"></slot>
       <slot></slot>
     </button>
@@ -201,7 +190,6 @@ export const Button = c(button);
 From the previous code I highlight:
 
 1. **import of `"../tokens"`** and the destructuring of the module that declares the use of `tokensColor` and `tokensInput`.
-2. **Utility classes**: Our component makes use of the utility classes of the `tokensColor`.
-3. **button.styles**: Atomico allows to associate multiple styles through the use of an array.
-4. **Button export.**
+2. **button.styles**: Atomico allows to associate multiple styles through the use of an array.
+3. **Button export.**
 
