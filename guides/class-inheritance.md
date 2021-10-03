@@ -107,7 +107,7 @@ class MyNewButton extends MyButton {
      * super.styles allows to load the previous styles
      * this static property is created internally by atomico
      */
-    ...super.styles,
+    super.styles,
     /**
      * In the following way we are associated with a new
      * styleSheet to our customElement
