@@ -1,5 +1,7 @@
 ---
-description: Captures the click event coordinates (Touch)
+description: >-
+  The usesClickCoordinates  hook is for capturing click coordinates, this is
+  useful when positioning a tooptip or creating visual effects
 ---
 
 # use-click-coordinates

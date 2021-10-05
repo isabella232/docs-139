@@ -1,5 +1,7 @@
 ---
-description: Consumes a promise reflecting the return and status of this.
+description: >-
+  The usePromise hook consumes an asynchronous function is ideal for using fetch
+  or other asynchronous tasks.
 ---
 
 # use-promise
