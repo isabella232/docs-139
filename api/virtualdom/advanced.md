@@ -1,5 +1,13 @@
 # Advanced
 
+### Special properties
+
+| Property | Type | Effect |
+| :--- | :--- | :--- |
+| shadowDom | Boolean | Enables the use of the shadowDOM on the node. |
+| renderOnce | Boolean | Render the node only once, this optimizes the update process as the node is ignored between updates. |
+| $&lt;name&gt; | any | the $ prefix allows defining  as an attribute in all cases. |
+
 ### Constructor with custom element
 
 This technique allows you to use any registered custom element without the need to know its `tag-name` for its use, example:
