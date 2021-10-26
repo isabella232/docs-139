@@ -36,6 +36,8 @@
 ## @atomico
 
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
+  * [use-dollars](atomico/atomico-hooks/use-dollars.md)
+  * [use-reflect-event](atomico/atomico-hooks/use-reflect-event.md)
   * [use-keyboar](atomico/atomico-hooks/use-keyboar.md)
   * [use-click-coordinates](atomico/atomico-hooks/use-click-coordinates.md)
   * [use-copy](atomico/atomico-hooks/use-copy.md)
