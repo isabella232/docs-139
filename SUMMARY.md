@@ -25,6 +25,7 @@
 
 ## Guides
 
+* [🎯 Tips](guides/tips.md)
 * [✨ Design systems](guides/design-systems/README.md)
   * [Slot](guides/design-systems/slot.md)
 * [📜 Typescript](guides/typescript.md)
