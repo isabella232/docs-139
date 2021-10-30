@@ -16,7 +16,7 @@ function component() {
 }
 ```
 
-This prevents confusion when identifying the constructor of the component instance.[ ](https://atomico.gitbook.io/doc/v/espanol/api/virtualdom/avanzado#constructor-con-custom-element)Atomico if it supports instances as Constructors, see cases.​
+This prevents confusion when identifying the constructor of the component instance.[ ](https://atomico.gitbook.io/doc/v/espanol/api/virtualdom/avanzado#constructor-con-custom-element)[Atomico if it supports instances as Constructors, see cases.​](https://atomico.gitbook.io/doc/api/virtualdom/advanced#constructor-with-custom-element)
 
 ### useProp <a href="useprop" id="useprop"></a>
 
@@ -62,7 +62,7 @@ component.props = {
 };
 ```
 
-Atomico has type support in both JSDOC and Typescript by inferring the types of the props.​
+[Atomico has type support in both JSDOC and Typescript by inferring the types of the props.​](https://atomico.gitbook.io/doc/guides/typescript#props-less-than-typeof-component.props-greater-than)
 
 ### Prefers the use of static styles
 
