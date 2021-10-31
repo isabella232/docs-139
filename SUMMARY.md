@@ -28,7 +28,7 @@
 * [🎯 Tips](guides/tips.md)
 * [✨ Design systems](guides/design-systems/README.md)
   * [Slot](guides/design-systems/slot.md)
-* [📜 Typescript](guides/typescript.md)
+* [📜 Typescript & JSDOC](guides/typescript.md)
 * [⚛️ From React to Atomico](guides/from-react-to-atomico/README.md)
   * [VirtualDOM api differences](guides/from-react-to-atomico/virtualdom-api-differences.md)
 * [Forms and shadowDOM](guides/forms-and-shadowdom.md)
