@@ -58,6 +58,42 @@ customElements.define("my-component", c(component));
 {% endtab %}
 {% endtabs %}
 
+### Component\<props>
+
+Create a strict contract that facilitates and checks the correct construction of props
+
+{% tabs %}
+{% tab title="Typescript" %}
+```typescript
+import { c, Component } from "atomico";
+
+const component: Component<{ value: string }> = (props) => {
+  return <host shadowDom></host>;
+};
+
+component.props = {
+  value: String,
+}
+```
+{% endtab %}
+
+{% tab title="JSDOC" %}
+```jsx
+import { c } from "atomico";
+/**
+ * @type {import("atomico").Component<{ value: string }>}
+ */
+const component = (props) => {
+  return <host shadowDom></host>;
+};
+
+component.props = {
+  value: String,
+};
+```
+{% endtab %}
+{% endtabs %}
+
 ## Hooks
 
 Most hooks infer the types, but others require a declaration to improve the typing experience, example:
