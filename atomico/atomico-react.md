@@ -39,3 +39,5 @@ import { Component as ElementComponent } from "./my-component";
 
 export const Component = auto(ElementComponent);
 ```
+
+{% embed url="https://codesandbox.io/s/atomico-react-example-cizcy" %}
