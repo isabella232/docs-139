@@ -36,6 +36,7 @@
 
 ## @atomico
 
+* [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
   * [use-dollars](atomico/atomico-hooks/use-dollars.md)
   * [use-reflect-event](atomico/atomico-hooks/use-reflect-event.md)
