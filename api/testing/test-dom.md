@@ -10,9 +10,9 @@ Atomico's render cycle works like this:
 
 First, when the component is instantiated, 3 promises will be created pending resolution:
 
-1. `componentInstance.mounted`: resolved once the `connectedCallback` method has been executed by the customElement.
+1. `componentInstance.mounted`: resolved once the `connectedCallback` has been executed by the customElement.
 2. `componentInstance.updated`: the render cycle for first mount or update is encapsulated in `componentInstance.updated`.
-3. `componentInstance.unmounted`: resolved once the `disconnectedCallback` method has been executed by the customElement.
+3. `componentInstance.unmounted`: resolved once the `disconnectedCallback` has been executed by the customElement.
 
 Render or rerender cases are:
 
