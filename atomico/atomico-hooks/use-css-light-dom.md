@@ -32,9 +32,8 @@ return (
 );
 ```
 
-### **Example** 
+### **Example**&#x20;
 
 {% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/odaNplBxuGgwsqkbHiLu/src/index.jsx" %}
 
-\*\*\*\*
-
+****

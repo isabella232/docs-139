@@ -67,7 +67,8 @@
   * [router](atomico/atomico-components/router.md)
   * [modal](atomico/atomico-components/modal.md)
   * [send-form](atomico/atomico-components/send-form.md)
-* [@atomico/exports](atomico/atomico-exports.md)
+* [@atomico/exports](atomico/atomico-exports/README.md)
+  * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
 
 ## Support
 
