@@ -54,14 +54,15 @@ customElements.define("send-form", SendForm);
 
 ### Properties
 
-| Property    | Type                                           | Description                                                           |
-| ----------- | ---------------------------------------------- | --------------------------------------------------------------------- |
-| response    | Any                                            | Reflect the response of the fetch in the response property.           |
-| action      | String                                         | Request destination                                                   |
-| json        | Boolean                                        | Sends the content serialized in JSON, by default the FormData is sent |
-| mode        | String                                         | Request.mode                                                          |
-| cache       | String                                         | Request.mode                                                          |
-| headers     | Object                                         | Request.mode                                                          |
-| method      | String                                         | Request.mode                                                          |
-| credentials | String                                         | Request.mode                                                          |
-| status      | `"" \| "pending" \| "rejected" \| "fulfilled"` | Promise.status                                                        |
+| Property | Type | Description |
+| :--- | :--- | :--- |
+| response | Any | Reflect the response of the fetch in the response property. |
+| action | String | Request destination |
+| json | Boolean | Sends the content serialized in JSON, by default the FormData is sent |
+| mode | String | Request.mode |
+| cache | String | Request.mode |
+| headers | Object | Request.mode |
+| method | String | Request.mode |
+| credentials | String | Request.mode |
+| status | `"" | "pending" | "rejected" | "fulfilled"` | Promise.status |
+

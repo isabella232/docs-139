@@ -1,6 +1,6 @@
 # 🤝 Atomico and React
 
-### React y webcomponents
+### React and webcomponents
 
 [React has begun to support the use of webcomponents in an experimental way](https://github.com/facebook/react/issues/11347#issuecomment-988970952), this will allow to use custom tag with association of events and more, example:
 
