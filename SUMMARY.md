@@ -37,6 +37,7 @@
 
 ## @atomico
 
+* [@atomico/magic-form](atomico/atomico-magic-form.md)
 * [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
   * [use-dollars](atomico/atomico-hooks/use-dollars.md)
