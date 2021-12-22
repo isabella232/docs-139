@@ -6,6 +6,8 @@ description: >-
 
 # @atomico/magic-form
 
+{% embed url="https://github.com/atomicojs/magic-form" %}
+
 ## Installation and import
 
 {% tabs %}
