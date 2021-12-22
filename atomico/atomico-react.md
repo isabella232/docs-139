@@ -4,6 +4,8 @@ description: Wrapper to use web components in React
 
 # @atomico/react
 
+{% embed url="https://github.com/atomicojs/react" %}
+
 This module provides 2 ways to create a wrapper for react, the generated wrapper fixes the following react problems when using webcomponents
 
 1. fixes the association of events, any property that starts with the prefix `in` and its value is of the function type will be associated as an event of the component.
