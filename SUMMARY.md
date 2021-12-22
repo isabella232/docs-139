@@ -37,7 +37,6 @@
 
 ## @atomico
 
-* [@atomico/magic-form](atomico/atomico-magic-form.md)
 * [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
   * [use-dollars](atomico/atomico-hooks/use-dollars.md)
@@ -70,6 +69,7 @@
   * [send-form](atomico/atomico-components/send-form.md)
 * [@atomico/exports](atomico/atomico-exports.md)
   * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
+* [@atomico/magic-form](atomico/atomico-magic-form.md)
 
 ## Support
 
