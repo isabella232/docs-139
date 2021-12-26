@@ -101,16 +101,6 @@ function component() {
 
 captures the submit event of the nested form and sends it to `MagicFormProvider`
 
-```html
-<magic-form>
-  <form action="user">
-    <input type="text" name="name" />
-    <input type="text" name="email" />
-    <button>Create user</button>
-  </form>
-</magic-form>
-```
-
 **Events**
 
 | Type            | Description                                  | Config                              |
@@ -123,6 +113,23 @@ captures the submit event of the nested form and sends it to `MagicFormProvider`
 | -------- | -------------------------------------------------------------------------------------------- |
 | `state`  | Read only, Current status submission of the form                                             |
 | `action` | <p>Defines the action to dispatch, if not defined it can be inherited from the</p><p>tag</p> |
+
+### \<magic-form-provider> | MagicFormProvider
+
+receives the submits from `MagicForm`
+
+**Events**
+
+| Type            | Description                                 | Config                              |
+| --------------- | ------------------------------------------- | ----------------------------------- |
+| `"ChangeForms"` | Dispatched when forms changes from provider | `{bubbles: false, composed: false}` |
+
+**Properties**
+
+| Property | Description                                                               |
+| -------- | ------------------------------------------------------------------------- |
+| `forms`  | Read only, current state of the captured forms                            |
+| actions  | object that defines the actions to be captured by the `MagicFormProvider` |
 
 
 
@@ -170,3 +177,6 @@ function component() {
   return <host></host>;
 }
 ```
+
+
+
