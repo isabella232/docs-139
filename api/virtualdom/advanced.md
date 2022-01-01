@@ -2,11 +2,12 @@
 
 ### Special properties
 
-| Property | Type | Effect |
-| :--- | :--- | :--- |
-| shadowDom | Boolean | Enables the use of the shadowDOM on the node. |
-| renderOnce | Boolean | Render the node only once, this optimizes the update process as the node is ignored between updates. |
-| $&lt;name&gt; | any | the $ prefix allows defining  as an attribute in all cases. |
+| Property   | Type    | Effect                                                                                               |
+| ---------- | ------- | ---------------------------------------------------------------------------------------------------- |
+| shadowDom  | Boolean | Enables the use of the shadowDOM on the node.                                                        |
+| staticNode | Boolean | Render the node only once, this optimizes the update process as the node is ignored between updates. |
+| cloneNode  | Boolean | clone a node of type Element                                                                         |
+| $\<name>   | any     | the $ prefix allows defining  as an attribute in all cases.                                          |
 
 ### render
 
@@ -41,7 +42,7 @@ render(
 ```
 {% endtab %}
 
-{% tab title="Template string\(html\)" %}
+{% tab title="Template string(html)" %}
 ```javascript
 import { html, render } from "atomico";
 
@@ -81,9 +82,9 @@ function App(){
 }
 ```
 
-Advantage : 
+Advantage :&#x20;
 
-1. Remove leverage from tag-name 
+1. Remove leverage from tag-name&#x20;
 2. Infer the types of the props and autocomplete only if you use JSX and Atomico.
 
 ### Constructor with DOM
@@ -115,21 +116,47 @@ function component({ subComponent }){
 }
 ```
 
-### Static nodes
+### staticNode
 
-Atomico allows you to reuse static nodes, improving performance, example:
+allows to declare a node within the scope of the function as static, this will optimize the diff process between render, achieving better performance in cases of high stress of the UI, example:
 
 ```jsx
-const header = <header></header>;
-
-function component(){
-    return <host>
-        {header}
+function component() {
+  return (
+    <host>
+      <h1 staticNode onclick={console.log}>
+        i am static node!
+      </h1>
     </host>
+  );
 }
 ```
 
-Consider using static nodes as a contextual technique, it is not a rule.
+the biggest advantage of this is that the node accesses the scope of the webcomponent
+
+### cloneNode
+
+Allows to clone a node from the virtualDOM, example:
+
+```jsx
+const Div = document.createElement("div");
+
+Div.innerHTML = `<h1>Div!</h1>`;
+
+function component() {
+  return (
+    <host>
+      <Div cloneNode onclick={console.log} />
+      <Div cloneNode onclick={console.log} />
+      <Div cloneNode onclick={console.log} />
+      <Div cloneNode onclick={console.log} />
+      <Div cloneNode onclick={console.log} />
+    </host>
+  );
+}
+```
+
+The objective of this feature is to retrieve slot and use it as a template from the webcomponent.
 
 ### Hidratación desde SSR
 
@@ -155,6 +182,5 @@ El shadowDOM también puede ser hidratado ejemplo:
 ```
 
 {% hint style="info" %}
-El código expuesto aun no es parte del estándar, es una propuesta impulsada por el **Google Chrome** [https://web.dev/declarative-shadow-dom/](https://web.dev/declarative-shadow-dom/), para ser usada en todos los browser debe hacer uso de polyfills. 
+El código expuesto aun no es parte del estándar, es una propuesta impulsada por el **Google Chrome** [https://web.dev/declarative-shadow-dom/](https://web.dev/declarative-shadow-dom/), para ser usada en todos los browser debe hacer uso de polyfills.&#x20;
 {% endhint %}
-
