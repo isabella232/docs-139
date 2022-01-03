@@ -44,9 +44,9 @@ function componentWithLightDomAndShadowDom() {
 ### What are the benefits of using useRender?
 
 1. Encapsulate DOM fragments within custom Hooks and then render to any webcomponent.
-2. Patch webcomponents limitations with shadowDOM when working with forms
+2. patch the limitations of webcomponents that use shadowDOM, to improve communication with forms.
 
-### Patch webcomponents limitations with shadowDOM when working with forms
+### Patch the limitations of web components that use shadow DOM, to improve communication with forms
 
 ```jsx
 import { css, useProp } from "atomico";
