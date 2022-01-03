@@ -27,6 +27,7 @@
 
 * [🧠 Atomico design patterns](guides/atomico-design-patterns/README.md)
   * [♻ Webcomponents with hybrid rendering](guides/atomico-design-patterns/webcomponents-with-hybrid-rendering.md)
+  * [🔗 Slot as templates](guides/atomico-design-patterns/slot-as-templates.md)
 * [🎯 Tips](guides/tips.md)
 * [✨ Design systems](guides/design-systems/README.md)
   * [Slot](guides/design-systems/slot.md)
