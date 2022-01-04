@@ -2,13 +2,13 @@
 
 The use of slots improves the composition allowing to reflect the content exposed in the `lightDOM` of the component in the `shadowDOM` of this, example:
 
-![](../../../.gitbook/assets/web\_1366\_7.png)
+![](../../.gitbook/assets/web\_1366\_7.png)
 
 ### ::slotted(\<selector>)
 
 The `slotted` selector allows the manipulation of the content exposed as a `lightDOM` slot from the `shadowDOM`, example:
 
-![](../../../.gitbook/assets/slotted.png)
+![](../../.gitbook/assets/slotted.png)
 
 ### Auto slot
 
@@ -37,7 +37,7 @@ Consider this practical only if the composition is leveraged to the container, t
 
 ### Conditional slot
 
-Atomico has the hook [**@atomico/hooks/use-slot**](../../../atomico/atomico-hooks/use-slot.md) that appends the slotchange event to a reference, this will allow you to hide slots if they do not declare content, example:
+Atomico has the hook [**@atomico/hooks/use-slot**](../../atomico/atomico-hooks/use-slot.md) that appends the slotchange event to a reference, this will allow you to hide slots if they do not declare content, example:
 
 ```jsx
 import { useRef } from "atomico";

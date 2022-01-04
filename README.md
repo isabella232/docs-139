@@ -95,8 +95,8 @@ Atomico simplifies learning, workflow and maintenance when creating webcomponent
 [virtualdom](api/virtualdom/)
 {% endcontent-ref %}
 
-{% content-ref url="guides/archives/design-systems/" %}
-[design-systems](guides/archives/design-systems/)
+{% content-ref url="guides/design-systems/" %}
+[design-systems](guides/design-systems/)
 {% endcontent-ref %}
 
 {% content-ref url="api/hooks/" %}

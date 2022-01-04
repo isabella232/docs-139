@@ -89,7 +89,7 @@ Where:
 2. **namespace**: group independent of our design system
 3. **property**: property associated with the system, such as color, size, or other value.
 
-**Why use the recommended pattern?** To individualize the configuration at the group level and separate the property definition from it thanks to the use of double hyphens \(**--**\), internally everything is simplified since the tokens only capture the global configuration global to reflect it to a simpler variable accessible only from the component instance level.
+**Why use the recommended pattern?** To individualize the configuration at the group level and separate the property definition from it thanks to the use of double hyphens (**--**), internally everything is simplified since the tokens only capture the global configuration global to reflect it to a simpler variable accessible only from the component instance level.
 
 #### Instance level
 
@@ -192,4 +192,3 @@ From the previous code I highlight:
 1. **import of `"../tokens"`** and the destructuring of the module that declares the use of `tokensColor` and `tokensInput`.
 2. **button.styles**: Atomico allows to associate multiple styles through the use of an array.
 3. **Button export.**
-

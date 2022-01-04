@@ -15,7 +15,7 @@ It is normal that we use the technique of dispatching events from the component 
 </form>
 ```
 
-To solve this we will have to nest an input tag in the lightDOM of our component, in order to reflect the logic of this to the form. Atomico facilitates this hybrid interaction between lightDOM and shadowDOM with the [**@atomico/hooks/use-render**](../../atomico/atomico-hooks/use-render.md) hook that allows executing a second render that works from the lightDOM, example:
+To solve this we will have to nest an input tag in the lightDOM of our component, in order to reflect the logic of this to the form. Atomico facilitates this hybrid interaction between lightDOM and shadowDOM with the [**@atomico/hooks/use-render**](../atomico/atomico-hooks/use-render.md) hook that allows executing a second render that works from the lightDOM, example:
 
 ```jsx
 import { useRender } from "@atomico/hooks/use-render";

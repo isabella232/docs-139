@@ -18,7 +18,7 @@ function component() {
 
 This prevents confusion when identifying the constructor of the component instance.[ ](https://atomico.gitbook.io/doc/v/espanol/api/virtualdom/avanzado#constructor-con-custom-element)[Atomico if it supports instances as Constructors, see cases.​](https://atomico.gitbook.io/doc/api/virtualdom/advanced#constructor-with-custom-element)
 
-### useProp <a href="useprop" id="useprop"></a>
+### useProp <a href="#useprop" id="useprop"></a>
 
 preferably use useProp in the following cases:
 
