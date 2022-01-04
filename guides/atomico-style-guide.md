@@ -5,7 +5,7 @@ description: >-
   are sustainable and scalable over time.
 ---
 
-# Atomico style guide
+# 🗺 Atomico style guide
 
 ### 1. Recommended file structure for webcomponents
 

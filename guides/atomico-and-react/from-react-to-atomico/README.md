@@ -4,7 +4,7 @@ description: >-
   with a closer to standard approach.
 ---
 
-# ⚛️ From React to Atomico
+# ⚛ From React to Atomico
 
 ### If you develop with React, you will know 80% Atomico ... now why use Atomico?:
 
@@ -158,7 +158,7 @@ In Atomico you will have the most useful React hooks such as:
 5. useEffect
 6. useMemo
 7. useCallback
-8. ~~useContext~~ : **Not supported**, event api is better practice than context when using webcomponents, example [**useChannel**](../../atomico/atomico-hooks/use-channel.md)\*\*\*\*
+8. ~~useContext~~ : **Not supported**, event api is better practice than context when using webcomponents, example [**useChannel**](../../../atomico/atomico-hooks/use-channel.md)****
 
 ### CSS-in-JS
 
@@ -237,4 +237,3 @@ export const Button = c(button);
 ```
 {% endtab %}
 {% endtabs %}
-
