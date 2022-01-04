@@ -36,8 +36,8 @@
 * [🗃 Archives](guides/archives/README.md)
   * [Class inheritance](guides/class-inheritance.md)
   * [Forms and shadowDOM](guides/forms-and-shadowdom.md)
-  * [🎯 Tips](guides/tips.md)
-  * [✨ Design systems](guides/design-systems/README.md)
+  * [Tips](guides/tips.md)
+  * [Design systems](guides/design-systems/README.md)
     * [Slot](guides/design-systems/slot.md)
 
 ## @atomico
