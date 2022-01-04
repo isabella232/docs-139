@@ -28,15 +28,16 @@
 * [🧠 Atomico design patterns](guides/atomico-design-patterns/README.md)
   * [♻ Webcomponents with hybrid rendering](guides/atomico-design-patterns/webcomponents-with-hybrid-rendering.md)
   * [🔗 Slot as templates](guides/atomico-design-patterns/slot-as-templates.md)
-* [🎯 Tips](guides/tips.md)
-* [✨ Design systems](guides/design-systems/README.md)
-  * [Slot](guides/design-systems/slot.md)
 * [📜 Typescript & JSDOC](guides/typescript.md)
 * [🤝 Atomico and React](guides/atomico-and-react.md)
 * [⚛️ From React to Atomico](guides/from-react-to-atomico/README.md)
   * [VirtualDOM api differences](guides/from-react-to-atomico/virtualdom-api-differences.md)
-* [Forms and shadowDOM](guides/forms-and-shadowdom.md)
-* [Class inheritance](guides/class-inheritance.md)
+* [🗃 Archives](guides/archives/README.md)
+  * [Class inheritance](guides/archives/class-inheritance.md)
+  * [Forms and shadowDOM](guides/archives/forms-and-shadowdom.md)
+  * [🎯 Tips](guides/archives/tips.md)
+  * [✨ Design systems](guides/archives/design-systems/README.md)
+    * [Slot](guides/archives/design-systems/slot.md)
 
 ## @atomico
 
