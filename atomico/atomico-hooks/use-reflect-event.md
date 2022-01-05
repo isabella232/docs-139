@@ -13,19 +13,28 @@ One of the possibilities of this hook is to reflect the events inside shadowDOM 
 ### module
 
 ```javascript
-import { useReflectEvent } from "@atomico/hooks/use-reflect-event";
+import { 
+    useReflectEvent, 
+    reflectEvent  
+} from "@atomico/hooks/use-reflect-event";
 ```
 
-### Syntax
+### Syntax useReflectEvent
 
-```
+```typescript
 useReflectEvent(
     refFrom: Ref<Element>,
     refTo: Ref<Element>,
-    event: string,
-    filter?: (event:Event)=>boolean
+    eventType: string
 );
 ```
 
-### Example
+useRefectEvent will listen for the eventType of refFrom, to reflect it on refTo
 
+### Syntax reflectEvent
+
+```javascript
+reflectEvent( target: Element, event: Event );
+```
+
+Reflects on an element the given event
