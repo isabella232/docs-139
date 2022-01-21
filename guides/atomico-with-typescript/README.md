@@ -95,7 +95,7 @@ customElements.define("my-component", MyComponent);
 
 The return of `c` is a CustomElement with the types of the associated props, example:
 
-```ts
+```typescript
 const myComponent = new MyComponent();
 
 myComponent.value = "abc";
