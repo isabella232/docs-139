@@ -38,12 +38,4 @@ It is recommended to add to the publish queue of the NPM package, since its exec
 }
 ```
 
-## Recipes
-
-### Export all the components, define one as main, create the types and minify the code.
-
-```bash
-exports src/*/*.{js,ts,jsx,tsx} --main components --types --exports --minify
-```
-
-`@atomico/exports` will send all found components to ESbuild to compile and minify, then define the parent of your package and finally create the types.
+El uso del flag \`--types\`, requiere la instalacion de Typescript como devDependency
