@@ -10,7 +10,7 @@ description: >-
 
 useState infers the type according to its initial state, if you don't define that state you can define the type manually, example:
 
-```ts
+```typescript
 const [message, setMessage] = useProp<string>();
 ```
 
@@ -23,7 +23,7 @@ The above statement will define that:
 
 useProp will not infer the type from the prop, you must define it, example:
 
-```ts
+```typescript
 const [message, setMessage] = useProp<string>("message");
 ```
 
@@ -36,7 +36,7 @@ Let's remember that useProp has a return api similar to useState, so the previou
 
 both useMemo vs useCallback infer its type based on the callback that builds the memo state, but for certain conditions you may need to force the type return, example:
 
-```ts
+```typescript
 const message = useMemo<string>(() => "i'am atomico!");
 ```
 
@@ -52,7 +52,7 @@ The above statement will define that:
 
 useEvent allows defining the detail structure through the type parameter, example:
 
-```ts
+```typescript
 const dispatch = useEvent<{ id: string }>("MyCustomEvent", { bubbles: true });
 
 dispatch({ id: string });
@@ -66,7 +66,7 @@ The above statement will define that:
 
 useRef allows to define through the type parameter the expected value of current in the reference.
 
-```ts
+```typescript
 const refForm = useRef<HTMLFormElement>();
 ```
 
@@ -78,7 +78,7 @@ The above statement defines:
 
 useHost defines that current always exists, so the optional selector is not necessary, the type parameter of useHost allows to define the source Element, example:
 
-```ts
+```typescript
 const host = useHost<HTMLElement>();
 ```
 

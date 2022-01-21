@@ -42,7 +42,7 @@ import { MyComponent } from "my-componnet";
 
 That has another benefit, capturing the event as a type to be used in an external handler, example:
 
-```ts
+```typescript
 function handlerMyCustomEvent(
   event: DOMEvent<"MyCustomEvent", typeof MyComponent>
 ) {
