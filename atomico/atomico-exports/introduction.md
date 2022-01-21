@@ -1,5 +1,7 @@
 # @atomico/exports
 
+![](<../../.gitbook/assets/Grupo 2.png>)
+
 `@atomico/exports` is a tool like CLI oriented to have an efficient and aesthetic distribution of packages through NPM or CDN.
 
 #### Efficient?

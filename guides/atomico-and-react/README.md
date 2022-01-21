@@ -29,7 +29,7 @@ Atomico the package [@atomic/react](../../atomico/atomico-react.md) allows:
 2. Avoid react conflicts with webcomponents, such as association of events, attributes, properties and children.
 3. Reflect the types declared in Atomic to React, valid for JSX or TSX
 
-Coverage is automatic if you decide to share your package using [@atomico/exports](../../atomico/atomico-exports/atomico-exports.md) under the following [export conditions.](../../atomico/atomico-exports/wrapper-for-react.md)
+Coverage is automatic if you decide to share your package using [@atomico/exports](../../atomico/atomico-exports.md) under the following [export conditions.](../../atomico/atomico-exports/wrapper-for-react.md)
 
 ### Atomico inside Next.js
 
