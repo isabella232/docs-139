@@ -38,4 +38,6 @@ It is recommended to add to the publish queue of the NPM package, since its exec
 }
 ```
 
-El uso del flag \`--types\`, requiere la instalacion de Typescript como devDependency
+{% hint style="warning" %}
+The `--types` flag requires Typescript to be installed as a devDependency
+{% endhint %}
