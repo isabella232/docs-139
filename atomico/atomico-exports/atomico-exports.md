@@ -2,11 +2,11 @@
 description: Facilitates the distribution of webcomponents
 ---
 
-# @atomico/exports
+# CLI and Flags
 
 {% embed url="https://github.com/atomicojs/exports" %}
 
-![](../.gitbook/assets/grupo-2.png)
+![](../../.gitbook/assets/grupo-2.png)
 
 Simplify the generation of builds, types and exports by distributing webcomponents in NPM, with `@atomico/exports` you will be able to:
 
@@ -16,7 +16,7 @@ Simplify the generation of builds, types and exports by distributing webcomponen
 4. Optimize build distribution thanks to ESbuild.
 5. Import the assets by using import.meta.url,  improving the consumption of assets from CDN.
 6. Add support for generic Atomico-based CSS modules.
-7. [Automatically create wrapper to use webcomponents in react](atomico-exports/wrapper-for-react.md)
+7. [Automatically create wrapper to use webcomponents in react](wrapper-for-react.md)
 8. Minificar el código. flag `--minify`.
 9. Centralize workspace in a single installation package. flag `--workspace <spaces>`.
 10. Automatically create CSS visibility files for customElements found in export, example `my-component:not(:defined){ visibility: hidden }`

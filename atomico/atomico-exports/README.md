@@ -1,4 +1,4 @@
-# Introduction
+# @atomico/exports
 
 `@atomico/exports` is a tool like CLI oriented to have an efficient and aesthetic distribution of packages through NPM or CDN.
 
@@ -16,7 +16,7 @@ Yes, thanks to the use of Esbuild and internal processes of @atomico/exports it 
 
 `@atomico/exports` takes care of the aesthetics of your package, managing everything necessary to achieve the following import format:
 
-```js
+```javascript
 // Import 1
 import { MyButton, MyInput, MyRadio } from "my-components";
 // Import 2

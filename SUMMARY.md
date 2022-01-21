@@ -75,8 +75,8 @@
   * [router](atomico/atomico-components/router.md)
   * [modal](atomico/atomico-components/modal.md)
   * [send-form](atomico/atomico-components/send-form.md)
-* [@atomico/exports](atomico/atomico-exports.md)
-  * [Introduction](atomico/atomico-exports/introduction.md)
+* [@atomico/exports](atomico/atomico-exports/README.md)
+  * [CLI and Flags](atomico/atomico-exports/atomico-exports.md)
   * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
 * [@atomico/magic-form](atomico/atomico-magic-form.md)
 
