@@ -76,6 +76,7 @@
   * [modal](atomico/atomico-components/modal.md)
   * [send-form](atomico/atomico-components/send-form.md)
 * [@atomico/exports](atomico/atomico-exports.md)
+  * [Introduction](atomico/atomico-exports/introduction.md)
   * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
 * [@atomico/magic-form](atomico/atomico-magic-form.md)
 
