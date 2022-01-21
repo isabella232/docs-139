@@ -9,10 +9,11 @@
 Yes, thanks to the use of Esbuild and internal processes of @atomico/exports it optimizes your distribution in:
 
 1. Code splitting to subdivide your code efficiently.
-2. Preprocess .css files as js modules through postcss.
+2. Preprocess `.css` files as js modules through postcss.
 3. Import of assets separately as URLs relative to the module, this prevents the origin of your assets from being broken when consuming it from a CDN.
 4. Component export using expressions, example `src/**/*.js`.
 5. Detect external dependencies(they are not part of the bundle)
+6. Minify your code
 
 #### Esthetic?
 
