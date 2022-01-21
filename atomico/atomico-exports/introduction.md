@@ -25,7 +25,7 @@ import { MyButton, MyInput, MyRadio } from "my-components";
 import { MyButton } from "my-components/button";
 ```
 
-to achieve this `@atomico/exports` manages part of the `exports`, `types` and other properties of your package.json, in order to achieve a perfect aesthetic export.
+to achieve that `@atomico/exports` manages part of the `exports`, `types` and other properties of your package.json, in order to achieve a perfect aesthetic export.
 
 ### Usage
 
