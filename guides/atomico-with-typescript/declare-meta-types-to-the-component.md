@@ -12,7 +12,7 @@ By using JSX you benefit from the instance of your webcomponent without the use 
 1. Know the origin of the import of your webcomponent.
 2. Know types when using properties and **Events**, If events!t.
 
-## Meta type and DOMEvent.
+### Meta type and DOMEvent.
 
 The Meta type allows you to define meta properties of your WebComponent when instantiated in JSX, for example Events:
 
