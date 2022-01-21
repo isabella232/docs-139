@@ -4,7 +4,7 @@ description: >-
   webcomponents con Atomico
 ---
 
-# 🎯 Tips
+# Tips
 
 ### Component name as function
 

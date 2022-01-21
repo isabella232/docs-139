@@ -4,7 +4,7 @@ description: >-
   systems with Atomico, analyzing the recommended structure and its files.
 ---
 
-# ✨ Design systems
+# Design systems
 
 ### Recommended structure
 
