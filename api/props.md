@@ -4,7 +4,7 @@ description: >-
   reactive attributes that trigger the logic or interface of the webcomponent.
 ---
 
-# 🧬 Props\(Properties\)
+# 🧬 Props(Properties)
 
 ## Syntax
 
@@ -71,16 +71,17 @@ component.props = { myName: String };
 component.props = { myName: { type: String } };
 ```
 
-| Type | Supports reflect |
-| :--- | :--- |
-| **String** | ✔️ |
-| **Number** | ✔️ |
-| **Boolean** | ✔️ |
-| **Object** | ✔️ |
-| **Array** | ✔️ |
-| **Promise** | ❌ |
-| **Symbol** | ❌ |
-| **Function** | ❌ |
+| Type                                                                                                                | Supports reflect |
+| ------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **String**                                                                                                          | ✔️               |
+| **Number**                                                                                                          | ✔️               |
+| **Boolean**                                                                                                         | ✔️               |
+| **Object**                                                                                                          | ✔️               |
+| **Array**                                                                                                           | ✔️               |
+| **Promise**                                                                                                         | ❌                |
+| **Symbol**                                                                                                          | ❌                |
+| **Function**                                                                                                        | ❌                |
+| **All references to existing types in the browser(HTMLElement, Element, Node, Date, File... more than 500** 😎**)** | ❌                |
 
 ### Prop.reflect
 
@@ -147,7 +148,7 @@ The association of callback as value allows generating unique values for each in
 
 ## Reactivity in the scope of the webcomponent
 
-Atomico removes the use of "this" given its functional approach, but adds the hook \[useProp\] \(hooks / useprop.md\) which allows to reference a prop for use with a functional syntax, eg:
+Atomico removes the use of "this" given its functional approach, but adds the hook \[useProp] (hooks / useprop.md) which allows to reference a prop for use with a functional syntax, eg:
 
 ```jsx
 function component() {
@@ -162,4 +163,3 @@ function component() {
 
 component.props = { message: String };
 ```
-
