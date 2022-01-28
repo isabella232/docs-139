@@ -8,9 +8,9 @@ description: >-
 
 ### **Cycle as attribute**:&#x20;
 
-the given value is transformed to the corresponding type, be it String, Number, Boolean, Array or Object, once transformed it is sent to the **cycle as a property**.
+the given value is transformed to the corresponding type, be it String, Number, Boolean, Array or Object, once transformed it is sent to the [**cycle as property**](value-cycle-as-prop.md#cycle-as-a-property).
 
-### **cycle as a property**:&#x20;
+### cycle as property:&#x20;
 
 evaluates if the value is of the declared type:
 
