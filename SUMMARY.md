@@ -5,7 +5,8 @@
 
 ## Api
 
-* [🧬 Props(Properties)](api/props.md)
+* [🧬 Props(Properties)](api/props/README.md)
+  * [Value cycle as prop](api/props/value-cycle-as-prop.md)
 * [🧩 VirtualDOM](api/virtualdom/README.md)
   * [Advanced](api/virtualdom/advanced.md)
 * [🎣 Hooks](api/hooks/README.md)

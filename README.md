@@ -87,8 +87,8 @@ Atomico simplifies learning, workflow and maintenance when creating webcomponent
 
 ### Api
 
-{% content-ref url="api/props.md" %}
-[props.md](api/props.md)
+{% content-ref url="api/props/" %}
+[props](api/props/)
 {% endcontent-ref %}
 
 {% content-ref url="api/virtualdom/" %}
