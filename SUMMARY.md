@@ -48,6 +48,7 @@
 
 * [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
+  * [use-click-press](atomico/atomico-hooks/use-click-press.md)
   * [use-dollars](atomico/atomico-hooks/use-dollars.md)
   * [use-reflect-event](atomico/atomico-hooks/use-reflect-event.md)
   * [use-keyboar](atomico/atomico-hooks/use-keyboar.md)
