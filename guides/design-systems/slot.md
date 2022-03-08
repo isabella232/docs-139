@@ -37,7 +37,7 @@ Consider this practical only if the composition is leveraged to the container, t
 
 ### Conditional slot
 
-Atomico has the hook [**@atomico/hooks/use-slot**](../../atomico/atomico-hooks/use-slot/) that appends the slotchange event to a reference, this will allow you to hide slots if they do not declare content, example:
+Atomico has the hook [**@atomico/hooks/use-slot**](../../atomico/atomico-hooks/use-slot.md) that appends the slotchange event to a reference, this will allow you to hide slots if they do not declare content, example:
 
 ```jsx
 import { useRef } from "atomico";

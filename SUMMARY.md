@@ -63,7 +63,7 @@
   * [use-responsive-state](atomico/atomico-hooks/use-responsive-state.md)
   * [use-parent](atomico/atomico-hooks/use-parent.md)
   * [use-resize-observer](atomico/atomico-hooks/use-resize-observer.md)
-  * [use-slot](atomico/atomico-hooks/use-slot/README.md)
+  * [use-slot](atomico/atomico-hooks/use-slot.md)
     * [useSlot](atomico/atomico-hooks/use-slot/useslot.md)
     * [useProxySlot](atomico/atomico-hooks/use-slot/useproxyslot.md)
   * [use-render](atomico/atomico-hooks/use-render.md)
