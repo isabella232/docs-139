@@ -1,10 +1,13 @@
 ---
-description: use CSS in the lightDOM locally in the webcomponent.
+description: share your style sheets between LightDOM and ShadowDOM
 ---
 
 # use-css-light-dom
 
-This hook aims to give css coverage in situations where the use of the lightDOM is required, **you always prefer to use the shadowDOM to give a general appearance to your component.**
+This hook creates a style tag in the lightDOM of the component, in order to insert that directly affect the lightDOM, before using this hook consider:
+
+1. The css is not isolated as if it occurs in the shadowDOM.
+2. It does not support the use of ::slotted selector.
 
 ### Module
 
@@ -14,26 +17,39 @@ import { useCssLightDom } from "@atomico/hooks/use-css-light-dom";
 
 ### Syntax
 
-This hook will wrap each css instance in a different className
-
-```jsx
-const css = useCssLightDom();
-
-return (
-  <host
-    class={css`
-      width: 100px;
-      height: 100px;
-      :hover {
-        background: red;
-      }
-    `}
-  ></host>
-);
+```tsx
+useCssLightDom(sheets: import("atomico").Sheets);
 ```
 
-### **Example**&#x20;
+### Example
+
+```jsx
+import { css } from "atomico";
+import { useCssLightDom } from "@atomico/hooks/use-css-light-dom";
+
+const sheet = css`
+  :host {
+    display: block;
+    background: black;
+    color: white;
+    padding: 100px;
+    border-radius: 1rem;
+  }
+  :host(:hover) {
+    background: crimson;
+  }
+`;
+
+function myExample() {
+  useCssLightDom(sheet);
+  return (
+    <host>
+      <h1>Hello</h1>
+    </host>
+  );
+}
+```
 
 {% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/odaNplBxuGgwsqkbHiLu/src/index.jsx" %}
 
-****
+***
