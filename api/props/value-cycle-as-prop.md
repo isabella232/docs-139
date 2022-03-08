@@ -1,16 +1,16 @@
 ---
 description: >-
-  Atomico posee una forma de validación de tipos realmente eficiente y simple,
-  la validacion de tipos opera de la siguiente forma:
+  Atomico has a really efficient and simple type validation method, the type
+  validation works in the following way:
 ---
 
 # Value cycle as prop
 
-### **Cycle as attribute**:&#x20;
+### **Cycle as attribute**:
 
 the given value is transformed to the corresponding type, be it String, Number, Boolean, Array or Object, once transformed it is sent to the [**cycle as property**](value-cycle-as-prop.md#cycle-as-a-property).
 
-### cycle as property:&#x20;
+### cycle as property:
 
 evaluates if the value is of the declared type:
 
@@ -23,6 +23,3 @@ evaluates if the value is of the declared type:
   * **target**: Instance of the webcomponent.
   * **value**: Input value.
   * **type**: expected type.
-
-
-
