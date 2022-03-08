@@ -47,4 +47,8 @@ function component() {
 All redirected hooks must exist under a slot
 {% endhint %}
 
+### Live example
+
 {% embed url="https://webcomponents.dev/edit/v8iyBsqujBGH5xZsrobR" %}
+Ejemplo en vivo
+{% endembed %}
