@@ -6,11 +6,13 @@ description: >-
 
 # Value cycle as prop
 
+![](../../.gitbook/assets/prop-en.png)
+
 ### **Cycle as attribute**:
 
 the given value is transformed to the corresponding type, be it String, Number, Boolean, Array or Object, once transformed it is sent to the [**cycle as property**](value-cycle-as-prop.md#cycle-as-a-property).
 
-### cycle as property:
+### Cycle as property:
 
 evaluates if the value is of the declared type:
 
