@@ -1,8 +1,4 @@
----
-description: Retrieves the nodes assigned to a slot.
----
-
-# use-slot
+# useSlot
 
 ### Module
 
@@ -24,6 +20,4 @@ Where:
 ### Example
 
 {% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/RjrShAkF1NYMkBbyNOaP/src/index.jsx" %}
-
-
 
