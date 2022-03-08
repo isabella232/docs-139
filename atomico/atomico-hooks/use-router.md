@@ -4,7 +4,7 @@ description: Hooks to work with routes in the browser
 
 # use-router
 
-Hook to handle routes based on expressions according to the [**https://github.com/uppercod/exp-route**](https://github.com/uppercod/exp-route)  library, this hook is used by [**@atomico/components/router**](https://app.gitbook.com/@atomico/s/doc/\~/drafts/-MkwI-GZFi\_DQoa0Epyp/atomico/atomico-components/router)****
+Hook to handle routes based on expressions according to the [**https://github.com/uppercod/exp-route**](https://github.com/uppercod/exp-route) library, this hook is used by [**@atomico/components/router**](../atomico-components/router.md)\*\*\*\*
 
 ### Module
 
@@ -19,7 +19,7 @@ import {
 } from "@atomico/hooks/use-router";
 ```
 
-### useRouter syntax&#x20;
+### useRouter syntax
 
 ```jsx
 const [ view, path, params, search ] = useRouter({
@@ -28,11 +28,11 @@ const [ view, path, params, search ] = useRouter({
 })
 ```
 
-Where:&#x20;
+Where:
 
-1. `view`: return of the last function executed according to the route match.&#x20;
-2. `path`: string, represents the prop of the last path that consists of the path match.&#x20;
-3. `params`: parameters captured according to the path&#x20;
+1. `view`: return of the last function executed according to the route match.
+2. `path`: string, represents the prop of the last path that consists of the path match.
+3. `params`: parameters captured according to the path
 4. `search`: parameters captured from the path
 
 ### useRoute syntax
