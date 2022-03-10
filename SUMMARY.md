@@ -36,6 +36,7 @@
   * [Typescript & JSDOC](guides/typescript.md)
 * [🤝 Atomico and React](guides/atomico-and-react/README.md)
   * [⚛ From React to Atomico](guides/atomico-and-react/from-react-to-atomico/README.md)
+    * [Rendering Differences](guides/atomico-and-react/from-react-to-atomico/rendering-differences.md)
     * [VirtualDOM api differences](guides/atomico-and-react/from-react-to-atomico/virtualdom-api-differences.md)
 * [🗃 Archives](guides/archives/README.md)
   * [Class inheritance](guides/class-inheritance.md)
