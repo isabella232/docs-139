@@ -25,17 +25,17 @@ render(
 
 ### RouterSwitch
 
-Componente controlador de las rutas, este componente  permite:
+Controller component of the routes, with it you can:
 
-1. Conocer el estado de las transiciones de ruta.
-2. Conocer la ruta en carga&#x20;
-3. acceder a ::part para crear transiciones de rutas personalizadas.
+1. Observe the status of route transitions.
+2. Observe the route in load&#x20;
+3. Define the ::part selector to create custom path transitions.
 
 
 
 ### RouterCase
 
-Componente que declara el comportamiento de la ruta, este componente  permite:
+Component that declares the behavior of the route, with it you can:
 
 1. definir un slot al momento al hacer match con la ruta del browser.
 2. definir un callback load para cargar el contenido de la ruta al hacer match con la ruta del browser
