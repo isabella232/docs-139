@@ -37,11 +37,11 @@ Controller component of the routes, with it you can:
 
 Component that declares the behavior of the route, with it you can:
 
-1. definir un slot al momento al hacer match con la ruta del browser.
-2. definir un callback load para cargar el contenido de la ruta al hacer match con la ruta del browser
+1. Define a slot to show instantly when matching the browser path.
+2. Define a load callback to execute when matching the browser route.
 
-| Prop | Description                                   | Type     |
-| ---- | --------------------------------------------- | -------- |
-| load | cargador asíncrono del contenido              | Function |
-| for  | slot a asociar al momento  del match con path | String   |
-| path | expresión para la ruta                        | String   |
+| Prop | Description                                          | Type     |
+| ---- | ---------------------------------------------------- | -------- |
+| load | asynchronous content loader                          | Function |
+| for  | slot to associate at the time of the match with path | String   |
+| path | expression for path                                  | String   |
