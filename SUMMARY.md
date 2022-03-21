@@ -47,6 +47,7 @@
 
 ## @atomico
 
+* [@atomico/router](atomico/atomico-router.md)
 * [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
   * [use-click-press](atomico/atomico-hooks/use-click-press.md)
