@@ -82,7 +82,7 @@ Controller component of the routes, with it you can:
 }
 ```
 
-{% embed url="https://stackblitz.com/edit/atomico-router-transition" %}
+{% embed url="https://stackblitz.com/edit/atomico-router-transition-76khvu?embed=1&hideExplorer=1&view=preview" %}
 
 ### RouterCase
 
