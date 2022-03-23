@@ -97,3 +97,9 @@ Component that declares the behavior of the route, with it you can:
 | for   | slot to associate at the time of the match with path                 | String   |
 | path  | expression for path                                                  | String   |
 | memo  | memorize the state resolved by load according to the concurrent path | Boolean  |
+
+### Examples
+
+1. [https://stackblitz.com/edit/atomico-router-for](https://stackblitz.com/edit/atomico-router-for)
+2. [https://stackblitz.com/edit/atomico-router-load](https://stackblitz.com/edit/atomico-router-load)
+3. [https://stackblitz.com/edit/atomico-router-transition](https://stackblitz.com/edit/atomico-router-transition)
