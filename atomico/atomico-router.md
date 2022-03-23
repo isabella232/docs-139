@@ -4,8 +4,6 @@ description: powerful router for webcomponents
 
 # @atomico/router
 
-![](../.gitbook/assets/atomico-router.svg)
-
 {% tabs %}
 {% tab title="Atomico JSX" %}
 ```jsx
