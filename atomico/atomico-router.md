@@ -4,6 +4,8 @@ description: powerful router for webcomponents
 
 # @atomico/router
 
+{% embed url="https://github.com/atomicojs/router" %}
+
 {% tabs %}
 {% tab title="Atomico JSX" %}
 ```jsx
