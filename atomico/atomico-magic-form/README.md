@@ -131,8 +131,6 @@ receives the submits from `MagicForm`
 | `forms`  | Read only, current state of the captured forms                            |
 | actions  | object that defines the actions to be captured by the `MagicFormProvider` |
 
-
-
 ## Hooks for Atomico
 
 ### useMagicForm
@@ -177,6 +175,3 @@ function component() {
   return <host></host>;
 }
 ```
-
-
-
