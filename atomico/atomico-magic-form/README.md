@@ -103,47 +103,13 @@ function component() {
 
 `magic-form-provider` captures all the forms nested in `magic-form` when executing the submit event by the form and distributes them according to the definition of the action attribute to each method of the actions object
 
-## Hooks for Atomico
+### Api
 
-### useMagicForm
+{% content-ref url="magicformprovider-or-less-than-magic-form-provider-greater-than.md" %}
+[magicformprovider-or-less-than-magic-form-provider-greater-than.md](magicformprovider-or-less-than-magic-form-provider-greater-than.md)
+{% endcontent-ref %}
 
-catch the submit event and send it to the `useMagicFormProvider`
+{% content-ref url="magicform-or-less-than-magic-form-greater-than.md" %}
+[magicform-or-less-than-magic-form-greater-than.md](magicform-or-less-than-magic-form-greater-than.md)
+{% endcontent-ref %}
 
-```jsx
-import { useRef } from "atomico";
-import { useMagicForm } from "@atomico/magic-form/hooks";
-
-function component() {
-  const ref = useRef();
-  const [state, submit] = useMagicForm(ref);
-  return (
-    <host>
-      <form ref={ref} action="addUser">
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <button>Add user</button>
-      </form>
-    </host>
-  );
-}
-```
-
-### useMagicFormProvider
-
-receives the submits from `useMagicForm`
-
-```jsx
-import { useHost } from "atomico";
-import { useMagicFormProvider } from "@atomico/magic-form/hooks";
-
-function component() {
-  const ref = useHost();
-  const forms = useMagicFormProvider(ref, {
-    addUser(form) {
-      const body = new FormData(form);
-      return fetch(formData, { method: "POST", body }).res((res) => res.json());
-    },
-  });
-  return <host></host>;
-}
-```
