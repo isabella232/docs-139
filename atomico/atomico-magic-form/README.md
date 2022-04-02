@@ -8,7 +8,13 @@ description: >-
 
 {% embed url="https://github.com/atomicojs/magic-form" %}
 
-## Installation and import
+A powerful form submission manager created with Atomicojs webcomponents, with MagicForm you can:
+
+1. Simplify the sending of forms by centralizing the sending actions through a provider.
+2. Know at all times the forms that are being provided and show their status.
+3. Isolate a group of actions according to provider, this means that if a provider does not register the action it will bubble to the parent provider.
+
+### Installation and import
 
 {% tabs %}
 {% tab title="Instalation" %}
@@ -36,7 +42,7 @@ import {
 {% endtab %}
 {% endtabs %}
 
-## Webcomponent
+### Usage
 
 {% tabs %}
 {% tab title="HTML" %}
@@ -90,7 +96,7 @@ function component() {
       </MagicFormProvider>
     </host>
   );
-}x
+}
 ```
 {% endtab %}
 {% endtabs %}

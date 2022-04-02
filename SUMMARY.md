@@ -86,7 +86,8 @@
   * [Recipes](atomico/atomico-exports/recipes.md)
   * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
 * [@atomico/magic-form](atomico/atomico-magic-form/README.md)
-  * [Patrones](atomico/atomico-magic-form/patrones.md)
+  * [Microfrontend](atomico/atomico-magic-form/microfrontend.md)
+  * [Patterns](atomico/atomico-magic-form/patterns.md)
 
 ## Support
 
