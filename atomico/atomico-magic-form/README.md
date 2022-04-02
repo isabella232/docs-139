@@ -103,23 +103,6 @@ function component() {
 
 `magic-form-provider` captures all the forms nested in `magic-form` when executing the submit event by the form and distributes them according to the definition of the action attribute to each method of the actions object
 
-### \<magic-form-provider> | MagicFormProvider
-
-receives the submits from `MagicForm`
-
-**Events**
-
-| Type            | Description                                 | Config                              |
-| --------------- | ------------------------------------------- | ----------------------------------- |
-| `"ChangeForms"` | Dispatched when forms changes from provider | `{bubbles: false, composed: false}` |
-
-**Properties**
-
-| Property | Description                                                               |
-| -------- | ------------------------------------------------------------------------- |
-| `forms`  | Read only, current state of the captured forms                            |
-| actions  | object that defines the actions to be captured by the `MagicFormProvider` |
-
 ## Hooks for Atomico
 
 ### useMagicForm
