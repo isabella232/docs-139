@@ -103,23 +103,6 @@ function component() {
 
 `magic-form-provider` captures all the forms nested in `magic-form` when executing the submit event by the form and distributes them according to the definition of the action attribute to each method of the actions object
 
-### \<magic-form> | MagicForm
-
-captures the submit event of the nested form and sends it to `MagicFormProvider`
-
-**Events**
-
-| Type            | Description                                  | Config                              |
-| --------------- | -------------------------------------------- | ----------------------------------- |
-| `"ChangeState"` | Dispatched when status changes from provider | `{bubbles: false, composed: false}` |
-
-**Properties**
-
-| Property | Description                                                                                  |
-| -------- | -------------------------------------------------------------------------------------------- |
-| `state`  | Read only, Current status submission of the form                                             |
-| `action` | <p>Defines the action to dispatch, if not defined it can be inherited from the</p><p>tag</p> |
-
 ### \<magic-form-provider> | MagicFormProvider
 
 receives the submits from `MagicForm`
