@@ -2,7 +2,7 @@
 description: MagicForm api is equivalent in Atomicojs, React and Preact at JSX level
 ---
 
-# React and Preact
+# MagicForm in React and Preact
 
 ### Installation
 

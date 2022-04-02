@@ -1,4 +1,4 @@
-# Hooks
+# MagicForm Hooks
 
 ### useMagicForm
 

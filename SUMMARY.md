@@ -88,10 +88,10 @@
 * [@atomico/magic-form](atomico/atomico-magic-form/README.md)
   * [MagicFormProvider | \<magic-form-provider>](atomico/atomico-magic-form/magicformprovider-or-less-than-magic-form-provider-greater-than.md)
   * [MagicForm | \<magic-form>](atomico/atomico-magic-form/magicform-or-less-than-magic-form-greater-than.md)
-  * [MagicForm Hooks](atomico/atomico-magic-form/magicform-hooks.md)
-  * [MagicForm in React and Preact](atomico/atomico-magic-form/magicform-in-react-and-preact.md)
-  * [MagicForm in Microfrontend](atomico/atomico-magic-form/magicform-in-microfrontend.md)
-  * [Patterns](atomico/atomico-magic-form/patterns.md)
+  * [MagicForm Hooks](atomico/atomico-magic-form/hooks.md)
+  * [MagicForm in React and Preact](atomico/atomico-magic-form/react-and-preact.md)
+  * [MagicForm in Microfrontend](atomico/atomico-magic-form/microfrontend.md)
+  * [MagicForm Patterns](atomico/atomico-magic-form/magicform-patterns.md)
 
 ## Support
 
