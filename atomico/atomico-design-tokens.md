@@ -6,6 +6,8 @@ description: >-
 
 # @atomico/design-tokens
 
+{% embed url="https://github.com/atomicojs/design-tokens" %}
+
 With `@atomico/design-tokens` you can:
 
 1. [Resolve scalability and maintenance issues with your design tokens.](atomico-design-tokens.md#resolve-scalability-and-maintenance-issues-with-your-design-tokens.)
