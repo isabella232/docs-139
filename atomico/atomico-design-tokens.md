@@ -123,7 +123,7 @@ export const tokensSize = designTokens(
 
 The `classes` middleware will parse the CSSStyleSheet to relate the custom propeprtiy `--size` as a class of `.gap`, internally the `css` will be as follows:
 
-```
+```css
 .gap\.xl {
   gap: var(--size-xl);
 }
