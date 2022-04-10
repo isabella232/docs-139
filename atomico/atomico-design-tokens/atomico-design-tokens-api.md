@@ -14,7 +14,7 @@ compose(
 
 ## tokens
 
-transforma un objeto a custom properties.
+transform an object to custom properties.
 
 ### Syntax
 
