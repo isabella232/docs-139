@@ -1,7 +1,7 @@
 ---
 description: >-
-  Accelerates the implementation of design tokens in web components in a
-  sustainable and scalable way
+  Acelera la implementación de tokens de diseño en webcomponents de forma
+  sostenible y escalable
 ---
 
 # @atomico/design-tokens
@@ -26,9 +26,9 @@ For this example we will use Atomico, by the way you can use `@atomico/design-to
 
 ```javascript
 import { css } from "atomico";
-import { compose, tokens } from "@atomico/design-tokens";
+import { composed, tokens } from "@atomico/design-tokens";
 
-const designTokens = compose(
+const designTokens = composed(
   tokens(
     {
       size: {
@@ -99,9 +99,9 @@ I am personally a fan of custom properties, but their use would become repetitiv
 
 ```javascript
 import { css } from "atomico";
-import { compose, tokens, classes } from "@atomico/design-tokens";
+import { composed, tokens, classes } from "@atomico/design-tokens";
 
-const designTokens = compose(
+const designTokens = composed(
   classes({
     size: {
       xl: "40px",
