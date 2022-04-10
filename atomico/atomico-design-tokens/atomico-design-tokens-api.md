@@ -1,5 +1,15 @@
 # @atomico/design-tokens api
 
+## module
+
+```javascript
+import {
+    compose,
+    tokens,
+    classes
+} from "@atomico/design-tokens";
+```
+
 ## compose
 
 create a pipeline of functions that share the same CSSStyleSheet.
@@ -98,5 +108,57 @@ compose(
 {% endtab %}
 {% endtabs %}
 
-###
+## classes
 
+It facilitates the reuse of tokens, through the generation of dynamic classes.
+
+### Syntax
+
+```typescript
+classes(tokens:Tokens);
+```
+
+### Example
+
+{% tabs %}
+{% tab title="Input" %}
+```javascript
+import {css} from "atomico";
+import { compose, classes } from "@atomico/design-tokens";
+
+const designTokens = compose(
+    classes(
+        {
+            size: {
+                xl: "32px",
+                l: "28px",
+                m: "24px",
+            }
+        }
+    )
+);
+
+export const classUtils = designTokens(
+    css`
+        .gap.--size{
+            gap: var(--size);
+        }
+    `
+);
+```
+{% endtab %}
+
+{% tab title="CSS mutations" %}
+```css
+.gap\.xl{    
+    gap: var(--size-xl);
+}
+.gap\.l{    
+    gap: var(--size-l);
+}
+.gap\.m{    
+    gap: var(--size-m);
+}
+```
+{% endtab %}
+{% endtabs %}
