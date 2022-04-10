@@ -70,7 +70,7 @@ This is a technique that I have created to improve the scalability of design tok
 
 1. Simplify maintenance, since your components will use the custom properties without a prefix:
 
-```javascript
+```jsx
 import { c, css } from "atomico";
 import tokens from "./tokens";
 function button() {
@@ -143,7 +143,7 @@ The `classes` middleware will parse the CSSStyleSheet to relate the custom prope
 
 This makes it really simple to reuse the tokens, example:
 
-```javascript
+```jsx
 import { c } from "atomico";
 import { tokensSize } from "./tokens";
 
