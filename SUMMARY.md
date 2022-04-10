@@ -47,7 +47,7 @@
 
 ## @atomico
 
-* [@atomico/design-tokens](atomico/atomico-design-tokens/README.md)
+* [@atomico/design-tokens](atomico/atomico-design-tokens.md)
   * [@atomico/design-tokens api](atomico/atomico-design-tokens/atomico-design-tokens-api.md)
 * [@atomico/router](atomico/atomico-router.md)
 * [@atomico/react](atomico/atomico-react.md)
