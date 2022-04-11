@@ -6,6 +6,13 @@ description: >-
 
 # 🧬 Props(Properties)
 
+Props is the Atomico recommended way to declare visible and accessible states at the instance level of your webcomponents, with props you can:
+
+1. Access state via instance, example: `document.querySelector("my-component").myStateProp`.
+2. Dispatch events on prop value change, example: `document.querySelector("my-component").addEventListener("myPropChange",console.log)`.
+3. Reflect attributes as prop, example: `<my-component my-prop="....">` to `document.querySelector("my-component").myProp`.
+4. define strict input types for props.
+
 ## Syntax
 
 Any function that represents the webcomponent will be able to associate the static object props for the declaration of reactive properties and attributes, for example:
@@ -71,17 +78,17 @@ component.props = { myName: String };
 component.props = { myName: { type: String } };
 ```
 
-| Type                                                                                                                | Supports reflect |
-| ------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| **String**                                                                                                          | ✔️               |
-| **Number**                                                                                                          | ✔️               |
-| **Boolean**                                                                                                         | ✔️               |
-| **Object**                                                                                                          | ✔️               |
-| **Array**                                                                                                           | ✔️               |
-| **Promise**                                                                                                         | ❌                |
-| **Symbol**                                                                                                          | ❌                |
-| **Function**                                                                                                        | ❌                |
-| **All references to existing types in the browser(HTMLElement, Element, Node, Date, File... more than 500** 😎**)** | ❌                |
+| Type                                                                                                                    | Supports reflect |
+| ----------------------------------------------------------------------------------------------------------------------- | ---------------- |
+| **String**                                                                                                              | ✔️               |
+| **Number**                                                                                                              | ✔️               |
+| **Boolean**                                                                                                             | ✔️               |
+| **Object**                                                                                                              | ✔️               |
+| **Array**                                                                                                               | ✔️               |
+| **Promise**                                                                                                             | ❌                |
+| **Symbol**                                                                                                              | ❌                |
+| **Function**                                                                                                            | ❌                |
+| **All references to existing types in the browser(HTMLElement, Element, Node, Date, File... more than 500** 😎\*\*)\*\* | ❌                |
 
 ### Prop.reflect
 
