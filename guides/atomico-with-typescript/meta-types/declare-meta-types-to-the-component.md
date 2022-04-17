@@ -1,9 +1,5 @@
 # Event declaration
 
-
-
-## Event declaration
-
 Atomico supports through the use of the Host type, the declaration of **events** and **methods**, this is useful for associating meta-types to the customElement instance when using JSX or TSX.
 
 ### Host to declare events
