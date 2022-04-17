@@ -12,7 +12,7 @@ With Atomico and Typescript you will be able to:
 1. [Construct the props parameter of your functional component.](./#construct-the-props-parameter-of-your-functional-component.)
 2. [Check the correct declaration of your component.](./#check-the-correct-declaration-of-your-component.)
 3. [Check the correct use of hooks.](check-the-correct-use-of-hooks.md)
-4. [Declare meta-types to the component.](meta-types/declare-meta-types-to-the-component.md)
+4. [Declare meta-types to the component.](declare-meta-types-to-the-component.md)
 
 📌 **If you are a Typescript user I recommend using TSX vs the template-string, as you will benefit from:**
 
