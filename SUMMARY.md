@@ -32,7 +32,7 @@
 * [🗺 Atomico style guide](guides/atomico-style-guide.md)
 * [🛡 Atomico with Typescript](guides/atomico-with-typescript/README.md)
   * [Check the correct use of hooks](guides/atomico-with-typescript/check-the-correct-use-of-hooks.md)
-  * [Declare meta-types to the component](guides/atomico-with-typescript/declare-meta-types-to-the-component.md)
+  * [Event declaration](guides/atomico-with-typescript/declare-meta-types-to-the-component.md)
   * [Typescript & JSDOC](guides/typescript.md)
 * [🤝 Atomico and React](guides/atomico-and-react/README.md)
   * [⚛ From React to Atomico](guides/atomico-and-react/from-react-to-atomico/README.md)

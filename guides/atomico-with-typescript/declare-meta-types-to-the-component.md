@@ -1,32 +1,35 @@
-# Declare meta-types to the component
+# Event declaration
 
 Meta-types allow you to define properties not covered by Atomico's Automatic support, such as:
 
-* [x] Event definition.
-* [ ] Definition of custom-properties.
+1. Event declaration
+2. Method declaration
+3. Type declaration
 
-## Event definition
+## Event declaration
 
-By using JSX you benefit from the instance of your webcomponent without the use of the Tagname, this is really amazing as it allows:
+Atomico supports through the use of the Host type, the declaration of **events** and **methods**, this is useful for associating meta-types to the customElement instance when using JSX or TSX.
 
-1. Know the origin of the import of your webcomponent.
-2. Know types when using properties and **Events**, If events!t.
+### Host to declare events
 
-### Meta type and DOMEvent.
-
-The Meta type allows you to define meta properties of your WebComponent when instantiated in JSX, for example Events:
+Host will be useful for you to declare your event using JSX or TSX regardless of its origin, example:
 
 ```tsx
-import { Meta, DOMEvent, c } from "atomico";
+import { Host, c, useEvent } from "atomico";
 
-function myComponent(): Meta<DOMEvent<"MyCustomEvent">> {
-  return <host />;
+function myComponent(): Host<{
+  onMyCustomEvent: Event
+}> {
+  const dispatch = useEvent("MyCustomEvent");
+  return <host>
+      <button onclick={dispatch}>click</button>
+  </host>;
 }
 
 export const MyComponent = c(myComponent);
 ```
 
-In this case, the Meta type defines that the internal context of the component has an event named `MyCustomEvent`, which can be listened to, example:
+The use of Host allows that when using JSX or TSX your event is validated through Typescript, this also applies when using @atomico/react, example:&#x20;
 
 ```tsx
 import { MyComponent } from "my-componnet";
@@ -50,10 +53,6 @@ function handlerMyCustomEvent(
 }
 ```
 
-DOMEvent is really versatile since it has 3 uses:
 
-1. Define an event as a parameter. example: `DOMEvent<HTMLElement, CustomEvent<{id:string}>>`.
-2. Retrieve an event from a customElement, example: `DOMEvent<"MyCustomEvent", typeof MyComponent>`.
-3. Create an event for a customElement, example `DOMEvent<"MyCustomEvent", CustomEvent<{id:string}>>`.
 
 Very powerful!
