@@ -2,7 +2,7 @@
 
 {% embed url="https://github.com/atomicojs/store" %}
 
-### Sources
+### Api
 
 {% content-ref url="hooks.md" %}
 [hooks.md](hooks.md)
