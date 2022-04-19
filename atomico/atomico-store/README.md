@@ -8,6 +8,8 @@ description: >-
 
 {% embed url="https://github.com/atomicojs/store" %}
 
+### @atomico/store is Naturally asynchronous.
+
 ```typescript
 interface State {
   api: string;
