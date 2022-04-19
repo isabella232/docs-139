@@ -8,124 +8,113 @@ description: >-
 
 {% embed url="https://github.com/atomicojs/store" %}
 
-### The problem with the traditional approach
+```typescript
+interface State {
+  api: string;
+  loading: boolean;
+  products: { id: number; title: string; price: number };
+}
 
-Normally the libraries solve the asynchrony through the observable pattern, applying it through a setter or a function that communicates the change to the subscribers, although this is valid, the following question arises, **when does the asynchrony end?**
-
-Let's analyze for example Pinia a store for Vuejs.
-
-```javascript
-defineStore("main", {
-  state: () => ({
-    counter: 0,
-  }),
-  actions: {
-    incrementAsync() {
-      setTimeout(() => {jav
-        this.counter++;
-      }, 100);
-    },
-  },
+const initialState = (state: State) => ({
+  api: "",
+  loading: false,
+  products: [],
 });
-```
 
-The disadvantages of the above code are:
-
-1. the execution of `incrementAsync` does not have a closure of the execution cycle, since the setTimeout is an unknown execution for the observable and its effect only occurs when setting the `this.counter` property, problem: _"we do not know when that action ends"_.
-2. There is no sequence of execution, we could add asynchronous effects inside `myAction` regardless of the order of these. problem: _"a big noodle soup"_.
-
-### A more predictable and natural approach
-
-`@atomico/store` seeks to facilitate async by defining the following goals:
-
-1. [Asynchrony management](./#asynchrony-management).
-2. [Finitely predictable asynchrony](./#finitely-predictable-asynchrony.).
-3. Modularity and composition.
-
-In this article we will only know how `@atomico/store` solves point 1 and 2.
-
-#### The Store
-
-`@atomico/store` implements 3 classic concepts of a store:
-
-1. `state`: observed and referential state for actions and getters.
-2. `actions`: only way to modify the state.
-3. `getters`: Virtual values from the state.
-
-### Example
-
-```javascript
-import { Store } from "@atomico/store";
-
-export default new Store(
-  // initial state
-  {
-    loading: false,
-    products: [],
-  },
-  {
-    actions: {
-      async *fetch(state) {
-        yield {
-          ...state,
-          loading: true,
-        };
-
-        const products = await getProducts("my-products");
-
-        return {
-          ...(yield),
-          loading: false,
-          products,
-        };
-      },
-    },
-  }
-);
-```
-
-#### Asynchrony management
-
-Let's go back to the previous example and rescue the following block of code:
-
-```javascript
-async *fetch(state) {
-  yield {
-    ...state,
-    loading: true,
-  };
-
-  const products = await getProducts("my-products");
-
+async function* getProducts(state: State) {
+  yield { ...state, loading: true };
   return {
     ...(yield),
     loading: false,
-    products,
+    products: await (await fetch(state.api)).json(),
+  };
+}
+
+const store = new Store(initialState, {
+  actions: { getProducts },
+});
+```
+
+### Objectives
+
+1. Asynchrony management.
+2. Finitely predictable asynchrony.
+3. Modularity and composition.
+
+#### Asynchrony management
+
+Application events and service calls are naturally asynchronous, with @atomico/store you can use asynchronous functions or asynchronous generators to define the update cycle.
+
+**update cycle?** By this I mean the states that occur sequentially when dispatching the action, example:
+
+```typescript
+async function* getProducts(state: State) {
+  yield { ...state, loading: true };
+  return {
+    ...(yield),
+    loading: false,
+    products: await (await fetch(state.api)).json(),
   };
 }
 ```
 
-The execution of the action fetch performs the following steps:
+The previous action will generate 2 states when dispatched:
 
-1. `return 1`: defines the loading property..
-2. `waiting`: recupera los productos mediante `await getProducts("products")`.
-3. `final return`: defines a new state without breaking parallelism thanks to `...(yield)`.
+1. state 1:`{loading: true, products:[]}`
+2. state 2: `{loading: false, products:[...product]}`
 
-#### Finitely predictable asynchrony.
+The advantage of this is that the process is clearly observable by the store and by whoever dispatches the action.
 
-Each execution of an action returns a promise, thanks to the use of asynchronous generators we can determine when our action ends the cycle, example:
+#### Finitely predictable asynchrony
 
-```javascript
-import Store from "./my-store";
+Every action in @atomico/store is wrapped in a promise that defines when it ends its cycle, this will let you execute actions sequentially, example:
 
-Store.action.on(({ loading }) => {
-  console.log(loading); // 1️⃣ first `true`, 2️⃣ then `false`
-});
-
-Store.actions.fetch().then(({ products }) => {
-  console.log(products); // DONE!
-});
+```typescript
+await store.actions.orderyBy();
+await store.actions.insert({ id: 1000 });
+await store.actions.updateAll();
 ```
+
+#### Modularity and composition
+
+@atomico/store allows to decouple the actions and the state of the store, for a better modularization , example:
+
+
+
+{% tabs %}
+{% tab title="actions.js" %}
+```typescript
+export interface State {
+  api: string;
+  loading: boolean;
+  products: { id: number; title: string; price: number };
+}
+
+export const initialState = (state: State) => ({
+  api: "",
+  loading: false,
+  products: [],
+});
+
+export async function* getProducts(state: State) {
+  yield { ...state, loading: true };
+  return {
+    ...(yield),
+    loading: false,
+    products: await (await fetch(state.api)).json(),
+  };
+}
+```
+{% endtab %}
+
+{% tab title="store.js" %}
+```typescript
+import * as Actions from "./actions";
+
+export default new Store(Actions.initialStore, { actions: { Actions } });
+```
+{% endtab %}
+{% endtabs %}
 
 ### Api
 
