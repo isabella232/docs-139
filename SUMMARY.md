@@ -51,6 +51,7 @@
 ## @atomico
 
 * [@atomico/store](atomico/atomico-store/README.md)
+  * [Store](atomico/atomico-store/store.md)
   * [Hooks](atomico/atomico-store/hooks.md)
 * [@atomico/design-tokens](atomico/atomico-design-tokens.md)
   * [@atomico/design-tokens api](atomico/atomico-design-tokens/atomico-design-tokens-api.md)

@@ -120,6 +120,10 @@ export default new Store(Actions.initialStore, { actions: { Actions } });
 
 ### Api
 
+{% content-ref url="store.md" %}
+[store.md](store.md)
+{% endcontent-ref %}
+
 {% content-ref url="hooks.md" %}
 [hooks.md](hooks.md)
 {% endcontent-ref %}
