@@ -1,43 +1,37 @@
 # Hooks
 
-### useStore
+The useStore hooks for atomico follow an island model where the useStore tries to inherit a parent useStore when synchronizing with the webcomponent, this leaves 2 possibilities:
 
-You subscribe to a store directly.
+\
+1\. If useStore does not find a superior useStore it will use the assigned one as a parameter.
+
+2\. If useStore finds a superior useStore it will use that store for its synchronization.
+
+this allows your application to respond to an instance-based configuration context.
+
+## useStore
+
+### Provider
+
+Using the second parameter on useStore will generate a copy that defines the context of use and inheritance for the nested webcomponents.
 
 ```jsx
-useStore(store);
+const store = useStore(Store, initialState);
 ```
 
-### useStoreProvider
+### Consumer
 
-Define a Store to share with nested useStoreConsumers.
+Consumes the store either by assignment or inheritance
 
-```jsx
-useStoreProvider(store, id?: string | symbol);
+```typescript
+const store = useStore(Store);
 ```
 
-Where:
-
-1. `store`: Store instance.
-2. `id`: Optional parameter, defines an ID for the Store, this allows that in the ascending search of `useStoreConsumer` the store is defined according to the equality of the ID
-
-### useStoreConsumer
-
-Find and consume a store.
-
-```ts
-const store = useStoreConsumer(id?: string | symbol);
-```
-
-Where:
-
-1. `id`: Optional parameter, identifier of the store defined by `useStoreProvider`
-
-### useActionObserver
+## useActionObserver
 
 When every action is executed, it creates a promise. This hook allows you to observe the state of the promise when it is dispatched.
 
-```ts
+```typescript
 const [myAction, status, result] = useActionObserver(store.actions.myAction);
 ```
 
@@ -47,3 +41,16 @@ Where:
 2. `status`: `"" | "pending" | "fulfilled" | "rejected"` dispatched action status.
 3. `result`: return of dispatched action
 
+## useActionFromForm
+
+It subscribes to the submit of a form in order to dispatch the action, giving the action the instance of the form tag as a parameter.
+
+```tsx
+const [status, submit] = useActionFromForm(refForm, store.action.send);
+```
+
+Where:
+
+1. `store.action.send`: action to dispatch
+2. `status`: `"" | "pending" | "fulfilled" | "rejected"` dispatched action status.
+3. `submit`: callback to manually execute the action
