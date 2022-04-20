@@ -29,17 +29,24 @@ const store = useStore(Store);
 
 ## useActionObserver
 
-When every action is executed, it creates a promise. This hook allows you to observe the state of the promise when it is dispatched.
+In @atomico/store every action is finite, this means that the store knows when the execution of an action is finished, useActionObserver lets you observe that, example:
 
 ```typescript
-const [myAction, status, result] = useActionObserver(store.actions.myAction);
+const [ requestData, status ] = useActionObserver(store.actions.requestData);
+
+useEffect(requestData,[]);
+
+console.log(status)// 1. "", 2. "pending", 3. "fulfilled"
 ```
 
 Where:
 
-1. `myAction`: function that dispatches the action.
+1. `requestData`: function that dispatches the action.
 2. `status`: `"" | "pending" | "fulfilled" | "rejected"` dispatched action status.
-3. `result`: return of dispatched action
+
+``
+
+
 
 ## useActionFromForm
 
