@@ -1,3 +1,7 @@
+---
+description: Share values from the scope via setter and getters
+---
+
 # use-prop-proxy
 
 allows to create a setter and getter for a property of the webcomponent, this is useful for:
