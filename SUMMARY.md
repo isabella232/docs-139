@@ -60,6 +60,7 @@
 * [@atomico/router](atomico/atomico-router.md)
 * [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
+  * [use-prop-proxy](atomico/atomico-hooks/use-prop-proxy.md)
   * [use-click-press](atomico/atomico-hooks/use-click-press.md)
   * [use-dollars](atomico/atomico-hooks/use-dollars.md)
   * [use-reflect-event](atomico/atomico-hooks/use-reflect-event.md)
