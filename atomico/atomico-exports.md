@@ -14,7 +14,7 @@ Simplify the generation of builds, types and exports by distributing webcomponen
 2. Automatically associate package.json#exports. flag `--exports`
 3. Automatically associate types for typescript package.json # typesVersions. flag `--types`
 4. Optimize build distribution thanks to ESbuild.
-5. Import the assets by using import.meta.url,  improving the consumption of assets from CDN.
+5. Import the assets by using import.meta.url, improving the consumption of assets from CDN.
 6. Add support for generic Atomico-based CSS modules.
 7. [Automatically create wrapper to use webcomponents in react](atomico-exports/wrapper-for-react.md)
 8. Minificar el código. flag `--minify`.
@@ -51,6 +51,10 @@ You will add the build files to the exports property inside the package.json.
 ### --types
 
 It requires the installation of Typescript, it will create the types and add the files to the typesVersion property inside package.json
+
+### --analyzer
+
+Analyze the code to generate output for third parties like react and preact
 
 ### --workspace
 
