@@ -68,11 +68,11 @@ Avoid using esbuild, ideal if you have standard js code that you want to distrib
 
 Add additional support for files not found by [default in meta-url export](https://github.com/atomicojs/exports/blob/master/src/module.js#L23-L42).
 
-### --main \<nombre>
+### --main \<fileName>
 
-Of all the exported files, it will associate the one censored with the name of the file as the main one for the export of the package.json
+Of all the exported files, it will associate the one censored with the name of the file as the main one for the export of the package.json. Main file does not require extension or path
 
-### --dest \<destino>
+### --dest \<destination>
 
 Modify the destination directory for the build
 
