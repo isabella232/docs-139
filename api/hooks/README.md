@@ -8,23 +8,48 @@ description: >-
 
 ## Hooks only for webcomponents
 
-{% page-ref page="useprop.md" %}
+{% content-ref url="useprop.md" %}
+[useprop.md](useprop.md)
+{% endcontent-ref %}
 
-{% page-ref page="useevent.md" %}
+{% content-ref url="useevent.md" %}
+[useevent.md](useevent.md)
+{% endcontent-ref %}
 
-{% page-ref page="usehost.md" %}
+{% content-ref url="usehost.md" %}
+[usehost.md](usehost.md)
+{% endcontent-ref %}
 
-{% page-ref page="useupdate.md" %}
+{% content-ref url="useupdate.md" %}
+[useupdate.md](useupdate.md)
+{% endcontent-ref %}
 
 ## Hooks homogolates of React
 
-{% page-ref page="usestate.md" %}
+{% content-ref url="usestate.md" %}
+[usestate.md](usestate.md)
+{% endcontent-ref %}
 
-{% page-ref page="usereducer.md" %}
+{% content-ref url="usereducer.md" %}
+[usereducer.md](usereducer.md)
+{% endcontent-ref %}
 
-{% page-ref page="useref.md" %}
+{% content-ref url="useref.md" %}
+[useref.md](useref.md)
+{% endcontent-ref %}
 
-{% page-ref page="useeffect-y-uselayouteffect.md" %}
+{% content-ref url="useeffect-y-uselayouteffect.md" %}
+[useeffect-y-uselayouteffect.md](useeffect-y-uselayouteffect.md)
+{% endcontent-ref %}
 
-{% page-ref page="usememo-y-usecallback.md" %}
+{% content-ref url="usememo-y-usecallback.md" %}
+[usememo-y-usecallback.md](usememo-y-usecallback.md)
+{% endcontent-ref %}
 
+### @atomico/hooks
+
+Atomico today offers more Hooks external to the core, we invite you to visit [@atomico/hooks](../../atomico/atomico-hooks/) with more than 50 hooks to enhance the use of webcomponents 😎
+
+{% content-ref url="../../atomico/atomico-hooks/" %}
+[atomico-hooks](../../atomico/atomico-hooks/)
+{% endcontent-ref %}
