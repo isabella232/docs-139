@@ -46,7 +46,7 @@ description: >-
 [usememo-y-usecallback.md](usememo-y-usecallback.md)
 {% endcontent-ref %}
 
-### @atomico/hooks
+## @atomico/hooks
 
 Atomico today offers more Hooks external to the core, we invite you to visit [@atomico/hooks](../../atomico/atomico-hooks/) with more than 50 hooks to enhance the use of webcomponents 😎
 
