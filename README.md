@@ -76,8 +76,6 @@ customElements.define("my-component", c(component));
 {% endtab %}
 {% endtabs %}
 
-
-
 Atomico simplifies learning, workflow and maintenance when creating webcomponents and achieves it with:
 
 1. **scalable and reusable interfaces**: with Atomico the code is simpler and you can apply practices that facilitate the reuse of your code.
@@ -95,8 +93,8 @@ Atomico simplifies learning, workflow and maintenance when creating webcomponent
 [virtualdom](api/virtualdom/)
 {% endcontent-ref %}
 
-{% content-ref url="guides/design-systems/" %}
-[design-systems](guides/design-systems/)
+{% content-ref url="guides/archives/design-systems.md" %}
+[design-systems.md](guides/archives/design-systems.md)
 {% endcontent-ref %}
 
 {% content-ref url="api/hooks/" %}
@@ -106,4 +104,3 @@ Atomico simplifies learning, workflow and maintenance when creating webcomponent
 {% content-ref url="api/testing/" %}
 [testing](api/testing/)
 {% endcontent-ref %}
-

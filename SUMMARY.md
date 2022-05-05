@@ -41,12 +41,12 @@
   * [⚛ From React to Atomico](guides/atomico-and-react/from-react-to-atomico/README.md)
     * [Rendering Differences](guides/atomico-and-react/from-react-to-atomico/rendering-differences.md)
     * [VirtualDOM api differences](guides/atomico-and-react/from-react-to-atomico/virtualdom-api-differences.md)
+* [🔀 Slot](guides/slot.md)
 * [🗃 Archives](guides/archives/README.md)
   * [Class inheritance](guides/class-inheritance.md)
   * [Forms and shadowDOM](guides/forms-and-shadowdom.md)
   * [Tips](guides/tips.md)
-  * [Design systems](guides/design-systems/README.md)
-    * [Slot](guides/design-systems/slot.md)
+  * [Design systems](guides/archives/design-systems.md)
 
 ## @atomico
 
