@@ -12,7 +12,7 @@ const dispatchEvent = useEvent(myEvent, eventInit);
 
 Where:
 
-* dispatchEvent: **callback,** dispatch the event from the webcomponent.
+* dispatchEvent: **callback,** dispatches the event from the webcomponent and allows defining the detail by receiving a first parameter
 * myEvent: **string**, name of the event to dispatch.
 * eventInit: **optional object**, event configuration.
 
@@ -50,4 +50,3 @@ interface EventInit {
   base?: Event | CustomEvent;
 }
 ```
-
