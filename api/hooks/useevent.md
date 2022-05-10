@@ -16,8 +16,10 @@ Where:
 * myEvent: **string**, name of the event to dispatch.
 * eventInit: **optional object**, event configuration.
 
-## Example
+## Examples
 
+{% tabs %}
+{% tab title="Basic" %}
 ```jsx
 import { useEvent } from "atomico";
 
@@ -33,6 +35,50 @@ function component() {
   );
 }
 ```
+{% endtab %}
+
+{% tab title="Detail" %}
+```javascript
+import { useEvent } from "atomico";
+
+function component() {
+  const dispatchEvent = useEvent("clickButton", {
+    bubbles: true,
+    composed: true,
+  });
+  return (
+    <host>
+      <button onclick={() => {
+        const detail = "my-component"; // 👈
+        dispatchEvent(detail);         // 👈
+      }}>button</button>
+    </host>
+  )c
+```
+{% endtab %}
+
+{% tab title="Typescript + detail" %}
+```typescript
+import { useEvent } from "atomico";
+
+function component() {
+  //                             👇 type for detail
+  const dispatchEvent = useEvent<{id:number}>("clickButton", {
+    bubbles: true,
+    composed: true,
+  });
+  return (
+    <host>
+      <button onclick={() => {
+        //            👇 Detail
+        dispatchEvent({id:100});
+      }}>button</button>
+    </host>
+  );
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Event customization
 
