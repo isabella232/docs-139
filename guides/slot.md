@@ -4,6 +4,12 @@ The use of slots improves the composition allowing to reflect the content expose
 
 ![](../.gitbook/assets/web\_1366\_7.png)
 
+{% hint style="info" %}
+The use of slot is thanks to the use of the **ShadowDOM** api, to make use of the shadowDom you must declare it as a property of the host tag, example:
+
+`<host shadowDom>`I exist inside the shadowDOM`</host>`
+{% endhint %}
+
 ### ::slotted(\<selector>)
 
 The `slotted` selector allows the manipulation of the content exposed as a `lightDOM` slot from the `shadowDOM`, example:
