@@ -56,4 +56,4 @@ Where:
 
 The following example shows the use of useResponsiveState, to display a message based on the mediaquery.
 
-{% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/PWFshi0MYl0CTbwlXIN6/src/index.jsx" %}
+{% embed url="https://studio.webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/gGV9X6OW5gINqRBFp8mK/src/index.jsx" %}
