@@ -60,6 +60,7 @@
 * [@atomico/router](atomico/atomico-router.md)
 * [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
+  * [use-intersection-observer](atomico/atomico-hooks/use-intersection-observer.md)
   * [use-ref-values](atomico/atomico-hooks/use-ref-values.md)
   * [use-script](atomico/atomico-hooks/use-script.md)
   * [use-attributes](atomico/atomico-hooks/use-attributes.md)
