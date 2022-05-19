@@ -14,10 +14,22 @@ import { useResponsiveState } from "@atomico/hooks/use-responsive-state";
 
 ### Syntax
 
-```jsx
+{% tabs %}
+{% tab title="Normal" %}
+```javascript
 const expression = "phone, tablet 720px, destop 1080px";
 const state = useResponsiveState(expression);
 ```
+{% endtab %}
+
+{% tab title="Template string" %}
+```javascript
+const state = useResponsiveState`
+    phone, tablet 720px, destop 1080px
+`;
+```
+{% endtab %}
+{% endtabs %}
 
 Where:
 
@@ -26,7 +38,7 @@ Where:
 
 ### Expressions
 
-```text
+```
 "<defaultState>, <caseState> <size>"
 ```
 
@@ -42,9 +54,6 @@ Where:
 
 ### Example
 
-The following example shows the use of useResponsiveState, to display a message based on the mediaquery. 
+The following example shows the use of useResponsiveState, to display a message based on the mediaquery.
 
 {% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/PWFshi0MYl0CTbwlXIN6/src/index.jsx" %}
-
-
-
