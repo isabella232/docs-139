@@ -95,7 +95,7 @@
 * [@atomico/components](atomico/atomico-components/README.md)
   * [keen-slider](atomico/atomico-components/router.md)
   * [modal](atomico/atomico-components/modal.md)
-  * [send-form](atomico/atomico-components/send-form.md)
+  * [lottie](atomico/atomico-components/send-form.md)
 * [@atomico/exports](atomico/atomico-exports/introduction.md)
   * [CLI and Flags](atomico/atomico-exports.md)
   * [Recipes](atomico/atomico-exports/recipes.md)
