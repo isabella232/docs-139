@@ -5,17 +5,13 @@
 {% tabs %}
 {% tab title="Default" %}
 ```javascript
-import {
-  SendForm // HTMLElement
-} from "@atomico/components/send-form";
+import { Lottie } from "@atomico/components/lottie";
 ```
 {% endtab %}
 
 {% tab title="React" %}
 ```javascript
-import {
-  SendForm 
-} from "@atomico/components/send-form.react";
+import { Lottie } from "@atomico/components/lottie/react";
 ```
 {% endtab %}
 {% endtabs %}
@@ -25,25 +21,23 @@ import {
 {% tabs %}
 {% tab title="HTML" %}
 ```markup
-<send-form action="https://api.any/data" json>
-    <form>
-        <input type="text"/>
-        <button>Enviar</button>
-    </form>
-    <h1 slot="pending">Loading...</h1>
-    <h1 slot="rejected">rejected!</h1>
-    <h1 slot="fulfilled">fulfilled!</h1>
-</send-form>
+<atomico-lottie
+    cdn
+    path="https://labs.nearpod.com/bodymovin/demo/markus/halloween/markus.json"
+></atomico-lottie>
+
 ```
 {% endtab %}
 
-{% tab title="IMPORT" %}
+{% tab title="JSX" %}
 ```javascript
-import {
-  SendForm, // HTMLElement
-} from "@atomico/components/send-form";
+import { Lottie } from "@atomico/components/lottie";
 
-customElements.define("send-form", SendForm);
+<Lottie 
+    cdn
+    path="https://labs.nearpod.com/bodymovin/demo/markus/halloween/markus.json"
+></Lottie>
+
 ```
 {% endtab %}
 {% endtabs %}
