@@ -1,31 +1,23 @@
 ---
-description: Manage routes for applications simply and declaratively.
+description: The Keen-slider api but with WebComponents
 ---
 
-# router
+# keen-slider
+
+This webcomponent reflects part of the [**keen-slider**](https://keen-slider.io/) library API using Atomico
 
 ## Modulo
 
 {% tabs %}
 {% tab title="Default" %}
 ```javascript
-import {
-  getPath, // ()=>string
-  redirect, // (path:string)=>void
-  RouterCase, // HTMLElement
-  RouterSwitch, // HTMLElement
-  RouterRedirect, // HTMLElement
-} from "@atomico/components/router";
+import { KeenSlider } from "@atomico/components/keen-slider";
 ```
 {% endtab %}
 
 {% tab title="React" %}
 ```javascript
-import {
-  RouterCase,
-  RouterSwitch, 
-  RouterRedirect, 
-} from "@atomico/components/router.react";
+import { KeenSlider } from "@atomico/components/keen-slider/react";
 ```
 {% endtab %}
 {% endtabs %}
@@ -35,60 +27,42 @@ import {
 {% tabs %}
 {% tab title="HTML" %}
 ```markup
-<router-redirect>
-    <a href="/">home</a>
-    <router-switch>
-        <router-case path="/" load="./component.js"></router-case>
-        <router-case path="/[...notFound]" for="notFound"></router-case>
-        <h1 slot="notFound">Not Found</h1>
-    </router-switch>
-</router-redirect>
+<atomico-keen-slider
+    slides-per-view="1, 2 520px"
+    slides-spacing="15"
+>
+    <div slot="slide" class="slide">
+        <h1>1</h1>
+    </div>
+    <div slot="slide" class="slide">
+        <h1>2</h1>
+    </div>
+    <button slot="to-left">←</button>
+    <button slot="to-right">→</button>
+</atomico-keen-slider>
+
 ```
 {% endtab %}
 
-{% tab title="IMPORT" %}
+{% tab title="JSX" %}
 ```javascript
 import {
-  RouterCase,
-  RouterSwitch,
-  RouterRedirect,
-} from "@atomico/components/router";
+    KeenSlider,
+} from "@atomico/components/keen-slider";
 
-customElements.define("router-redirect", RouterRedirect);
-customElements.define("router-switch", RouterSwitch);
-customElements.define("router-case", RouterCase);
+<KeenSlider
+    slidesPerView="1, 2 520px"
+    slidesSpacing="15">
+    <div slot="slide" class="slide">
+        <h1>1</h1>
+    </div>
+    <div slot="slide" class="slide">
+        <h1>2</h1>
+    </div>
+    <button slot="to-left">←</button>
+    <button slot="to-right">→</button>
+</KeenSlider>
+
 ```
 {% endtab %}
 {% endtabs %}
-
-### router-redirect
-
-Redirect every `onclick` event that declares the`href` property in its target, example tag `<a>`.
-
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| path | String | Define a `path` to concatenate to the nested`path`, either by redirection or router-switch. |
-
-### router-switch
-
-Controla la ruta a mostrar o montar según la expresión del path
-
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| path | String | Define a `path` to concatenate to the nested`path`, either by redirection or router-switch. |
-
-### router-case
-
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| load | \`String | \(\)=&gt;Promise\` |
-| for | String | Content to show at the time of the match by `path`,`for` must point to a slot within the parent. |
-
-### router-link
-
-Allows redirection in shadowDOM situations, `router-link` will inherit the top `path` from `router-redirect` or `router-switch`.
-
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| href | String | path a enviar a redirect |
-
