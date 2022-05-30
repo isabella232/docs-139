@@ -39,3 +39,21 @@ export const MyComponent = auto( HTMLMyComponent );
 ```
 
 {% embed url="https://codesandbox.io/s/atomico-react-example-cizcy" %}
+
+### @atomico/exports
+
+Another way to export your **webcomponents to React** is using `@atomico/exports` which will automatically detect the webcomponents and create the wrappers using `@atomico/react`.
+
+Some benefits of @atomico/exports are:
+
+1. export via expressions, example `./src/**.tsx`
+2. create the `package.json#exports` automatically
+3. create the types and associate the export paths for Typescript.
+4. group the sub dependencies of the workspace
+5. minimize the JS code.
+
+We invite you to review in detail the @atomico/exports package for its use
+
+{% content-ref url="atomico-exports/introduction.md" %}
+[introduction.md](atomico-exports/introduction.md)
+{% endcontent-ref %}
