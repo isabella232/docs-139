@@ -98,7 +98,6 @@
   * [lottie](atomico/atomico-components/send-form.md)
 * [@atomico/exports](atomico/atomico-exports/introduction.md)
   * [CLI and Flags](atomico/atomico-exports.md)
-  * [Recipes](atomico/atomico-exports/recipes.md)
   * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
 * [@atomico/magic-form](atomico/atomico-magic-form/README.md)
   * [MagicFormProvider | \<magic-form-provider>](atomico/atomico-magic-form/magicformprovider-or-less-than-magic-form-provider-greater-than.md)

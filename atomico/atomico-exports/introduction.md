@@ -44,3 +44,27 @@ The purpose of `@atomico/exports` is to create the output files and associate th
 ```bash
 exports ./src/*.{js,ts} --exports --types --watch
 ```
+
+## Installation
+
+{% tabs %}
+{% tab title="NPM" %}
+```bash
+npm install -D @atomico/exports
+```
+{% endtab %}
+
+{% tab title="package.json#scripts" %}
+```javascript
+{
+ /**
+  * ⚠️ The --types flag requires the installation of @typescript
+  */
+ "scripts": {
+   "exports": "exports src/components/*/*.js --exports --watch"
+ }
+}
+```
+{% endtab %}
+{% endtabs %}
+
