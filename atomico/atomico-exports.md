@@ -12,14 +12,12 @@ Simplify the generation of builds, types and exports by distributing webcomponen
 
 1. Exporting multiple files using example expressions: `exports src/components/*.{js,jsx}`.
 2. Automatically associate package.json#exports. flag `--exports`
-3. Automatically associate types for typescript package.json # typesVersions. flag `--types`
+3. Automatically associate types for typescript package.json#typesVersions. flag `--types`
 4. Optimize build distribution thanks to ESbuild.
 5. Import the assets by using import.meta.url, improving the consumption of assets from CDN.
 6. Add support for generic Atomico-based CSS modules.
 7. [Automatically create wrapper to use webcomponents in react](atomico-exports/wrapper-for-react.md)
 8. Minificar el código. flag `--minify`.
-9. Centralize workspace in a single installation package. flag `--workspace <spaces>`.
-10. Automatically create CSS visibility files for customElements found in export, example `my-component:not(:defined){ visibility: hidden }`
 
 ## Installation
 

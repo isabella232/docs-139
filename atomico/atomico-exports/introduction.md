@@ -2,43 +2,12 @@
 
 ![](<../../.gitbook/assets/Grupo 2.png>)
 
-`@atomico/exports` is a tool like CLI oriented to have an efficient and aesthetic distribution of packages through NPM or CDN.
+Exporting packages through NPM for publication or use in monorepo is a really complex task, it is no longer enough to create our js, now we will have to solve minimally:
 
-#### Efficient?
+1. `compilacion`: if we want to use JS To TS, our code will largely be compiled, `@atomico/exports` uses esbuild for it
+2. `package.json#exports`: declare all paths to consume from our `package.json`
+3. `packages.json#types`: declares the main path of types for Typescript
+4. `packages.json#typesVersions`: declare the subpaths, this is similar to package.json#exports but at the typescript level.
+5. `package.json#main`: declares the main file, the main property is friendly to services like unpkg.com
 
-Yes, thanks to the use of Esbuild and internal processes of @atomico/exports it optimizes your distribution in:
-
-1. Code splitting to subdivide your code efficiently.
-2. Preprocess `.css` files as js modules through postcss.
-3. Import of assets separately as URLs relative to the module, this prevents the origin of your assets from being broken when consuming it from a CDN.
-4. Component export using expressions, example `src/**/*.js`.
-5. Detect external dependencies(they are not part of the bundle)
-6. Minify your code
-
-#### Esthetic?
-
-`@atomico/exports` takes care of the aesthetics of your package, managing everything necessary to achieve the following import format:
-
-```javascript
-// Import 1
-import { MyButton, MyInput, MyRadio } from "my-components";
-// Import 2
-import { MyButton } from "my-components/button";
-```
-
-to achieve that `@atomico/exports` manages part of the `exports`, `types` and other properties of your package.json, in order to achieve a perfect aesthetic export.
-
-### Usage
-
-It is recommended to add to the publish queue of the NPM package, since its execution is only necessary when we export our package.
-
-```json
-"scripts": {
-    "exports": "exports src/*/*.{js,ts,jsx,tsx} --main components --types --exports --minify",
-    "prepublishOnly": "npm run exports"
-}
-```
-
-{% hint style="warning" %}
-The `--types` flag requires Typescript to be installed as a devDependency
-{% endhint %}
+**But why not automate this tedious process?** I present to you `@atomico/exports` is a tool like CLI created by Uppercod to improve the construction of packages.json frontend when talking about export.
