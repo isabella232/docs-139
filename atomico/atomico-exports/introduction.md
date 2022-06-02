@@ -2,69 +2,43 @@
 
 ![](<../../.gitbook/assets/Grupo 2.png>)
 
-Exporting packages through NPM for publication or use in monorepo is a really complex task, it is no longer enough to create our js, now we will have to solve minimally:
+`@atomico/exports` is a tool like CLI oriented to have an efficient and aesthetic distribution of packages through NPM or CDN.
 
-1. `compilacion`: if we want to use JS To TS, our code will largely be compiled, `@atomico/exports` uses esbuild for it
-2. `package.json#exports`: declare all paths to consume from our `package.json`
-3. `packages.json#types`: declares the main path of types for Typescript
-4. `packages.json#typesVersions`: declare the subpaths, this is similar to package.json#exports but at the typescript level.
-5. `package.json#main`: declares the main file, the main property is friendly to services like unpkg.com
+#### Efficient?
 
-**But why not automate this tedious process?** I present to you `@atomico/exports` is a tool like CLI created by Uppercod to improve the construction of packages.json frontend when talking about export.
+Yes, thanks to the use of Esbuild and internal processes of @atomico/exports it optimizes your distribution in:
 
-## With @atomico/exports you can get:
+1. Code splitting to subdivide your code efficiently.
+2. Preprocess `.css` files as js modules through postcss.
+3. Import of assets separately as URLs relative to the module, this prevents the origin of your assets from being broken when consuming it from a CDN.
+4. Component export using expressions, example `src/**/*.js`.
+5. Detect external dependencies(they are not part of the bundle)
+6. Minify your code
 
-### Export and compile your code using expressions
+#### Esthetic?
 
-```bash
-exports ./src/*.{js,ts}
-```
+`@atomico/exports` takes care of the aesthetics of your package, managing everything necessary to achieve the following import format:
 
-The expression `./src/*.{js,ts}` defines that all js and ts type files are exported inside the src folder, the exported files will be compiled thanks to **Esbuild**.
-
-### Aesthetic import.
-
-```js
-import moduleA from "module/dist/a.js"; // ❌
-import moduleA from "module/a"; // ✅
-```
-
-`@atomico/exports` will allow you to use exports as module/a, since it internally creates the `exports` and `typesVersions` properties within the package.json, to resolve this export you must use the following command:
-
-```bash
-exports ./src/*.{js,ts} --exports --types
-```
-
-remember that `./src/*.{js,ts}` is just an expression, it can be modified with your file path.
-
-### watch mode
-
-The purpose of `@atomico/exports` is to create the output files and associate them correctly with the package.json, the result is a modified package.json. the `--watch` flag, allows you to modify your package.json but temporarily, this is ideal for monorepos that automate their publication through automation flows, you will keep a clean package in development that will only be decorated in production.
-
-```bash
-exports ./src/*.{js,ts} --exports --types --watch
-```
-
-## Installation
-
-{% tabs %}
-{% tab title="NPM" %}
-```bash
-npm install -D @atomico/exports
-```
-{% endtab %}
-
-{% tab title="package.json#scripts" %}
 ```javascript
-{
- /**
-  * ⚠️ The --types flag requires the installation of @typescript
-  */
- "scripts": {
-   "exports": "exports src/components/*/*.js --exports --watch"
- }
+// Import 1
+import { MyButton, MyInput, MyRadio } from "my-components";
+// Import 2
+import { MyButton } from "my-components/button";
+```
+
+to achieve that `@atomico/exports` manages part of the `exports`, `types` and other properties of your package.json, in order to achieve a perfect aesthetic export.
+
+### Usage
+
+It is recommended to add to the publish queue of the NPM package, since its execution is only necessary when we export our package.
+
+```json
+"scripts": {
+    "exports": "exports src/*/*.{js,ts,jsx,tsx} --main components --types --exports --minify",
+    "prepublishOnly": "npm run exports"
 }
 ```
-{% endtab %}
-{% endtabs %}
 
+{% hint style="warning" %}
+The `--types` flag requires Typescript to be installed as a devDependency
+{% endhint %}

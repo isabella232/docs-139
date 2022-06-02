@@ -20,9 +20,7 @@ It requires the installation of Typescript, it will create the types and add the
 
 Analyze the code to generate output for third parties like react and preact
 
-### --workspace
 
-It will look for the subpackages that declare dependencies and it will add them in the dependencies property of the package.json
 
 ### --ignore-build
 
