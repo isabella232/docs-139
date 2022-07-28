@@ -51,22 +51,22 @@ import { KeenSlider } from "@atomico/keen-slider/preact";
 
 ### Properties / attributes
 
-| Prop/Attr                       | Type / default                  | Description |
-| ------------------------------- | ------------------------------- | ----------- |
-| loop                            | boolean                         |             |
-| drag                            | boolean                         |             |
-| disabled                        | boolean                         |             |
-| vertical                        | boolean                         |             |
-| rtl                             | boolean                         |             |
-| rubberband                      | boolean                         |             |
-| autoplay                        | boolean                         |             |
-| autoplayLoop / autoplay-loop    | number / 2000                   |             |
-| initial                         | number                          |             |
-| mode                            | "snap" \| "free" \| "free-snap" |             |
-| slidesPerView / slides-per-view | string                          |             |
-| slidesSpacing / slides-spacing  | string                          |             |
-| slidesOrigin / slides-origin    | string                          |             |
-| slider                          | KeenSliderInstance              |             |
+| Prop/Attr                           | Type / default                  | Description                                                                                                                                                      |
+| ----------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **loop**                            | boolean                         | Enables or disables carousel/loop functionality of the slider.                                                                                                   |
+| **drag**                            | boolean                         | Enables or disables mouse and touch control. Default is **tru**                                                                                                  |
+| **disabled**                        | boolean                         |                                                                                                                                                                  |
+| **vertical**                        | boolean                         | Changes the direction of the slider from horizontal to vertical. (Note: The height of the `container` must be defined if vertical is true) Default is **false**. |
+| **rtl**                             | boolean                         | Changes the direction in which the slides are positioned, from left-to-right to right-to-left. Default is **false**.                                             |
+| **rubberband**                      | boolean                         | Enables or disables the rubberband behavior for dragging and animation after a drag. Default is **tr**                                                           |
+| **autoplay**                        | boolean                         |                                                                                                                                                                  |
+| **autoplayLoop / autoplay-loop**    | number / 2000                   |                                                                                                                                                                  |
+| **initial**                         | number                          |                                                                                                                                                                  |
+| **mode**                            | "snap" \| "free" \| "free-snap" |                                                                                                                                                                  |
+| **slidesPerView / slides-per-view** | string                          |                                                                                                                                                                  |
+| **slidesSpacing / slides-spacing**  | string                          |                                                                                                                                                                  |
+| **slidesOrigin / slides-origin**    | string                          |                                                                                                                                                                  |
+| **slider**                          | KeenSliderInstance              |                                                                                                                                                                  |
 
 The slidesPerView, slidesSpacing and slidesOrigin props accept responsive expressions, example:
 
