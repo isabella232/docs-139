@@ -6,42 +6,6 @@ description: Facilitates the distribution of webcomponents
 
 {% embed url="https://github.com/atomicojs/exports" %}
 
-![](../.gitbook/assets/grupo-2.png)
-
-Simplify the generation of builds, types and exports by distributing webcomponents in NPM, with `@atomico/exports` you will be able to:
-
-1. Exporting multiple files using example expressions: `exports src/components/*.{js,jsx}`.
-2. Automatically associate package.json#exports. flag `--exports`
-3. Automatically associate types for typescript package.json # typesVersions. flag `--types`
-4. Optimize build distribution thanks to ESbuild.
-5. Import the assets by using import.meta.url, improving the consumption of assets from CDN.
-6. Add support for generic Atomico-based CSS modules.
-7. [Automatically create wrapper to use webcomponents in react](atomico-exports/wrapper-for-react.md)
-8. Minificar el código. flag `--minify`.
-9. Centralize workspace in a single installation package. flag `--workspace <spaces>`.
-10. Automatically create CSS visibility files for customElements found in export, example `my-component:not(:defined){ visibility: hidden }`
-
-## Installation
-
-{% tabs %}
-{% tab title="NPM" %}
-```bash
-npm install -D @atomico/exports
-```
-{% endtab %}
-
-{% tab title="package.json#scripts" %}
-```javascript
-{
-    /**
-     * ⚠️ The --types flag requires the installation of @typescript
-     */
-    "scripts": "exports src/components/*/*.js --exports --types"
-}
-```
-{% endtab %}
-{% endtabs %}
-
 ## Flags
 
 ### --exports
@@ -56,9 +20,7 @@ It requires the installation of Typescript, it will create the types and add the
 
 Analyze the code to generate output for third parties like react and preact
 
-### --workspace
 
-It will look for the subpackages that declare dependencies and it will add them in the dependencies property of the package.json
 
 ### --ignore-build
 
