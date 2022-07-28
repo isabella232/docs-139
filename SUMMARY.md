@@ -33,7 +33,7 @@
   * [File structure](guides/atomico-style-guide/file-structure/README.md)
     * [Monorepo](guides/atomico-style-guide/file-structure/monorepo.md)
     * [Design systems](guides/atomico-style-guide/file-structure/design-systems.md)
-  * [At the component level](guides/atomico-style-guide/at-the-component-level.md)
+  * [Component](guides/atomico-style-guide/component.md)
 * [🛡 Atomico with Typescript](guides/atomico-with-typescript/README.md)
   * [Meta-types](guides/atomico-with-typescript/meta-types/README.md)
     * [Type](guides/atomico-with-typescript/meta-types/type.md)

@@ -1,4 +1,4 @@
-# At the component level
+# Component
 
 ### &#x20;Component name as function.
 
