@@ -8,13 +8,15 @@ description: The Keen-slider api but with WebComponents
 
 {% embed url="https://codepen.io/uppercod/pen/MWVENee" %}
 
-## Modulo
+### Modulo
 
 {% tabs %}
 {% tab title="Default" %}
 ```javascript
 import { KeenSlider } from "@atomico/keen-slider";
 ```
+
+
 {% endtab %}
 
 {% tab title="Elements" %}
@@ -45,47 +47,39 @@ import { KeenSlider } from "@atomico/keen-slider/preact";
 {% endtab %}
 {% endtabs %}
 
-## Example
+### Properties / attributes
 
-{% tabs %}
-{% tab title="HTML" %}
-```markup
-<atomico-keen-slider
-    slides-per-view="1, 2 520px"
-    slides-spacing="15"
->
-    <div slot="slide" class="slide">
-        <h1>1</h1>
-    </div>
-    <div slot="slide" class="slide">
-        <h1>2</h1>
-    </div>
-    <button slot="to-left">←</button>
-    <button slot="to-right">→</button>
-</atomico-keen-slider>
+| Prop/Attr                       | Type / default                  | Description |
+| ------------------------------- | ------------------------------- | ----------- |
+| loop                            | boolean                         |             |
+| drag                            | boolean                         |             |
+| disabled                        | boolean                         |             |
+| vertical                        | boolean                         |             |
+| rtl                             | boolean                         |             |
+| rubberband                      | boolean                         |             |
+| autoplay                        | boolean                         |             |
+| autoplayLoop / autoplay-loop    | number / 2000                   |             |
+| initial                         | number                          |             |
+| mode                            | "snap" \| "free" \| "free-snap" |             |
+| slidesPerView / slides-per-view | string                          |             |
+| slidesSpacing / slides-spacing  | string                          |             |
+| slidesOrigin / slides-origin    | string                          |             |
+| slider                          | KeenSliderInstance              |             |
 
-```
-{% endtab %}
+### Events
 
-{% tab title="JSX" %}
-```javascript
-import {
-    KeenSlider,
-} from "@atomico/components/keen-slider";
+**CreateSlider**
 
-<KeenSlider
-    slidesPerView="1, 2 520px"
-    slidesSpacing="15">
-    <div slot="slide" class="slide">
-        <h1>1</h1>
-    </div>
-    <div slot="slide" class="slide">
-        <h1>2</h1>
-    </div>
-    <button slot="to-left">←</button>
-    <button slot="to-right">→</button>
-</KeenSlider>
+dispatched when defining the slider prop, useful for accessing the keen-slider instance
 
-```
-{% endtab %}
-{% endtabs %}
+### Methods
+
+`KeenSlider.next()`
+
+next slide
+
+`KeenSlider.prev()`
+
+`prev slide`
+
+****
