@@ -10,8 +10,8 @@ description: >-
 
 With `@atomico/design-tokens` you can:
 
-1. [Resolve scalability and maintenance issues with your design tokens.](atomico-design-tokens.md#resolve-scalability-and-maintenance-issues-with-your-design-tokens.)
-2. [Create utility classes from design tokens.](atomico-design-tokens.md#create-utility-classes-to-be-used-internally-by-your-component-system.)
+1. [Resolve scalability and maintenance issues with your design tokens.](./#resolve-scalability-and-maintenance-issues-with-your-design-tokens.)
+2. [Create utility classes from design tokens.](./#create-utility-classes-to-be-used-internally-by-your-component-system.)
 
 ### Resolve scalability and maintenance issues with your design tokens.
 
@@ -162,6 +162,6 @@ button.styles = tokensSize;
 customElements.define("my-button", c(button));
 ```
 
-{% content-ref url="atomico-design-tokens/atomico-design-tokens-api.md" %}
-[atomico-design-tokens-api.md](atomico-design-tokens/atomico-design-tokens-api.md)
+{% content-ref url="atomico-design-tokens-api.md" %}
+[atomico-design-tokens-api.md](atomico-design-tokens-api.md)
 {% endcontent-ref %}

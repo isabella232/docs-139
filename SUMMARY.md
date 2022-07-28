@@ -26,6 +26,7 @@
 
 ## Guides
 
+* [💧 SSR / SSG](guides/ssr-ssg.md)
 * [🧠 Atomico design patterns](guides/atomico-design-patterns/README.md)
   * [♻ Webcomponents with hybrid rendering](guides/atomico-design-patterns/webcomponents-with-hybrid-rendering.md)
   * [🔗 Slot as templates](guides/atomico-design-patterns/slot-as-templates.md)
@@ -55,14 +56,9 @@
 
 ## @atomico
 
-* [@atomico/store](atomico/atomico-store/README.md)
-  * [Store](atomico/atomico-store/store.md)
-  * [Hooks](atomico/atomico-store/hooks.md)
-  * [Examples](atomico/atomico-store/examples/README.md)
-    * [Cart](atomico/atomico-store/examples/cart.md)
-* [@atomico/design-tokens](atomico/atomico-design-tokens.md)
-  * [@atomico/design-tokens api](atomico/atomico-design-tokens/atomico-design-tokens-api.md)
-* [@atomico/router](atomico/atomico-router.md)
+* [@atomico/exports](atomico/atomico-exports/introduction.md)
+  * [CLI and Flags](atomico/atomico-exports.md)
+  * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
 * [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
   * [use-intersection-observer](atomico/atomico-hooks/use-intersection-observer.md)
@@ -101,9 +97,12 @@
   * [@atomico/keen-slider](atomico/atomico-components/router.md)
   * [@atomico/modal](atomico/atomico-components/modal.md)
   * [@atomico/lottie](atomico/atomico-components/send-form.md)
-* [@atomico/exports](atomico/atomico-exports/introduction.md)
-  * [CLI and Flags](atomico/atomico-exports.md)
-  * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
+* [@atomico/store](atomico/atomico-store/README.md)
+  * [Store](atomico/atomico-store/store.md)
+  * [Hooks](atomico/atomico-store/hooks.md)
+  * [Examples](atomico/atomico-store/examples/README.md)
+    * [Cart](atomico/atomico-store/examples/cart.md)
+* [@atomico/router](atomico/atomico-router.md)
 * [@atomico/magic-form](atomico/atomico-magic-form/README.md)
   * [MagicFormProvider | \<magic-form-provider>](atomico/atomico-magic-form/magicformprovider-or-less-than-magic-form-provider-greater-than.md)
   * [MagicForm | \<magic-form>](atomico/atomico-magic-form/magicform-or-less-than-magic-form-greater-than.md)
@@ -111,6 +110,9 @@
   * [MagicForm in React and Preact](atomico/atomico-magic-form/react-and-preact.md)
   * [MagicForm in Microfrontend](atomico/atomico-magic-form/microfrontend.md)
   * [MagicForm Patterns](atomico/atomico-magic-form/magicform-patterns.md)
+* [🚫 Deprecated](atomico/deprecated/README.md)
+  * [@atomico/design-tokens](atomico/deprecated/atomico-design-tokens/README.md)
+    * [@atomico/design-tokens api](atomico/deprecated/atomico-design-tokens/atomico-design-tokens-api.md)
 
 ## Support
 

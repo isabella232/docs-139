@@ -2,52 +2,58 @@
 description: Responsive generic modal component.
 ---
 
-# modal
+# @atomico/modal
 
-## Modulo
+**Webcomponent** built with [Atomico JS](https://atomicojs.dev/), Simple to use and customize modal. Includes additional support for React and Preact.
+
+{% embed url="https://codepen.io/uppercod/pen/poLdyBZ" %}
+
+{% embed url="https://github.com/atomicojs/components/tree/master/src/components/modal" %}
+
+### Modules
 
 {% tabs %}
 {% tab title="Default" %}
 ```javascript
 import {
   Modal // HTMLElement
-} from "@atomico/components/modal";
+} from "@atomico/modal";
+```
+{% endtab %}
+
+{% tab title="Elements" %}
+```javascript
+// Import that does not associate the tagName by default
+import { Modal } from "@atomico/modal/elements";
 ```
 {% endtab %}
 
 {% tab title="React" %}
 ```jsx
 import {
-  Modal 
-} from "@atomico/components/modal.react";
-```
-{% endtab %}
-{% endtabs %}
-
-## Example
-
-{% tabs %}
-{% tab title="HTML" %}
-```markup
-<atomico-modal show-after-ms="5000">
-    <div>
-        <img src="./image.jpg"/>
-        <button data-closed>Cerrar</button>
-    </div>
-</atomico-modal>
+  Modal
+} from "@atomico/modal/react";
 ```
 {% endtab %}
 
-{% tab title="IMPORT" %}
+{% tab title="Preact" %}
 ```javascript
-import { Modal } from "@atomico/components/modal";
+import {
+  Modal
+} from "@atomico/modal/preact";
+```
+{% endtab %}
 
-customElements.define("atomico-modal", Modal);
+{% tab title="Html CDN" %}
+```html
+<script 
+    type="module" 
+    src="http://esm.sh/@atomico/modal"></script>
 ```
 {% endtab %}
 {% endtabs %}
 
-## Properties
+### Properties
 
 **showAfterMs / show-after-ms**: `String`, defines the milliseconds to wait for the activation of the modal.
 
@@ -71,3 +77,10 @@ customElements.define("atomico-modal", Modal);
 
 **fullSizeClosed / full-size-closed**: `Boolean`, defines whether clicking on the background hides the modal.
 
+
+
+### Examples
+
+**React**
+
+{% embed url="https://stackblitz.com/edit/atomico-modal-react?file=src/App.tsx" %}

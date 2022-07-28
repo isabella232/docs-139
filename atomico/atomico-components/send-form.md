@@ -1,6 +1,15 @@
-# lottie
+# @atomico/lottie
 
-## Modulo
+**Webcomponent** built with [Atomico JS](https://atomicojs.dev/) to use lottie as webcomponent. Includes additional support for React and Preact.
+
+
+
+**Differences with lottie file**
+
+1. Faster and smaller
+2. Non-blocking, thanks to lazy loading.
+
+### Modules
 
 {% tabs %}
 {% tab title="Default" %}
@@ -9,35 +18,46 @@ import { Lottie } from "@atomico/components/lottie";
 ```
 {% endtab %}
 
+{% tab title="Elements" %}
+```javascript
+// Import that does not associate the tagName by default
+import { Lottie } from "@atomico/lottie/elements";
+```
+{% endtab %}
+
 {% tab title="React" %}
 ```javascript
 import { Lottie } from "@atomico/components/lottie/react";
 ```
 {% endtab %}
-{% endtabs %}
 
-## Example
+{% tab title="Preact" %}
 
-{% tabs %}
-{% tab title="HTML" %}
-```markup
-<atomico-lottie
-    cdn
-    path="https://labs.nearpod.com/bodymovin/demo/markus/halloween/markus.json"
-></atomico-lottie>
-
-```
 {% endtab %}
 
-{% tab title="JSX" %}
-```javascript
-import { Lottie } from "@atomico/components/lottie";
+{% tab title="Html CDN" %}
 
-<Lottie 
-    cdn
-    path="https://labs.nearpod.com/bodymovin/demo/markus/halloween/markus.json"
-></Lottie>
-
-```
 {% endtab %}
 {% endtabs %}
+
+### Properties
+
+**cdn**: `boolean` , importa lottie-web desde un CDN, por default [https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js](https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js), este puede ser modificado mediante el objeto cdn existente en el modulo, por defecto es false.
+
+**path**: string, path de la animacion, compatible con [lottiefile](https://lottiefiles.com/)
+
+loop: boolean, la animacion se reproduce en loop.
+
+lazyload: boolean, la animacion se descarga al ocurrir una intercepción
+
+intersectionOffset : string ,define el offset para la carga por intercepcion o reproduccion de animacion
+
+intersectionControl: boolean, si es true la animacion se reproducira solo en intercepción.&#x20;
+
+intersectionControlReplay: boolean, cada intercepción reinicia la animación.&#x20;
+
+### Examples
+
+**React**
+
+{% embed url="https://stackblitz.com/edit/atomico-lottie-react?file=src/App.tsx" %}
