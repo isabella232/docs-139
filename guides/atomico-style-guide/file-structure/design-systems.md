@@ -1,41 +1,39 @@
 # Design systems
 
-Al crear sistemas de diseño o sistemas de componentes, Atomico recomienda mantener una estructura de distribución centralizada en un solo package de exportacion con múltiples path de importación
+Al crear sistemas de diseño o sistemas de componentes, como te recomendamos mantener una estructura de distribución centralizada en un solo package de exportación con múltiples path de importación
 
 {% tabs %}
 {% tab title="Caso 1" %}
-```
+```javascript
 import { Button, Input } from "my-ds";
 ```
 {% endtab %}
 
 {% tab title="Caso 2" %}
-```
+```javascript
 import { Button } from "my-ds/button";
 import { Input } from "my-ds/input";
 ```
 {% endtab %}
 {% endtabs %}
 
-### Que gano con esta distribución
+### What are the benefits of this type of distribution?
 
-Coherencia estética, todo el sistema de diseño se apalanca en si mismo, ya que es un lenguaje  composición de la interfaz en el que la apariencia del componente esta apalancada a dicho sistema, gracias a esto ganamos coherencia estética.&#x20;
+Aesthetic coherence, the entire design system leverages itself and thanks to this we gain aesthetic coherence.
 
-Si bien un monorepo podría parecer un camino ideal, realmente eleva la complejidad de mantenimiento, sea por versionamiento de los componentes y Mantenimiento de dependencias.
+While a monorepo might seem like an ideal path, it actually increases the complexity of maintenance, whether it be component versioning and dependency maintenance.
 
-Entendiendo lo anterior te pregunto ¿ si un organismo requiere la existencia de una célula podemos prescindir de ella para componer dicho organismo? la respuesta es No, esto es lo que sucede con los sistemas de diseño.&#x20;
+We move faster and reduce implementation errors if you don't rely on individual versioning at the component level and leave this only defined at the design system level.
 
-Avanzaras mas rapido y reducirás los errores de implementación si no dependes de un versionamiento individual a nivel de componente y dejas esto solo definido a nivel de sistema de diseño.
-
-Esto tiene sus pros y contras:
+This has its pros and cons:
 
 **Pros:**&#x20;
 
-1. Acelera la creacion de componentes, ya que evita el proceso de publicación individual y centraliza todo esto a nivel sistema de diseño.
+1. It speeds up the creation of components, since it avoids the individual publication process and centralizes all this at the design system level.
 
-**Contras**
+**Cons**
 
-1. no podrás actualizar un componente de forma individual, ya que este esta apalancado a nivel de sistema de diseño.
+1. you will not be able to update a component individually, since it is leveraged at the design system level.
 
 
 
