@@ -59,7 +59,6 @@
 * [@atomico/exports](atomico/atomico-exports/introduction.md)
   * [CLI and Flags](atomico/atomico-exports.md)
   * [Wrapper for React](atomico/atomico-exports/wrapper-for-react.md)
-* [@atomico/react](atomico/atomico-react.md)
 * [@atomico/hooks](atomico/atomico-hooks/README.md)
   * [use-intersection-observer](atomico/atomico-hooks/use-intersection-observer.md)
   * [use-ref-values](atomico/atomico-hooks/use-ref-values.md)
@@ -97,6 +96,7 @@
   * [@atomico/keen-slider](atomico/atomico-components/router.md)
   * [@atomico/modal](atomico/atomico-components/modal.md)
   * [@atomico/lottie](atomico/atomico-components/send-form.md)
+* [@atomico/react](atomico/atomico-react.md)
 * [@atomico/store](atomico/atomico-store/README.md)
   * [Store](atomico/atomico-store/store.md)
   * [Hooks](atomico/atomico-store/hooks.md)
@@ -111,8 +111,8 @@
   * [MagicForm in Microfrontend](atomico/atomico-magic-form/microfrontend.md)
   * [MagicForm Patterns](atomico/atomico-magic-form/magicform-patterns.md)
 * [🚫 Deprecated](atomico/deprecated/README.md)
-  * [@atomico/design-tokens](atomico/deprecated/atomico-design-tokens/README.md)
-    * [@atomico/design-tokens api](atomico/deprecated/atomico-design-tokens/atomico-design-tokens-api.md)
+  * [@atomico/design-tokens](atomico/atomico-design-tokens.md)
+    * [@atomico/design-tokens api](atomico/atomico-design-tokens/atomico-design-tokens-api.md)
 
 ## Support
 
