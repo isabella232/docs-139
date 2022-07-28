@@ -7,11 +7,15 @@ description: Type to structure a component from its creation
 ```typescript
 import { Component } from "atomico";
 
+// 📌 Parameters for the function and set 
+//    the structure rules for myComponent.props
 interface Props{
     checked: boolean;
     value: string
 }
 
+// 📌 Optional, improves the typing experience 
+//    in JSX (Atomico, Preact and React)
 interface MetaProps {
     myMethod:(value: number)=>void;
     onMyEvent: Event;
