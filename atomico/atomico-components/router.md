@@ -68,6 +68,14 @@ import { KeenSlider } from "@atomico/keen-slider/preact";
 | slidesOrigin / slides-origin    | string                          |             |
 | slider                          | KeenSliderInstance              |             |
 
+The slidesPerView, slidesSpacing and slidesOrigin props accept responsive expressions, example:
+
+```html
+<atomico-keen-slider 
+    slider-per-view="1, 2 520px, 3 720px"
+></atomico-keen-slider>
+```
+
 ### Events
 
 **CreateSlider**
