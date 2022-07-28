@@ -4,7 +4,7 @@ description: Hooks to work with routes in the browser
 
 # use-router
 
-Hook to handle routes based on expressions according to the [**https://github.com/uppercod/exp-route**](https://github.com/uppercod/exp-route) library, this hook is used by [**@atomico/components/router**](../atomico-components/router.md)\*\*\*\*
+Hook to handle routes based on expressions according to the [**https://github.com/uppercod/exp-route**](https://github.com/uppercod/exp-route) library, this hook is used by [**@atomico/components/router**](../atomico-components/keen-slider.md)\*\*\*\*
 
 ### Module
 

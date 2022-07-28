@@ -4,7 +4,7 @@ description: create connection between components to share internal states
 
 # use-channel
 
-Este hook implementa [**@atomico/channel**](https://github.com/atomicojs/channel) una alternativa a React.Context, pero basada en eventos y agnóstica. 
+Este hook implementa [**@atomico/channel**](https://github.com/atomicojs/channel) una alternativa a React.Context, pero basada en eventos y agnóstica.
 
 ### Modulo
 
@@ -29,5 +29,4 @@ Where :
 
 {% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/34DlYUfeqmk0sO3BUa31/src/index.jsx" %}
 
-This hook is used by [@atomico/components/router](../atomico-components/router.md)
-
+This hook is used by [@atomico/components/router](../atomico-components/keen-slider.md)
