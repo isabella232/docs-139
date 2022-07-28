@@ -2,11 +2,13 @@
 description: The Keen-slider api but with WebComponents
 ---
 
-# keen-slider
+# @atomico/keen-slider
 
 **Webcomponent** built with [Atomico JS](https://atomicojs.dev/) to use [keen-slider](https://keen-slider.io/) as webcomponent. Includes additional support for React and Preact.
 
 {% embed url="https://codepen.io/uppercod/pen/MWVENee" %}
+
+{% embed url="https://github.com/atomicojs/components/tree/master/src/components/keen-slider" %}
 
 ### Modulo
 
