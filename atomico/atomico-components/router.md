@@ -19,6 +19,7 @@ import { KeenSlider } from "@atomico/keen-slider";
 
 {% tab title="Elements" %}
 ```javascript
+// Import that does not associate the tagName by default
 import { KeenSlider } from "@atomico/keen-slider/elements";
 ```
 {% endtab %}

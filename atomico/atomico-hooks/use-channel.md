@@ -29,4 +29,4 @@ Where :
 
 {% embed url="https://webcomponents.dev/edit/collection/n2tZyzx4LMKqk1jNE0e9/34DlYUfeqmk0sO3BUa31/src/index.jsx" %}
 
-This hook is used by [@atomico/components/router](../atomico-components/keen-slider.md)
+This hook is used by [@atomico/components/router](../atomico-components/router.md)
