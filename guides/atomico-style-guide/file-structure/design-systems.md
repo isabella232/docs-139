@@ -1,15 +1,17 @@
 # Design systems
 
-Al crear sistemas de diseño o sistemas de componentes, como te recomendamos mantener una estructura de distribución centralizada en un solo package de exportación con múltiples path de importación
+## Distribution and consumption
+
+When creating design systems or component systems, we recommend that you maintain a centralized distribution structure in a single export package with multiple import paths, example:
 
 {% tabs %}
-{% tab title="Caso 1" %}
+{% tab title="case 1" %}
 ```javascript
 import { Button, Input } from "my-ds";
 ```
 {% endtab %}
 
-{% tab title="Caso 2" %}
+{% tab title="case 2" %}
 ```javascript
 import { Button } from "my-ds/button";
 import { Input } from "my-ds/input";
@@ -37,7 +39,7 @@ This has its pros and cons:
 
 
 
-### Recommended file structure for webcomponents
+## Recommended file structure for webcomponents
 
 you always prefer to keep each component isolated in a directory with names associative to the same component, example:
 
