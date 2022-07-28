@@ -21,6 +21,13 @@ import {
 ```
 {% endtab %}
 
+{% tab title="Elements" %}
+```javascript
+// Import that does not associate the tagName by default
+import { Modal } from "@atomico/modal/elements";
+```
+{% endtab %}
+
 {% tab title="React" %}
 ```jsx
 import {

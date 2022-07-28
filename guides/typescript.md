@@ -1,125 +1,39 @@
 ---
-description: Types for functional webcomponents created with Atomico + Typescript.
+description: Type to structure a component from its creation
 ---
 
-# Typescript & JSDOC
+# Component
 
-## Component
-
-### `Props<typeof component.props>`
-
-Allows you to retrieve the types of the `props` object associated with the function.
-
-{% tabs %}
-{% tab title="Typescript" %}
 ```typescript
-import { Props, c } from "atomico";
+import { Component } from "atomico";
 
-function component(props: Props<typeof component.props>) {
-  return <host shadowDom>
-    Atomico + Typescript
-  </host>
+interface Props{
+    checked: boolean;
+    value: string
 }
 
-component.props = {
-    propString: String,
-    propObject: {
-        type: Object,
-        value: (): { prop?: number } => ({}),
-    },
-};
-
-customElements.define("my-component", c(component));
-```
-{% endtab %}
-
-{% tab title="JSDOC" %}
-```jsx
-import { c } from "atomico";
-/**
- * @param {import("atomico").Props<component.props>} props
- */
-function component(props) {
-  return <host shadowDom>
-    Atomico + Typescript
-  </host>
+interface MetaProps {
+    myMethod:(value: number)=>void;
+    onMyEvent: Event;
 }
 
-component.props = {
-    propString: String,
-    propObject: {
-        type: Object,
-        value: (): { prop?: number } => ({}),
-    },
-};
+const myComponent: Component<Props, MetaProps> = (props) => {
+    const myMethod = (value: number)=>{};
+    return <host myMethod={myMethod }></host>
+}
 
-customElements.define("my-component", c(component));
-```
-{% endtab %}
-{% endtabs %}
-
-### Component\<props>
-
-Create a strict contract that facilitates and checks the correct construction of props
-
-{% tabs %}
-{% tab title="Typescript" %}
-```typescript
-import { c, Component } from "atomico";
-
-const component: Component<{ value: string }> = (props) => {
-  return <host shadowDom></host>;
-};
-
-component.props = {
-  value: String,
+myComponent.props = {
+    checked: Boolean,
+    value: { type: String, event: {type: "MyEvent"} },
 }
 ```
-{% endtab %}
 
-{% tab title="JSDOC" %}
-```jsx
-import { c } from "atomico";
-/**
- * @type {import("atomico").Component<{ value: string }>}
- */
-const component = (props) => {
-  return <host shadowDom></host>;
-};
+The declaration `const myComponent: Component<Props, MetaProps>` defines at the Typescript level the types of props and other options with which the component should be structured.&#x20;
 
-component.props = {
-  value: String,
-};
-```
-{% endtab %}
-{% endtabs %}
+This process is strict but makes autocompletion and error detection easier in the component declaration.
 
-## Hooks
+Some warnings that this type can create are:
 
-Most hooks infer the types, but others require a declaration to improve the typing experience, example:
-
-### useProp
-
-```typescript
-const [value, setValue] = useProp<number>("value");
-```
-
-Forces the type `number` for `value` and `setValue`, according to the example `value` can only be of type `number`.
-
-### useState
-
-**useState infers the type in most cases,** but not using an initial state prevents strict typing, I was able to correct this as follows:
-
-```typescript
-const [value, setValue] = useState<number>();
-```
-
-Forces the type `number` for `value` and `setValue`, according to the example `value` can only be of type `number`.
-
-### useRef
-
-```typescript
-const ref = useRef < HTMLInputElement > useRef();
-```
-
-Forces **ref.current** to be `HTMLInputElement`.
+1. The declaration of the prop in myComponents.props does not match the type declared in Props.
+2. A props declaration is missing.
+3. Props has invalid metadata, example reflect has been defined for a Promise type.
