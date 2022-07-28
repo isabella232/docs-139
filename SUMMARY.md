@@ -94,7 +94,7 @@
   * [use-force-render](atomico/atomico-hooks/use-force-render.md)
 * [@atomico/components](atomico/atomico-components/README.md)
   * [@atomico/keen-slider](atomico/atomico-components/router.md)
-  * [modal](atomico/atomico-components/modal.md)
+  * [@atomico/modal](atomico/atomico-components/modal.md)
   * [lottie](atomico/atomico-components/send-form.md)
 * [@atomico/exports](atomico/atomico-exports/introduction.md)
   * [CLI and Flags](atomico/atomico-exports.md)

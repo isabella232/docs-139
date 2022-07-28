@@ -10,7 +10,7 @@ description: The Keen-slider api but with WebComponents
 
 {% embed url="https://github.com/atomicojs/components/tree/master/src/components/keen-slider" %}
 
-### Modulo
+### Modules
 
 {% tabs %}
 {% tab title="Default" %}
@@ -40,7 +40,7 @@ import { KeenSlider } from "@atomico/keen-slider/preact";
 ```
 {% endtab %}
 
-{% tab title="CDN" %}
+{% tab title="Html CDN" %}
 ```html
 <script 
     type="module" 
