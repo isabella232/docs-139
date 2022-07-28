@@ -51,6 +51,8 @@ import { KeenSlider } from "@atomico/keen-slider/preact";
 
 ### Properties / attributes
 
+most of the properties are homologous to [keen-slider documentation](https://keen-slider.io/docs)
+
 | Prop/Attr                           | Type / default                  | Description                                                                                                                                                      |
 | ----------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **loop**                            | boolean                         | Enables or disables carousel/loop functionality of the slider.                                                                                                   |
