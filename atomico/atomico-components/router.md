@@ -82,6 +82,6 @@ next slide
 
 `KeenSlider.prev()`
 
-`prev slide`
+prev slide
 
 ****
