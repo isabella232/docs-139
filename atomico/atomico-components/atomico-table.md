@@ -11,19 +11,26 @@
 {% tabs %}
 {% tab title="Default" %}
 ```javascript
-import { Table } from "@atomico/table";
+import { Table, Tr, Td } from "@atomico/table";
+```
+{% endtab %}
+
+{% tab title="Elements" %}
+```javascript
+// Import that does not associate the tagName by default
+import { Table, Tr, Td } from "@atomico/table/elements";
 ```
 {% endtab %}
 
 {% tab title="React" %}
 ```javascript
-import { Table } from "@atomico/table/react";
+import { Table, Tr, Td } from "@atomico/table/react";
 ```
 {% endtab %}
 
 {% tab title="Preact" %}
 ```javascript
-import { Table } from "@atomico/table/preact";
+import { Table, Tr, Td } from "@atomico/table/preact";
 ```
 {% endtab %}
 
