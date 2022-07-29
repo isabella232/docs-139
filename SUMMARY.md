@@ -26,7 +26,6 @@
 
 ## Guides
 
-* [💧 SSR / SSG](guides/ssr-ssg.md)
 * [🧠 Atomico design patterns](guides/atomico-design-patterns/README.md)
   * [♻ Webcomponents with hybrid rendering](guides/atomico-design-patterns/webcomponents-with-hybrid-rendering.md)
   * [🔗 Slot as templates](guides/atomico-design-patterns/slot-as-templates.md)
@@ -47,6 +46,7 @@
   * [⚛ From React to Atomico](guides/atomico-and-react/from-react-to-atomico/README.md)
     * [Rendering Differences](guides/atomico-and-react/from-react-to-atomico/rendering-differences.md)
     * [VirtualDOM api differences](guides/atomico-and-react/from-react-to-atomico/virtualdom-api-differences.md)
+* [💧 SSR / SSG](guides/ssr-ssg.md)
 * [🔀 Slot](guides/slot.md)
 * [🗃 Archives](guides/archives/README.md)
   * [Class inheritance](guides/class-inheritance.md)
