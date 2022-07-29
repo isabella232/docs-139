@@ -93,6 +93,7 @@
   * [use-child-nodes](atomico/atomico-hooks/use-child-nodes.md)
   * [use-force-render](atomico/atomico-hooks/use-force-render.md)
 * [@atomico/components](atomico/atomico-components/README.md)
+  * [@atomico/table](atomico/atomico-components/atomico-table.md)
   * [@atomico/keen-slider](atomico/atomico-components/router.md)
   * [@atomico/modal](atomico/atomico-components/modal.md)
   * [@atomico/lottie](atomico/atomico-components/send-form.md)
