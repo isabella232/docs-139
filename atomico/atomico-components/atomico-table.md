@@ -2,9 +2,9 @@
 
 **Webcomponent** built with [Atomico JS](https://atomicojs.dev/), Simple to use and customize table. Includes additional support for React and Preact.
 
+{% embed url="https://codepen.io/uppercod/pen/qBoVpZP" %}
 
-
-
+{% embed url="https://github.com/atomicojs/components/tree/master/src/components/table" %}
 
 ### Custom properties
 
