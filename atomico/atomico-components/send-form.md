@@ -2,7 +2,7 @@
 
 **Webcomponent** built with [Atomico JS](https://atomicojs.dev/) to use lottie as webcomponent. Includes additional support for React and Preact.
 
-
+{% embed url="https://codepen.io/uppercod/pen/MWVOOxW" %}
 
 **Differences with lottie file**
 
@@ -42,19 +42,19 @@ import { Lottie } from "@atomico/components/lottie/react";
 
 ### Properties
 
-**cdn**: `boolean` , importa lottie-web desde un CDN, por default [https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js](https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js), este puede ser modificado mediante el objeto cdn existente en el modulo, por defecto es false.
+**cdn**: `boolean` , import lottie-web from a CDN, by default [https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js](https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.1/lottie.min.js), this can be modified through the existing cdn object in the module, by default it is false.
 
-**path**: string, path de la animacion, compatible con [lottiefile](https://lottiefiles.com/)
+**path**: `string`, animation path, compatible with lottiefiles
 
-loop: boolean, la animacion se reproduce en loop.
+**loop**: `boolean`, the animation plays in a loop.
 
-lazyload: boolean, la animacion se descarga al ocurrir una intercepción
+**lazyload**: `boolean`, the animation is downloaded when an interception occurs
 
-intersectionOffset : string ,define el offset para la carga por intercepcion o reproduccion de animacion
+**intersectionOffset** : `string`, defines the offset for interception loading or animation playback.
 
-intersectionControl: boolean, si es true la animacion se reproducira solo en intercepción.&#x20;
+**intersectionControl**: `boolean`, if true the animation is played only on interception.
 
-intersectionControlReplay: boolean, cada intercepción reinicia la animación.&#x20;
+**intersectionControlReplay**: `boolean`, each intercept restarts the animation.
 
 ### Examples
 
