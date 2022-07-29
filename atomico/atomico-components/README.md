@@ -1,5 +1,5 @@
 ---
-description: Componentes utilitarios y genéricos sin asociación de TAG.
+description: Utility and generic components
 ---
 
 # @atomico/components
