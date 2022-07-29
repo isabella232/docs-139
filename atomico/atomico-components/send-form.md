@@ -36,7 +36,13 @@ import { Lottie } from "@atomico/components/lottie/react";
 {% endtab %}
 
 {% tab title="Html CDN" %}
-
+```html
+<script 
+    type="module" 
+    src="http://esm.sh/@atomico/lottie"></script>
+    
+<atomico-lottie></atomico-lottie>
+```
 {% endtab %}
 {% endtabs %}
 

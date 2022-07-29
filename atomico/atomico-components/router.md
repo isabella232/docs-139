@@ -45,6 +45,8 @@ import { KeenSlider } from "@atomico/keen-slider/preact";
 <script 
     type="module" 
     src="http://esm.sh/@atomico/keen-slider"></script>
+    
+<atomico-keen-slider><atomico-keen-slider>
 ```
 {% endtab %}
 {% endtabs %}

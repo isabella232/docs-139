@@ -49,6 +49,8 @@ import {
 <script 
     type="module" 
     src="http://esm.sh/@atomico/modal"></script>
+    
+<atomico-modal></atomico-modal>
 ```
 {% endtab %}
 {% endtabs %}

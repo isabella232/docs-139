@@ -6,6 +6,38 @@
 
 {% embed url="https://github.com/atomicojs/components/tree/master/src/components/table" %}
 
+### Modules
+
+{% tabs %}
+{% tab title="Default" %}
+```javascript
+import { Table } from "@atomico/table";
+```
+{% endtab %}
+
+{% tab title="React" %}
+```javascript
+import { Table } from "@atomico/table/react";
+```
+{% endtab %}
+
+{% tab title="Preact" %}
+```javascript
+import { Table } from "@atomico/table/preact";
+```
+{% endtab %}
+
+{% tab title="Html CDN" %}
+```java
+<script 
+    type="module" 
+    src="http://esm.sh/@atomico/table"></script>
+    
+<atomico-table></atomico-table>
+```
+{% endtab %}
+{% endtabs %}
+
 ### Custom properties
 
 | Global                         | Description                                                 |
