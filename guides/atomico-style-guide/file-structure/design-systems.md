@@ -56,4 +56,4 @@ you always prefer to keep each component isolated in a directory with names asso
     └── my-input.md
 ```
 
-**why?** The NPM-oriented [`@atomico/exports`](../../../atomico/atomico-exports.md) packaging tool allows automatic export from the recommended structure,`@atomico/exports` will generate a modern package.json to current standards, automatically generating all (main, types, exports and more) what is necessary for your package to be distributed correctly.
+**why?** The NPM-oriented [`@atomico/exports`](../../../packages/introduction/atomico-exports.md) packaging tool allows automatic export from the recommended structure,`@atomico/exports` will generate a modern package.json to current standards, automatically generating all (main, types, exports and more) what is necessary for your package to be distributed correctly.

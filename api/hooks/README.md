@@ -48,8 +48,8 @@ description: >-
 
 ## @atomico/hooks
 
-Atomico today offers more Hooks external to the core, we invite you to visit [@atomico/hooks](../../atomico/atomico-hooks/) with more than 50 hooks to enhance the use of webcomponents 😎
+Atomico today offers more Hooks external to the core, we invite you to visit [@atomico/hooks](../../packages/atomico-hooks/) with more than 50 hooks to enhance the use of webcomponents 😎
 
-{% content-ref url="../../atomico/atomico-hooks/" %}
-[atomico-hooks](../../atomico/atomico-hooks/)
+{% content-ref url="../../packages/atomico-hooks/" %}
+[atomico-hooks](../../packages/atomico-hooks/)
 {% endcontent-ref %}

@@ -77,7 +77,7 @@ From the example we will highlight the following differences:
 2. `useProp` is like `useState`, but with the difference that useProp references the state from the webcomponent property defined in `counter.props`.
 3. `counter.props` allows us to create the properties of our webcomponent, these are like React's propTypes, but with a big difference they are associated with the instance and can be read and modified by referencing the node, example `document.querySelector("my-counter").count = 10;`
 4. `ReactDom.render` needs a reference to mount the component, in Atomico you only need to create the `my-counter` tag to create a new instance of the component.
-5. The `<host/>` tag is similar to `<> </>` for React, but  `<host/>` represents the webcomponent instance and **every component created with Atomico must return the host tag**
+5. The `<host/>` tag is similar to `<> </>` for React, but `<host/>` represents the webcomponent instance and **every component created with Atomico must return the host tag**
 6. This is only readability, but in Atomico by convention we do not use capital letters when naming our component, these are only used when creating the customElement as in line 16, since `Counter` is instantiable.
 
 ### CustomHooks example
@@ -158,7 +158,7 @@ In Atomico you will have the most useful React hooks such as:
 5. useEffect
 6. useMemo
 7. useCallback
-8. ~~useContext~~ : **Not supported**, event api is better practice than context when using webcomponents, example [**useChannel**](../../../atomico/atomico-hooks/use-channel.md)****
+8. ~~useContext~~ : **Not supported**, event api is better practice than context when using webcomponents, example [**useChannel**](../../../packages/atomico-hooks/use-channel.md)\*\*\*\*
 
 ### CSS-in-JS
 

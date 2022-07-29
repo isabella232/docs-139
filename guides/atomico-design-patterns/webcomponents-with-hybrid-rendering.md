@@ -26,7 +26,7 @@ function componentWithShadowDom() {
 }
 ```
 
-With atomico you can go further thanks to the hook [`@atomico/hooks/use-render`](../../atomico/atomico-hooks/use-render.md) which allows you to execute renders independent of the main one, example:
+With atomico you can go further thanks to the hook [`@atomico/hooks/use-render`](../../packages/atomico-hooks/use-render.md) which allows you to execute renders independent of the main one, example:
 
 ```jsx
 import { useRender } from "@atomico/hooks/use-render";
@@ -92,4 +92,3 @@ With the `useRender(...)` fragment we are managing to render an input in the lig
 ### Conclucion
 
 Thanks to useRender you will be able to work together with LightDOM and shadowDOM from the scope of the webcomponent created with Atomico.
-

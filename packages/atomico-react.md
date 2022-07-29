@@ -54,6 +54,6 @@ Some benefits of @atomico/exports are:
 
 We invite you to review in detail the @atomico/exports package for its use
 
-{% content-ref url="atomico-exports/introduction.md" %}
-[introduction.md](atomico-exports/introduction.md)
+{% content-ref url="introduction/" %}
+[introduction](introduction/)
 {% endcontent-ref %}

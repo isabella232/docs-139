@@ -113,10 +113,10 @@ function component() {
 [magicform-or-less-than-magic-form-greater-than.md](magicform-or-less-than-magic-form-greater-than.md)
 {% endcontent-ref %}
 
-{% content-ref url="hooks.md" %}
-[hooks.md](hooks.md)
+{% content-ref url="magicform-hooks.md" %}
+[magicform-hooks.md](magicform-hooks.md)
 {% endcontent-ref %}
 
-{% content-ref url="react-and-preact.md" %}
-[react-and-preact.md](react-and-preact.md)
+{% content-ref url="magicform-in-react-and-preact.md" %}
+[magicform-in-react-and-preact.md](magicform-in-react-and-preact.md)
 {% endcontent-ref %}
