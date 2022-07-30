@@ -6,6 +6,12 @@ description: Implement SSR and SST without friction
 
 Atomico and automatic SSR support, you will not need additional packages, example:
 
+{% tabs %}
+{% tab title="Example" %}
+{% embed url="https://stackblitz.com/edit/atomico-ssr-express?embed=1&file=index.js&hideExplorer=1&view=preview" %}
+{% endtab %}
+
+{% tab title="Express js" %}
 ```javascript
 // If your version of node accepts top-level await just point to 'atomico/ssr'
 import 'atomico/ssr/load'; 
@@ -39,6 +45,67 @@ app.listen(port, () => {
 });
 
 ```
+{% endtab %}
+
+{% tab title="Component.js" %}
+For this case we are using a JS-only component to avoid compilation in the example. you can achieve the same with JSX or TSX.
+
+&#x20;
+
+```javascript
+import { c, html, css, useProp } from 'atomico';
+
+function component() {
+  const [value, setValue] = useProp('value');
+  return html`<host shadowDom>
+    <h1>Atomico webcomponent</h1>    
+    <button onclick=${() => setValue(value + 1)}>${value} Increment</button>
+    <slot/>
+  </host>`;
+}
+
+component.props = {
+  value: { type: Number, value: 0 },
+};
+
+component.styles = css`
+  :host{
+    font-size: 32px;
+    font-family: arial;
+  }
+`;
+
+export const Component = c(component);
+
+customElements.define('my-element', Component);
+
+```
+{% endtab %}
+
+{% tab title="package.json" %}
+You will not need any additional package, atomic internally understands that the component must be hydrated
+
+
+
+```json
+{
+  "name": "node-starter",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@atomico/site": "^0.1.0",
+    "atomico": "^1.61.1",
+    "express": "^4.17.1"
+  }
+}
+
+```
+{% endtab %}
+{% endtabs %}
 
 Unlike other libraries, Atomico automatically hydrates when mounting the component in the DOM, so no additional client configuration is required.
 
