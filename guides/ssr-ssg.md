@@ -4,6 +4,8 @@ description: Implement SSR and SST without friction
 
 # 💧 SSR / SSG
 
+### Node
+
 Atomico and automatic SSR support, you will not need additional packages, example:
 
 {% tabs %}
@@ -109,7 +111,11 @@ You will not need any additional package, atomic internally understands that the
 
 Unlike other libraries, Atomico automatically hydrates when mounting the component in the DOM, so no additional client configuration is required.
 
-### SSR/SSG a travez de @atomico/react
+{% hint style="info" %}
+Remember that for node Node without tools like Next.js, Fresh or Astro you should import the path `atomico/ssr/load` from the server
+{% endhint %}
+
+### SSR/SSG via @atomico/react
 
 The @atomico/react package allows you to take advantage of support for SSR or SSG designed for React/Preact, example:
 
