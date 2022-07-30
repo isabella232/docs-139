@@ -112,7 +112,7 @@ You will not need any additional package, atomic internally understands that the
 Unlike other libraries, Atomico automatically hydrates when mounting the component in the DOM, so no additional client configuration is required.
 
 {% hint style="info" %}
-Remember that for node Node without tools like Next.js, Fresh or Astro you should import the path `atomico/ssr/load` from the server
+To use SSR in Node without tools like Next.js, Fresh or Astro you should import the path `atomico/ssr/load` from the server
 {% endhint %}
 
 ### SSR/SSG via @atomico/react
