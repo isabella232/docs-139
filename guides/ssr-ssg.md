@@ -7,21 +7,36 @@ description: Implement SSR and SST without friction
 Atomico and automatic SSR support, you will not need additional packages, example:
 
 ```javascript
-import "atomico/ssr";
-import { html } from "atomico";
-import { http } from "http";
-import { MyComponent } from "./my-component";
+// If your version of node accepts top-level await just point to 'atomico/ssr'
+import 'atomico/ssr/load'; 
+import { html } from 'atomico';
+import { Component } from './static/component.js';
+import express from 'express';
 
-http.createServer((req, res) {
-  res.writeHead(200);
-  res.end(html`
-    <script src="./my-component" type="module"></script>
-    <${MyComponent }>
-      <h1>Yes, this is SSR with Atomico 🤯</h1>
-    </${MyComponent }>
+const app = express();
+const port = 3010;
+
+app.use(express.static('static'));
+
+app.get('/', (req, res) => {
+  res.send(`
+    <script type="importmap">
+    {
+      "imports": {
+        "atomico": "https://unpkg.com/atomico"
+      }
+    }
+    </script>
+    <script src="./component.js" type="module"></script>
+    ${html`<${Component} value=${100}>
+      <h1>Message from server!</h1>
+     </${Component}>`.render()}
   `);
-})
-.listen(8080);
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
 
 ```
 
