@@ -1,5 +1,9 @@
 # @atomico/exports
 
+{% hint style="info" %}
+`@atomico/exports` is distributed as ESM, so your `package.json` must define the property `"type":"module"` for its use.
+{% endhint %}
+
 ![](<../../.gitbook/assets/Grupo 2.png>)
 
 Exporting packages through NPM for publication or use in monorepo is a really complex task, it is no longer enough to create our js, now we will have to solve minimally:
