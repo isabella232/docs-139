@@ -89,3 +89,11 @@ The following properties are automatically defined by the component to declare s
 
 **width**: string, cell width.
 
+
+
+### Examples
+
+**React**
+
+{% embed url="https://stackblitz.com/edit/atomico-table-react?embed=1&file=src/App.tsx&view=preview" %}
+
