@@ -1,10 +1,18 @@
 ---
-description: powerful router for webcomponents
+description: powerful router for Webcomponents, React and Preact
 ---
 
 # @atomico/router
 
+@atomico/router tiene como objetivo facilitar la creacion de aplicaciones tipo SPA a travez de las siguientes estrategias:
+
+1. &#x20;slot: usted podra referenciar un slot dentro  de RouterSwitch a mostrar en un path especifico.&#x20;
+2. elementos: usted podra montar CustomElements a travez de elementos Instanciables.
+3. generadores asincronos: a través de generadores asíncronos usted lograra mostrar múltiples vistas según el estado de carga, por ejemplo transiciones.&#x20;
+
 {% embed url="https://github.com/atomicojs/router" %}
+
+## Sintaxis
 
 {% tabs %}
 {% tab title="Atomico JSX" %}
@@ -15,7 +23,8 @@ import { RouterSwitch, RouterCase } from "@atomico/router";
 render(
     <RouterSwitch>
         <RouterCase path="/" for="home"></RouterCase>
-        <RouterCase path="/user/{id}" load={async ({id})=>{
+        <RouterCase path="/user/{id}" load={async function *()({id}){
+            yield <h1>loading...</h1>;
             const data = await getUser(id);
             return <User {...data}/>
         }}></RouterCase>
@@ -38,6 +47,8 @@ render(
 {% endtab %}
 {% endtabs %}
 
+## Elementos
+
 ### RouterSwitch
 
 Controller component of the routes, with it you can:
@@ -48,41 +59,15 @@ Controller component of the routes, with it you can:
 
 #### Properties
 
-| Props   | Description                                                                                                                          | Type               | Event   |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ------- |
-| loading | is defined in case RouterCase defines the load function,  the value of loading will be the route that is being loaded asynchronously | String - read only | loading |
-| case    | slot to associate at the time of the match with path                                                                                 | String - read only | match   |
+| Props | Description                                          | Type               | Event |
+| ----- | ---------------------------------------------------- | ------------------ | ----- |
+| case  | slot to associate at the time of the match with path | String - read only | match |
 
-#### Custom properties
+#### Events
 
-| Prop                     | Type                                            |
-| ------------------------ | ----------------------------------------------- |
-| --router-transition-wait | transition before the entry of the state **in** |
-| --router-opacity-wait    | opacity before the entry of the state **in**    |
-| --router-transform-wait  | transform before the entry of the state **in**  |
-| --router-transition-in   |                                                 |
-| --router-opacity-in      |                                                 |
-| --router-transform-in    |                                                 |
-| --router-transition-out  |                                                 |
-| --router-opacity-out     |                                                 |
-| --router-transform-out   |                                                 |
-
-#### Transition example
-
-```css
-:root{
-    --router-transition-wait: 0.5s ease all;
-    --router-transition-out: 0.5s ease all;
-    --router-transition-in: 0.5s ease all;
-    --router-transform-wait: scale(0.5) translateX(50%);
-    --router-transform-in: translateY(0%);
-    --router-transform-out: scale(0.5) translateX(-50%);
-    --router-opacity-wait: 1;
-    --router-opacity-out: 1;
-}
-```
-
-{% embed url="https://stackblitz.com/edit/atomico-router-transition-76khvu?embed=1&hideExplorer=1&view=preview" %}
+| Event | JSX     |                                                             |
+| ----- | ------- | ----------------------------------------------------------- |
+| Match | onMatch | It is dispatched every time the router matches a new route. |
 
 ### RouterCase
 
@@ -93,15 +78,16 @@ Component that declares the behavior of the route, with it you can:
 
 #### Properties
 
-| Props | Description                                                          | Type     |
-| ----- | -------------------------------------------------------------------- | -------- |
-| load  | asynchronous content loader                                          | Function |
-| for   | slot to associate at the time of the match with path                 | String   |
-| path  | expression for path                                                  | String   |
-| memo  | memorize the state resolved by load according to the concurrent path | Boolean  |
+| Props   | Description                                                          | Type     |
+| ------- | -------------------------------------------------------------------- | -------- |
+| load    | asynchronous content loader                                          | Function |
+| for     | slot to associate at the time of the match with path                 | String   |
+| path    | expression for path                                                  | String   |
+| memo    | memorize the state resolved by load according to the concurrent path | Boolean  |
+| destroy | Remove associated view on route change                               | Boolean  |
 
-### Examples
+## Examples
 
-1. [https://stackblitz.com/edit/atomico-router-for](https://stackblitz.com/edit/atomico-router-for)
-2. [https://stackblitz.com/edit/atomico-router-load](https://stackblitz.com/edit/atomico-router-load)
-3. [https://stackblitz.com/edit/atomico-router-transition](https://stackblitz.com/edit/atomico-router-transition)
+### Pokeapi
+
+{% embed url="https://stackblitz.com/edit/atomico-router?embed=1&file=package.json&view=preview" %}
