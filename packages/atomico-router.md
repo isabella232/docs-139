@@ -4,15 +4,15 @@ description: powerful router for Webcomponents, React and Preact
 
 # @atomico/router
 
-@atomico/router tiene como objetivo facilitar la creacion de aplicaciones tipo SPA a travez de las siguientes estrategias:
+@atomico/router aims to facilitate the creation of SPA-type applications through the following strategies:
 
-1. &#x20;slot: usted podra referenciar un slot dentro  de RouterSwitch a mostrar en un path especifico.&#x20;
-2. elementos: usted podra montar CustomElements a travez de elementos Instanciables.
-3. generadores asincronos: a través de generadores asíncronos usted lograra mostrar múltiples vistas según el estado de carga, por ejemplo transiciones.&#x20;
+1. &#x20;**slot**: you can reference a slot within the Router Switch to show on a specific path.
+2. **elements**: you will be able to mount CustomElements through Instantable elements.
+3. **asynchronous generators**: through asynchronous generators you will be able to show multiple views according to the load state, for example transitions.&#x20;
 
 {% embed url="https://github.com/atomicojs/router" %}
 
-## Sintaxis
+## Syntax
 
 {% tabs %}
 {% tab title="Atomico JSX" %}
@@ -47,7 +47,7 @@ render(
 {% endtab %}
 {% endtabs %}
 
-## Elementos
+## Elements
 
 ### RouterSwitch
 
