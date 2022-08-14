@@ -51,12 +51,6 @@ render(
 
 ### RouterSwitch
 
-Controller component of the routes, with it you can:
-
-1. Observe the status of route transitions.
-2. Observe the route in load&#x20;
-3. Define the ::part selector to create custom path transitions.
-
 #### Properties
 
 | Props | Description                                          | Type               | Event |
