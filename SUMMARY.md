@@ -10,6 +10,7 @@
 * [🧩 VirtualDOM](api/virtualdom/README.md)
   * [Advanced](api/virtualdom/advanced.md)
 * [🎣 Hooks](api/hooks/README.md)
+  * [useContext](api/hooks/usecontext.md)
   * [useProp](api/hooks/useprop.md)
   * [useEvent](api/hooks/useevent.md)
   * [useRef](api/hooks/useref.md)
